@@ -1,0 +1,294 @@
+{
+  "info_cv": {
+    "en": "ONLINE CV",
+    "sk": "ONLINE CV"
+  },
+  "project_label": {
+    "en": "PROJECTS",
+    "sk": "PROJEKTY"
+  },
+  "education_label": {
+    "en": "EDUCATION",
+    "sk": "VZDELANIE"
+  },
+  "skills_label": {
+    "en": "SKILLS",
+    "sk": "SKILLS"
+  },
+  "filter_arch": {
+    "en": "architecture",
+    "sk": "architektúra"
+  },
+  "filter_prog": {
+    "en": "programming",
+    "sk": "programovanie"
+  },
+  "info_name": {
+    "en": "Name",
+    "sk": "Meno"
+  },
+  "info_date_birth": {
+    "en": "Date of birth",
+    "sk": "Dátum narodenia"
+  },
+  "info_nationality": {
+    "en": "Nationality",
+    "sk": "Národnosť"
+  },
+  "info_nationality_slovak": {
+    "en": "slovak",
+    "sk": "slovenská"
+  },
+  "info_currentCity": {
+    "en": "Current city",
+    "sk": "Miesto trvalého pobytu"
+  },
+  "info_maritalStatus": {
+    "en": "Marital status",
+    "sk": "Rodinný stav"
+  },
+  "info_maritalStatus_description": {
+    "en": "single",
+    "sk": "slobodný"
+  },
+  "info_cellphone": {
+    "en": "Cellphone",
+    "sk": "Mobil"
+  },
+  "education_facultyofArch": {
+    "en": "STU Bratislava, Faculty of architecture",
+    "sk": "STU v Bratislave, Fakulta architektúry"
+  },
+  "education_facultyofArch_description": {
+    "en": "architecture",
+    "sk": "architektúra"
+  },
+  "education_evLyceum": {
+    "en": "Evanjelical lyceum, Bratislava",
+    "sk": "Evanjelické lýceum, Bratislava"
+  },
+  "education_papakuraHighSchool": {
+    "en": "Papakura High School, Auckland, New Zealand",
+    "sk": "Papakura High School, Auckland, Nový Zéland"
+  },
+  "project_construction": {
+    "en": "construction documentation",
+    "sk": "realizačný projekt"
+  },
+  "project_building_permit": {
+    "en": "building permit documentation",
+    "sk": "projekt pre stavebné povolenie"
+  },
+  "project_study_construction": {
+    "en": "study and construction documentation",
+    "sk": "štúdia a realizačný projekt"
+  },
+  "project_position_programmer": {
+    "en": "programmer",
+    "sk": "programator"
+  },
+  "prosck_description": {
+    "en": "Construction documentation drafting.",
+    "sk": "Kreslenie projektovej dokumentácie pre realizačné projekty."
+  },
+  "prosck_position": {
+    "en": "cad specialist",
+    "sk": "cad projektant"
+  },
+  "prosck_palace": {
+    "en": "Motesickych palace addition, Eurovea",
+    "sk": "nadstavba paláca Motěšických, Eurovea"
+  },
+  "prosck_house": {
+    "en": "house for Bogar-Kralik-Urban architects",
+    "sk": "roddom pre Bogar-Kralik-Urban architects"
+  },
+  "audiro_description": {
+    "en": "Project documentation, visualisation, graphic design.",
+    "sk": "Kreslenie projektovej dokumentácie, vizualizácie, dizajn."
+  },
+  "audiro_position": {
+    "en": "architect",
+    "sk": "architekt"
+  },
+  "audiro_tools": {
+    "en": "autodesk, adobe software",
+    "sk": "autodesk, adobe software"
+  },
+  "audiro_projects": {
+    "en": "high-end interiors",
+    "sk": "luxusné interiéry"
+  },
+  "audiro_interior": {
+    "en": "private houses and high-end interiors",
+    "sk": "súkromné domy a luxusné interiéry"
+  },
+  "project_eea_description": {
+    "en": "Theme implementation for Liferay Portal projects.",
+    "sk": "Implementácia témy pre Liferay Portal projekty."
+  },
+  "project_eea_position": {
+    "en": "consultant, programmer",
+    "sk": "konzultant, programátor"
+  },
+  "project_eea_ghmp": {
+    "en": "theme",
+    "sk": "téma"
+  },
+  "project_eea_O2": {
+    "en": "theme",
+    "sk": "téma"
+  },
+  "project_eea_portlet1": {
+    "en": "mvc portlet for Liferay portal",
+    "sk": "mvc portlet pre Liferay portal"
+  },
+  "project_eea_jiraPlugin": {
+    "en": "mvc plugin for Jira issue tracking system",
+    "sk": "mvc plugin pre Jira issue tracking system"
+  },
+  "project_studentagency_description": {
+    "en": "Development of server-side generated web elements on open-cms platform. Web redesign consulting.",
+    "sk": "Vývoj dynamicky generovaných prvkov webu na platforme open-cms. Konzultácie pre redizajn webu."
+  },
+  "project_studentagency_position": {
+    "en": "consultant, programmer",
+    "sk": "konzultant, programátor"
+  },
+  "project_achmea_name": {
+    "en": "Project Achmea",
+    "sk": "Projekt Achmea"
+  },
+  "project_achmea_description": {
+    "en": "Developement of SharePoint components.",
+    "sk": "Vyvoj SharePoint komponentov."
+  },
+  "project_other_label": {
+    "en": "other projects",
+    "sk": "ďalšie projekty"
+  },
+  "project_other_whoisnearby": {
+    "en": "responsive mobile app template",
+    "sk": "responsívny template pre mobilnú aplikáciu"
+  },
+  "project_other_position": {
+    "en": "consultant, programmer",
+    "sk": "konzultant, programátor"
+  },
+  "project_other_longboardshop": {
+    "en": "eshop, currently longboard-factory.sk",
+    "sk": "eshop, v sucastnosti longboard-factory.sk"
+  },
+  "project_other_whoisnearby": {
+    "en": "responsive mobile interface design",
+    "sk": "design responsivneho mobilneho interface"
+  },
+  "project_other_silnereci": {
+    "en": "development, db migration",
+    "sk": "development, migrácia db"
+  },
+  "project_other_podnajomba": {
+    "en": "responsive web, personal project",
+    "sk": "responsivny web, osobný projekt"
+  },
+  "project_other_fbapp": {
+    "en": "fb app development",
+    "sk": "fb app development"
+  },
+  "project_other_volis": {
+    "en": "development",
+    "sk": "vývoj webu"
+  },
+  "project_other_sygic": {
+    "en": "web template developement",
+    "sk": "vývoj template pre web"
+  },
+  "skills_architecture": {
+    "en": "architecture / design",
+    "sk": "architektúra / dizajn"
+  },
+  "skills_programming": {
+    "en": "programming",
+    "sk": "programovanie"
+  },
+  "skills_languages": {
+    "en": "languages",
+    "sk": "jazykové znalosti"
+  },
+  "skills_languages_english": {
+    "en": "English",
+    "sk": "Anglický jazyk"
+  },
+  "skills_languages_german": {
+    "en": "German",
+    "sk": "Nemecký jazyk"
+  },
+  "skills_languages_portugese": {
+    "en": "Portuguese",
+    "sk": "Portugalský jazyk"
+  },
+  "skills_drivinglicense": {
+    "en": "Driving license - type B",
+    "sk": "Vodičský preukazskupina  B"
+  },
+  "skills_interests": {
+    "en": "interests",
+    "sk": "záujmy"
+  },
+  "skills_interests_kitesurfing": {
+    "en": "kitesurfing",
+    "sk": "kitesurfing"
+  },
+  "skills_interests_agile": {
+    "en": "agile, ui",
+    "sk": "agile, ui"
+  },
+  "level_expert": {
+    "en": "expert",
+    "sk": "expert"
+  },
+  "level_advanced": {
+    "en": "advanced",
+    "sk": "pokročilý"
+  },
+  "level_intermediate": {
+    "en": "intermediate",
+    "sk": "stredne pokročilý"
+  },
+  "level_lowerIntermediate": {
+    "en": "lower intermediate",
+    "sk": "mierne pokročilý"
+  },
+  "level_fluent": {
+    "en": "fluent",
+    "sk": "plynule"
+  },
+  "level_passive": {
+    "en": "passive",
+    "sk": "pasívne"
+  },
+  "level_fundamentals": {
+    "en": "fundamentals",
+    "sk": "základy"
+  },
+  "level_basics": {
+    "en": "basics",
+    "sk": "základy"
+  },
+  "viewgallery": {
+    "en": "gallery",
+    "sk": "galéria"
+  },
+  "languagebox_sk": {
+    "en": "SLOVAK",
+    "sk": "SLOVENSKY"
+  },
+  "languagebox_en": {
+    "en": "ENGLISH",
+    "sk": "ANGLICKY"
+  },
+  "download_pdf": {
+    "en": "download pdf",
+    "sk": "stiahni pdf"
+  }
+}
