@@ -7,7 +7,7 @@ class Footer extends React.Component {
 
   render() {
     const version = React.version
-    return (<footer id="footer" className="d-flex align-items-center">
+    return (<footer id="footer" className="d-flex align-items-center mt-auto">
 
       <div id="bootstrap-grid-util" className="position-absolute">
         <span className="d-sm-none">XS</span>

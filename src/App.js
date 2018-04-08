@@ -8,7 +8,7 @@ import './main.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App  d-flex flex-column">
 
         <Cv/>
         <Footer/>

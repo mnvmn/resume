@@ -19,10 +19,17 @@ class InfoTable extends React.Component {
           </Row>
       }
       {
-        this.props.data && this.props.data.map(data => <Row>
-          <Col>{data.label}</Col>
-          <Col>{data.value}</Col>
-        </Row>)
+        this.props.data && this.props.data.map(data => <div key={data.label}>
+          <Row>
+            <Col>{data.label}</Col>
+            <Col>{data.value}</Col>
+          </Row>
+{
+  // data.projects ? 'YES' : 'NO'
+  // this.props.data && this.props.data.map(data => <div key={data.label}>
+}
+
+        </div>)
       }
 
     </div>)

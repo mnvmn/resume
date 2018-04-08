@@ -3,8 +3,7 @@ import InfoTable from './InfoTable.js';
 import Controls from './Controls.js';
 import {Container} from 'reactstrap';
 
-const url = '/data.json';
-// const url = 'http://localhost:3000/data.json';
+const REST_URL = '/data.json';
 
 class Cv extends React.Component {
 
@@ -21,14 +20,17 @@ class Cv extends React.Component {
 
     this.setState({isLoading: true});
 
-    fetch(url).then(response => {
+    fetch(REST_URL).then(response => {
       console.log(response)
       if (response.ok) {
-        return response.json();
+        return response.json()
       } else {
         throw new Error('Something went wrong ...');
       }
     }).then(data => this.setState({data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
+  }
+  componentWillUpdate(nextProps, nextState) {
+    console.log(nextState)
   }
 
   render() {
