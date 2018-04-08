@@ -9,7 +9,7 @@ class InfoTable extends React.Component {
     return (<Container>
       {
         this.props.title && <Row>
-            <Col className=" text-left">Name<h5 className="ml-1 font-weight-bold text-left">{this.props.title}</h5>
+            <Col className="text-left"><h5 className="ml-1 font-weight-bold">{this.props.title}</h5>
             </Col>
           </Row>
       }
