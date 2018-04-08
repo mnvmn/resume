@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Col, Row, Button} from 'reactstrap';
+import {Col, Row, Button} from 'reactstrap';
 
 class InfoTable extends React.Component {
   render() {
