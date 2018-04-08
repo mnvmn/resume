@@ -1,14 +1,15 @@
 import React from 'react';
 import {Col, Row, ButtonGroup, Button} from 'reactstrap';
-import MaterialIcon, {colorPallet} from 'material-icons-react';
+import * as FontAwesome from 'react-icons/lib/fa'
 
 class Controls extends React.Component {
   render() {
     return (<Row>
       <Col className="d-flex justify-content-end">
         <ButtonGroup>
-          <Button outline={true} size="sm" className="d-flex align-items-center">
-            <MaterialIcon icon="import_export" size={15} className="p-0 m-0" color="none"/>
+          <Button outline={true} size="xs" className="d-flex align-items-center">
+            {false ? <FontAwesome.FaSortNumericAsc /> : <FontAwesome.FaSortNumericDesc />}
+            {' '}
             <span>asc/desc</span>
           </Button>
         </ButtonGroup>
