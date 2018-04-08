@@ -1,8 +1,13 @@
+import React from 'react';
 
-{/* <Icon>swap_vert</Icon> */
-} {/* <Icon>low_priority</Icon> */
-} {/* <header className="App-header">
-  <img src={logo} className="App-logo" alt="logo"/>
-  <h1 className="App-title">Welcome to React</h1>
-</header> */
+class Cv extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, CV</h1>
+      </div>
+    )
+  }
 }
+
+export default Cv;

@@ -23,6 +23,25 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.parallaxFrame1, .parallaxFrame2 {
+  background-color: #BBDEFB;
+  color: white;
+  font-size: 5em;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.parallaxFrame1 {
+  height: 200px;
+}
+
+.parallaxFrame1::before {
+  /* content: "Let's build something in React.js ...but keep it simple"; */
 }
