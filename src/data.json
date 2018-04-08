@@ -1,6 +1,6 @@
 {
   "info": [{
-    "label": "Name",
+      "label": "Name",
       "value": "Ing. arch. Matúš Nevedel"
     },
     {
@@ -33,7 +33,7 @@
       "value": "Evanjelical lyceum, Bratislava"
     },
     {
-      "label": 2002,
+      "label": "2002",
       "value": "Papakura High School, Auckland, New Zealand"
     },
     {
@@ -45,7 +45,7 @@
       "label": "2005 – 2007",
       "value": "PRO SCK s.r.o.",
       "projects": [{
-        "value": "Project documentation drafting - Eurovea, Motešických palace",
+        "project": "Project documentation drafting - Eurovea, Motešických palace",
         "skill": "AutoCAD"
       }]
     },
@@ -53,7 +53,7 @@
       "label": "2008 – 2010",
       "value": "AUDIRO s.r.o.",
       "projects": [{
-        "value": "Project documentation and visualisations for houses and interiors",
+        "project": "Project documentation and visualisations for houses and interiors",
         "skill": "Autodesk and  Adobe software"
       }]
     },
@@ -61,15 +61,15 @@
       "label": "2011 – 2012",
       "value": "freelance",
       "projects": [{
-          "value": "Theme implementation for portal citygalleryprague.cz",
+          "project": "Theme implementation for portal citygalleryprague.cz",
           "skill": "Liferay, java, css"
         },
         {
-          "value": "Frontend web development for portal studentagency.cz",
+          "project": "Frontend web development for portal studentagency.cz",
           "skill": "OpenCms, java, css"
         },
         {
-          "value": "CMS customization, development and deployment www.volis.sk, www.silnereci.sk, www.customboards.sk …",
+          "project": "CMS customization, development and deployment www.volis.sk, www.silnereci.sk, www.customboards.sk …",
           "skill": "Drupal, php, js, css"
         }
       ]
@@ -78,19 +78,19 @@
       "label": "2012 – 2015",
       "value": "Accenture, s.r.o.",
       "projects": [{
-          "value": "Continuous delivery of components for Achmea (agile team)",
+          "project": "Continuous delivery of components for Achmea (agile team)",
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
-          "value": "Internal information portal development and deployment",
+          "project": "Internal information portal development and deployment",
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
-          "value": "Implementation of dashbord for TDC call center (agile team)",
+          "project": "Implementation of dashbord for TDC call center (agile team)",
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
-          "value": "Pre-launch development of global website (agile team) www.husqvarna.com",
+          "project": "Pre-launch development of global website (agile team) www.husqvarna.com",
           "skill": "Sitecore, ASP.Net, js, css"
         }
       ]
@@ -99,15 +99,15 @@
       "label": "2015 – 2018",
       "value": "Lomnido GmbH",
       "projects": [{
-          "value": "Frontend layer implementation for data integration application. Rewrite into single page.",
+          "project": "Frontend layer implementation for data integration application. Rewrite into single page.",
           "skill": "Grails, Groovy, Backbone.js, Marionette.js, Bootstrap 4, Datatables, jsPlumb, Node, Sass"
         },
         {
-          "value": "Client side application for server and network configuration",
+          "project": "Client side application for server and network configuration",
           "skill": "Grails, Groovy, Angular 1, Bootstrap 3, Datatables"
         },
         {
-          "value": "Client side application for monitoring of projects",
+          "project": "Client side application for monitoring of projects",
           "skill": "Grails, Groovy, Angular 1, Bootstrap 3, Datatables"
         }
       ]
