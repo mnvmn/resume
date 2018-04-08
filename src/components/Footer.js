@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Col, Row} from 'reactstrap';
 
 class Footer extends React.Component {
-
   render() {
     const version = React.version
     return (<footer className="footer">
@@ -12,7 +11,7 @@ class Footer extends React.Component {
             <small>
               <span className="text-muted">powered by</span>
               {' '}
-              <span>React v.{version}</span>
+              <b>React v{version}</b>
             </small>
           </Col>
         </Row>
