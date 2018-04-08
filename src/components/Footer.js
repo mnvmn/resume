@@ -2,6 +2,9 @@ import React from 'react';
 import {Container, Col, Row} from 'reactstrap';
 
 class Footer extends React.Component {
+
+  // const REST_URL = 'https://api.github.com/repos/mnvn/mnvmn.github.io/commits/master';
+
   render() {
     const version = React.version
     return (<footer id="footer" className="d-flex align-items-center">

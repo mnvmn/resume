@@ -13,18 +13,18 @@ class InfoTable extends React.Component {
     return (<div className="mb-4">
       {
         this.props.title && <Row>
-            <Col><h5 className="ml-1 font-weight-bold">{this.props.title}</h5>
+            <Col>
+              <h5 className="ml-1 font-weight-bold">{this.props.title}</h5>
             </Col>
           </Row>
       }
-      <Row>
-        <Col>Name</Col>
-        <Col>Ing. arch. Matúš Nevedel</Col>
-      </Row>
-      <Row>
-        <Col>Date of birth</Col>
-        <Col>2.12.1984</Col>
-      </Row>
+      {
+        this.props.data && this.props.data.map(data => <Row>
+          <Col>{data.label}</Col>
+          <Col>{data.value}</Col>
+        </Row>)
+      }
+
     </div>)
   }
 }
