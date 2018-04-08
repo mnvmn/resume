@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Row, ButtonGroup, Button} from 'reactstrap';
+import {Container, Col, Row, ButtonGroup, Button} from 'reactstrap';
 import MaterialIcon, {colorPallet} from 'material-icons-react';
 
 class Controls extends React.Component {
