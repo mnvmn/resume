@@ -6,7 +6,7 @@ class InfoTable extends React.Component {
 
     const title = this.props.title
 
-    return (<div>
+    return (<div className="mb-4">
       {
         this.props.title && <Row>
             <Col><h5 className="ml-1 font-weight-bold">{this.props.title}</h5>

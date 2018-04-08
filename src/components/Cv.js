@@ -8,10 +8,10 @@ class Cv extends React.Component {
     return (<div className="cv-container">
 
       <Container>
-
-        <h3 className="text-center font-weight-bold">CV</h3>
-
         <Controls/>
+
+        <h3 className="text-center font-weight-bold mb-5">CV</h3>
+
         <InfoTable data=""/>
         <InfoTable data="" title="EDUCATION"/>
         <InfoTable data="" title="WORK EXPERIENCE"/>

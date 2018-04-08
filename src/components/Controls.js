@@ -7,8 +7,8 @@ class Controls extends React.Component {
     return (<Row>
       <Col className="d-flex justify-content-end">
         <ButtonGroup>
-          <Button outline={true} size="sm">
-            <MaterialIcon icon="dashboard" size="small"/>
+          <Button outline={true} size="sm" className="d-flex align-items-center">
+            <MaterialIcon icon="dashboard" size={15} className="p-0 m-0"/>
             <span>asc/desc</span>
           </Button>
         </ButtonGroup>
@@ -16,5 +16,9 @@ class Controls extends React.Component {
     </Row>)
   }
 }
+
+
+
+
 
 export default Controls;
