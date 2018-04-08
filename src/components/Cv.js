@@ -1,5 +1,5 @@
 import React from 'react';
-import InfoTable from './InfoTable.js';
+import TableInfo from './TableInfo.js';
 import Controls from './Controls.js';
 import {Container} from 'reactstrap';
 
@@ -42,9 +42,9 @@ class Cv extends React.Component {
 
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
 
-        <InfoTable data={this.state.data.info}/>
-        <InfoTable data={this.state.data.education} title="EDUCATION"/>
-        <InfoTable data={this.state.data.work} title="WORK EXPERIENCE"/>
+        <TableInfo data={this.state.data.info}/>
+        <TableInfo data={this.state.data.education} title="EDUCATION"/>
+        <TableInfo data={this.state.data.work} title="WORK EXPERIENCE"/>
       </Container>
 
     </div>)
