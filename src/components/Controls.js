@@ -9,7 +9,7 @@ class Controls extends React.Component {
         <ButtonGroup>
           <Button outline={true} size="xs" className="d-flex align-items-center">
             {false ? <FontAwesome.FaSortNumericAsc /> : <FontAwesome.FaSortNumericDesc />}
-            {' '}
+            {' '}&nbsp;&nbsp;
             <span>asc/desc</span>
           </Button>
         </ButtonGroup>

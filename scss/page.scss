@@ -1,11 +1,19 @@
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "variables";
+
+
 body {
   background-color: white;
+  margin-bottom: 30px;
 }
 
 .cv-container {}
 
+$footer-color: #f5f5f5;
 footer.footer {
-  background-color: #f5f5f5;
+  background-color: $footer-color;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -17,6 +25,15 @@ footer.footer {
   margin-bottom: 3px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bold;
+}
+
+#bootstrap-grid-util {
+  left: 20px;
+  color: $footer-color
 }

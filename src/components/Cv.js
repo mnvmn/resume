@@ -29,14 +29,6 @@ class Cv extends React.Component {
         throw new Error('Something went wrong ...');
       }
     }).then(data => this.setState({data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
-    //   this.setState({data: resp, isLoading: false})
-
-    // .then(function(resp) {
-    //   console.log(resp)
-    //   this.setState({data: resp, isLoading: false})
-    // })
-    // fetch(url).then(response => response.json())
-    // .then(response => response.json()).then(data => this.setState({hits: data.hits}));
   }
 
   render() {
@@ -47,9 +39,9 @@ class Cv extends React.Component {
 
         <h3 className="text-center font-weight-bold mb-5">CV</h3>
 
-        <InfoTable data=""/>
-        <InfoTable data="" title="EDUCATION"/>
-        <InfoTable data="" title="WORK EXPERIENCE"/>
+        <InfoTable data={this.state.data.info}/>
+        <InfoTable data={this.state.data.education} title="EDUCATION"/>
+        <InfoTable data={this.state.data.work} title="WORK EXPERIENCE"/>
       </Container>
 
     </div>)

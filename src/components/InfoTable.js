@@ -1,11 +1,15 @@
 import React from 'react';
-import {Col, Row, Button} from 'reactstrap';
+import {Col, Row} from 'reactstrap';
 
 class InfoTable extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: props.data
+    };
+  }
+
   render() {
-
-    const title = this.props.title
-
     return (<div className="mb-4">
       {
         this.props.title && <Row>
