@@ -1,24 +1,62 @@
-import React from 'react';
-import {Container, Col, Row, ButtonGroup, Button} from 'reactstrap';
-import MaterialIcon, {colorPallet} from 'material-icons-react';
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "variables";
 
-class Controls extends React.Component {
-  render() {
-    return (<Row>
-      <Col className="d-flex justify-content-end">
-        <ButtonGroup>
-          <Button outline={true} size="sm" className="d-flex align-items-center">
-            <MaterialIcon icon="dashboard" size={15} className="p-0 m-0"/>
-            <span>asc/desc</span>
-          </Button>
-        </ButtonGroup>
-      </Col>
-    </Row>)
+.btn-link,
+.btn-link:focus,
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.btn,
+button {
+  box-shadow: none;
+  background-color: white !important;
+  // transition: none;
+
+  &.disabled {
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  &.btn-outline-secondary {
+    border-color: $gray-500;
+    color: $gray-600;
+
+    &.hover,
+    &:hover {
+      border-color: lighten($primary, 10%);
+      color: $link-hover-color;
+    }
+
+    &.active,
+    &:active {
+      background-color: $gray-200 !important;
+      border-color: darken($link-hover-color, 10%) !important;
+      color: darken($link-hover-color, 10%) !important;
+    }
   }
 }
 
+.btn,
+button,
+input[type=submit] {
+  cursor: pointer !important;
 
+  &.disabled,
+  &:disabled {
+    cursor: default !important;
+  }
+}
 
-
-
-export default Controls;
+.btn-group-xs > .btn,
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
