@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Cv from './Cv';
+import Cv from './components/Cv.js';
 import logo from './logo.svg';
 import './App.css';
 
