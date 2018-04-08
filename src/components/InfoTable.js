@@ -21,17 +21,19 @@ class InfoTable extends React.Component {
       {
         this.props.data && this.props.data.map(data => <div key={data.label}>
           <Row>
-            <Col>{data.label}</Col>
-            <Col>{data.value}</Col>
+            <Col xs="6">{data.label}</Col>
+            <Col xs="6">{data.value}</Col>
           </Row>
-{
-  // data.projects ? 'YES' : 'NO'
-  // this.props.data && this.props.data.map(data => <div key={data.label}>
-}
-
+          {
+            data.projects && data.projects.map(project => <div key={project.project}>
+              <Row>
+                <Col xs="12">{project.project}</Col>
+                <Col xs="12" className="text-right">{project.skill}</Col>
+              </Row>
+            </div>)
+          }
         </div>)
       }
-
     </div>)
   }
 }

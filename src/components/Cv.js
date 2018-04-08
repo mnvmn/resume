@@ -12,7 +12,8 @@ class Cv extends React.Component {
 
     this.state = {
       data: {},
-      isLoading: false
+      isLoading: false,
+      isAscending: true
     };
   }
 
@@ -39,7 +40,7 @@ class Cv extends React.Component {
       <Container>
         <Controls/>
 
-        <h3 className="text-center font-weight-bold mb-5">CV</h3>
+        <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
 
         <InfoTable data={this.state.data.info}/>
         <InfoTable data={this.state.data.education} title="EDUCATION"/>

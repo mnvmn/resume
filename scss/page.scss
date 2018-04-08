@@ -16,14 +16,16 @@ body {
 
 .cv-container {
   padding-top: 15px;
-  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 footer#footer {
+  > div{
+    height: $footer-height;
+  }
   border-top: 1px solid darken($footer-color, 3%);
   background-color: $footer-color;
   z-index: 10;
-  height: $footer-height;
 }
 
 .row {
