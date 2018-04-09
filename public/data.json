@@ -1,36 +1,63 @@
 {
   "info": [{
-      "label": "Name",
+      "label": {
+        "en": "Name",
+        "sk": "Meno"
+      },
       "value": "Ing. arch. Matúš Nevedel"
     },
     {
-      "label": "Date of birth",
+      "label": {
+        "en": "Date of birth",
+        "sk": "Dátum narodenia"
+      },
       "value": "2.12.1984"
     },
     {
-      "label": "Nationality",
-      "value": "slovak"
+      "label": {
+        "en": "Nationality",
+        "sk": "Narodnosť"
+      },
+      "value": {
+        "en": "slovak",
+        "sk": "slovenská"
+      }
     },
     {
-      "label": "Permanent address",
+      "label": {
+        "en": "Permanent address",
+        "sk": "Trvalé bydlisko"
+      },
       "value": "Bratislava"
     },
     {
-      "label": "Marital status",
-      "value": "single"
+      "label": {
+        "en": "Marital status",
+        "sk": "Rodinný stav"
+      },
+      "value": {
+        "en": "single",
+        "sk": "slobodný"
+      }
     },
     {
       "label": "Email",
       "value": "matus.nevedel@gmail.com"
     },
     {
-      "label": "Phone",
+      "label": {
+        "en": "Phone",
+        "sk": "Telefonický kontakt"
+      },
       "value": "+421 948 194 195"
     }
   ],
   "education": [{
       "label": "1999 – 2004",
-      "value": "Evanjelical lyceum, Bratislava"
+      "value": {
+        "en": "Evanjelical lyceum, Bratislava",
+        "sk": "Evanjelické lýceum, Bratislava"
+      }
     },
     {
       "label": "2002",
@@ -38,14 +65,20 @@
     },
     {
       "label": "2004 – 2011",
-      "value": "STU Bratislava, Faculty of architecture"
+      "value": {
+        "en": "STU Bratislava, Faculty of architecture",
+        "sk": "STU Bratislava, Fakulta architektúry"
+      }
     }
   ],
   "work": [{
       "label": "2005 – 2007",
       "value": "PRO SCK s.r.o.",
       "projects": [{
-        "project": "Project documentation drafting - Eurovea, Motešických palace",
+        "project": {
+          "en": "Project documentation drafting - Eurovea, Motešických palace",
+          "sk": "Rysovanie stavebných výkresov - Eurovea, Motešických palace"
+        },
         "skill": "AutoCAD"
       }]
     },
@@ -53,7 +86,10 @@
       "label": "2008 – 2010",
       "value": "AUDIRO s.r.o.",
       "projects": [{
-        "project": "Project documentation and visualisations for houses and interiors",
+        "project": {
+          "en": "Project documentation and visualisations for houses and interiors",
+          "sk": "Tvorba projektovej dokumentácie and vizualizácií"
+        },
         "skill": "Autodesk and  Adobe software"
       }]
     },
@@ -61,15 +97,24 @@
       "label": "2011 – 2012",
       "value": "freelance",
       "projects": [{
-          "project": "Theme implementation for portal citygalleryprague.cz",
+          "project": {
+            "en": "Theme implementation for portal citygalleryprague.cz",
+            "sk": "Implementácia témy portal citygalleryprague.cz"
+          },
           "skill": "Liferay, java, css"
         },
         {
-          "project": "Frontend web development for portal studentagency.cz",
+          "project": {
+            "en": "Frontend web development for portal studentagency.cz",
+            "sk": "Frontend web development pre portál studentagency.cz"
+          },
           "skill": "OpenCms, java, css"
         },
         {
-          "project": "CMS customization, development and deployment"
+          "project": {
+            "en": "CMS customization, development and deployment",
+            "sk": "CMS customization, development and deployment"
+          }
         },
         {
           "project": "www.volis.sk, www.silnereci.sk, www.customboards.sk …",
@@ -81,19 +126,31 @@
       "label": "2012 – 2015",
       "value": "Accenture, s.r.o.",
       "projects": [{
-          "project": "Continuous delivery of components for Achmea (agile team)",
+          "project": {
+            "en": "Continuous delivery of components for Achmea (agile team)",
+            "sk": "Continuous delivery of components for Achmea (agile team)"
+          },
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
-          "project": "Internal information portal development and deployment",
+          "project": {
+            "en": "Internal information portal development and deployment",
+            "sk": "Internal information portal development and deployment"
+          },
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
-          "project": "Implementation of dashbord for TDC call center (agile team)",
+          "project": {
+            "en": "Implementation of dashbord for TDC call center (agile team)",
+            "sk": "Implementation of dashbord for TDC call center (agile team)"
+          },
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
-          "project": "Pre-launch development of global website (agile team) www.husqvarna.com",
+          "project": {
+            "en": "Pre-launch development of global website (agile team) www.husqvarna.com",
+            "sk": "Pre-launch development of global website (agile team) www.husqvarna.com"
+          },
           "skill": "Sitecore, ASP.Net, js, css"
         }
       ]
@@ -102,15 +159,24 @@
       "label": "2015 – 2018",
       "value": "Lomnido GmbH",
       "projects": [{
-          "project": "Frontend layer implementation for data integration application. Rewrite into single page application",
+          "project": {
+            "en": "Frontend layer implementation for data integration application. Rewrite into single page application",
+            "sk": "Frontend layer implementation for data integration application. Rewrite into single page application"
+          },
           "skill": "Grails, Groovy, Backbone.js, Marionette.js, Bootstrap 4, Datatables, jsPlumb, Node, Sass"
         },
         {
-          "project": "Client side application for server and network configuration",
+          "project": {
+            "en": "Client side application for server and network configuration",
+            "sk": "Client side application for server and network configuration"
+          },
           "skill": "Grails, Groovy, Angular 1, Bootstrap 3, Datatables"
         },
         {
-          "project": "Client side application for monitoring of projects",
+          "project": {
+            "en": "Client side application for monitoring of projects",
+            "sk": "Client side application for monitoring of projects"
+          },
           "skill": "Grails, Groovy, Angular 1, Bootstrap 3, Datatables"
         }
       ]

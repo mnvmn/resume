@@ -17,15 +17,23 @@ class Cv extends React.Component {
         work: []
       },
       isLoading: false,
-      isAscending: true
+      isAscending: true,
+      language: 'en'
     };
 
     this.changeOrder = this.changeOrder.bind(this);
+    this.changeLang = this.changeLang.bind(this);
   }
 
   changeOrder() {
     this.setState(prevState => ({
       isAscending: !prevState.isAscending
+    }));
+  }
+
+  changeLang() {
+    this.setState(prevState => ({
+      language: prevState.language == 'en' ? 'sk' : 'en'
     }));
   }
 
@@ -48,6 +56,7 @@ class Cv extends React.Component {
   }
 
   render() {
+    const lang = this.state.language
     const isAsc = this.state.isAscending;
     return (<div className="cv-container">
 
@@ -55,12 +64,12 @@ class Cv extends React.Component {
 
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
 
-        <TableInfo data={this.state.data.info}/>
+        <TableInfo data={this.state.data.info} language={lang}/>
 
-        <Controls btnHandler={this.changeOrder} isAscending={isAsc}/>
+        <Controls btnHandler={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} language={lang}/>
 
-        <TableInfo data={this.state.data.education} isAscending={isAsc} title="EDUCATION"/>
-        <TableInfo data={this.state.data.work} isAscending={isAsc} title="WORK EXPERIENCE"/>
+        <TableInfo data={this.state.data.education} isAscending={isAsc} language={lang} title="EDUCATION"/>
+        <TableInfo data={this.state.data.work} isAscending={isAsc} language={lang} title="WORK EXPERIENCE"/>
       </Container>
 
     </div>)

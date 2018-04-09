@@ -17,6 +17,13 @@ class Controls extends React.Component {
             <FontAwesome.FaDownload/>
             &nbsp; Download PDF
           </Button>
+          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLang}>
+            {
+              this.props.language === 'sk'
+                ? 'En'
+                : 'Sk'
+            }
+          </Button>
           <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.btnHandler}>
             {
               this.props.isAscending
