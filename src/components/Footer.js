@@ -19,11 +19,11 @@ class Footer extends React.Component {
 
         <Container>
           <Row>
-            <Col className="text-sm text-right text-secondary">
+            <Col className="text-sm text-right text-muted">
               <small>
-                <span className="text-muted">#</span>
+                <span>#</span>
                 {' '}
-                <b>React v{version}</b>
+                <span className="font-weight-bold">React v{version}</span>
               </small>
             </Col>
           </Row>
