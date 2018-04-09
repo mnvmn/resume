@@ -26,22 +26,23 @@ button {
   }
 
   &.btn-outline-secondary {
-    // border-color: $gray-600;
-    // color: $gray-700;
     border-color: lighten($secondary, 10%) !important;
-    color: $secondary !important;
+    // border-color: $secondary;
+    color: $secondary;
 
     &.hover,
     &:hover {
-      border-color: lighten($secondary, 10%);
-      color: $secondary;
+      // border-color: $secondary;
+      border-color: darken($secondary, 10%) !important;
+      color: darken($secondary, 10%);
+      // color: $primary;
     }
 
     &.active,
     &:active {
       background-color: $gray-200 !important;
-      border-color: darken($secondary, 10%) !important;
-      color: darken($secondary, 10%) !important;
+      border-color: darken($secondary, 12%) !important;
+      color: darken($secondary, 20%) !important;
       // border-color: darken($link-hover-color, 10%) !important;
       // color: darken($link-hover-color, 10%) !important;
     }

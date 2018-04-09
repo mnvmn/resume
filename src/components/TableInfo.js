@@ -25,8 +25,8 @@ class TableInfo extends React.Component {
         (
           this.props.title
           ? infoList
-          : this.props.data).map(info => <div key={info.label}>
-            <Row className={info.projects ? 'mt-4' : ''}>
+          : this.props.data).map((info, index) => <div key={info.label}>
+            <Row className={info.projects && index > 0 ? 'mt-4' : ''}>
               <Col xs="6" className={this.props.title
                   ? 'text-primary'
                   : ''}>{info.label}

@@ -1,4 +1,7 @@
-body, html, #root, .App {
+#root,
+.App,
+body,
+html {
   height: 100%;
   min-height: 100%; }
 
@@ -6,8 +9,10 @@ body {
   background-color: white; }
 
 .cv-container {
-  padding-top: 15px;
+  padding-top: 50px;
   padding-bottom: 30px; }
+  .cv-container h3 {
+    font-size: 1.6em; }
 
 footer#footer {
   border-top: 1px solid #ededed;
@@ -49,18 +54,18 @@ button {
   .btn.btn-outline-secondary,
   button.btn-outline-secondary {
     border-color: #378fe7 !important;
-    color: #1976d2 !important; }
+    color: #1976d2; }
     .btn.btn-outline-secondary.hover, .btn.btn-outline-secondary:hover,
     button.btn-outline-secondary.hover,
     button.btn-outline-secondary:hover {
-      border-color: #378fe7;
-      color: #1976d2; }
+      border-color: #145ca4 !important;
+      color: #145ca4; }
     .btn.btn-outline-secondary.active, .btn.btn-outline-secondary:active,
     button.btn-outline-secondary.active,
     button.btn-outline-secondary:active {
       background-color: #e9ecef !important;
-      border-color: #145ca4 !important;
-      color: #145ca4 !important; }
+      border-color: #12579b !important;
+      color: #0e4377 !important; }
 
 .btn,
 button,
@@ -6125,3 +6130,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-primary {
   color: #01579b !important; }
+
+.text-secondary {
+  color: #1976d2 !important; }
