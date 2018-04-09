@@ -2,11 +2,12 @@
 @import "btns";
 @import "variables";
 
+@import "node_modules/bootstrap/scss/bootstrap";
+
 
 .btn-link, .btn-link:hover, .btn-link:focus {
   text-decoration: none;
 }
-
 
 
 button, .btn {

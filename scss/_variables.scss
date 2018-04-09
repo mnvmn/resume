@@ -4,8 +4,9 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px
-) !default;
+)
 
+;
 $container-max-widths: (
   sm: 540px,
   md: 700px,
@@ -14,3 +15,8 @@ $container-max-widths: (
 );
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// $primary: #1a237e;
+$primary: #e040fb;
+$secondary: #e040fb;
