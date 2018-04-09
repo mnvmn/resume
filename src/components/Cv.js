@@ -20,7 +20,6 @@ class Cv extends React.Component {
   }
 
   changeOrder() {
-    console.log('I was clisked')
     this.setState(prevState => ({
       isAscending: !prevState.isAscending
     }));
@@ -41,10 +40,12 @@ class Cv extends React.Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
-    console.log(nextState)
+    // console.log('CV state', nextState)
+    console.log('CV state', nextState.isAscending)
   }
 
   render() {
+    const isAsc = this.state.isAscending;
     return (<div className="cv-container">
 
       <Container>
@@ -54,8 +55,8 @@ class Cv extends React.Component {
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
 
         <TableInfo data={this.state.data.info}/>
-        <TableInfo data={this.state.data.education} title="EDUCATION"/>
-        <TableInfo data={this.state.data.work} title="WORK EXPERIENCE"/>
+        <TableInfo data={this.state.data.education} isAscending={isAsc} title="EDUCATION"/>
+        <TableInfo data={this.state.data.work} isAscending={isAsc} title="WORK EXPERIENCE"/>
       </Container>
 
     </div>)

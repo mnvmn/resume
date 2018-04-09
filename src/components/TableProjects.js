@@ -12,6 +12,11 @@ class TableProjects extends React.Component {
     };
   }
 
+  componentWillUpdate(nextProps, nextState) {
+    // console.log('Projects state', nextState)
+    // console.log('Projects state', nextState.isAscending)
+  }
+
   render() {
 
     const projects = this.state.isAscending

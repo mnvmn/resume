@@ -11,6 +11,10 @@ class TableInfo extends React.Component {
     };
   }
 
+  componentWillUpdate(nextProps, nextState) {
+    console.log('Info state', nextState.isAscending)
+  }
+
   render() {
     return (<div className="mb-4">
       {
