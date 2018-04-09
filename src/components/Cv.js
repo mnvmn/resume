@@ -14,7 +14,17 @@ class Cv extends React.Component {
       data: {
         info: [],
         education: [],
-        work: []
+        work: [],
+      },
+      strings: {
+        education: {
+          en: 'education',
+          sk: 'vzdelanie'
+        },
+        work: {
+          en: 'work experience',
+          sk: 'zamestnanie'
+        }
       },
       isLoading: false,
       isAscending: true,
@@ -58,18 +68,19 @@ class Cv extends React.Component {
   render() {
     const lang = this.state.language
     const isAsc = this.state.isAscending;
+    const data = this.state.data;
     return (<div className="cv-container">
 
       <Container>
 
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
 
-        <TableInfo data={this.state.data.info} language={lang}/>
+        <TableInfo data={data.info} language={lang}/>
 
         <Controls btnHandler={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} language={lang}/>
 
-        <TableInfo data={this.state.data.education} isAscending={isAsc} language={lang} title="EDUCATION"/>
-        <TableInfo data={this.state.data.work} isAscending={isAsc} language={lang} title="WORK EXPERIENCE"/>
+        <TableInfo data={data.education} isAscending={isAsc} language={lang} title={this.state.strings.education[lang]}/>
+        <TableInfo data={data.work} isAscending={isAsc} language={lang} title={this.state.strings.work[lang]}/>
       </Container>
 
     </div>)

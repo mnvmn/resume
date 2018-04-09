@@ -18,7 +18,7 @@ class TableInfo extends React.Component {
       {
         this.props.title && <Row>
             <Col>
-              <h5 className="ml-1 font-weight-bold">{this.props.title[lang] ? this.props.title[lang] : this.props.title}</h5>
+              <h5 className="ml-1 font-weight-bold text-uppercase">{this.props.title[lang] ? this.props.title[lang] : this.props.title}</h5>
             </Col>
           </Row>
       }

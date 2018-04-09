@@ -18,6 +18,8 @@ class Controls extends React.Component {
             &nbsp; Download PDF
           </Button>
           <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLang}>
+            <FontAwesome.FaLanguage/>
+            &nbsp;
             {
               this.props.language === 'sk'
                 ? 'En'
