@@ -9,13 +9,13 @@ class Footer extends React.Component {
     const version = React.version
     return (<footer id="footer" className="mt-auto">
       <div className="d-flex align-items-center">
-        <div id="bootstrap-grid-util" className="position-absolute">
+        {/* <div id="bootstrap-grid-util" className="position-absolute">
           <span className="d-sm-none">XS</span>
           <span className="d-none d-sm-block d-md-none">SM</span>
           <span className="d-none d-md-block d-lg-none">MD</span>
           <span className="d-none d-lg-block d-xl-none">LG</span>
           <span className="d-none d-xl-block">XL</span>
-        </div>
+        </div> */}
 
         <Container>
           <Row>
