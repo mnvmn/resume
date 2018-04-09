@@ -13,7 +13,7 @@ class Controls extends React.Component {
             <FontAwesome.FaCodeFork/>
             &nbsp; View Source
           </Button>
-          <Button outline={true} size="xs" className="d-flex align-items-center" href="/CV_MN.pdf" target="_blank">
+          <Button outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/mnvmn.github.io/raw/master/CV_MN.pdf" target="_blank">
             <FontAwesome.FaDownload/>
             &nbsp; Download PDF
           </Button>
