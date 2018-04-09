@@ -6,7 +6,8 @@ class TableInfo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: props.data
+      data: props.data,
+      isAscending: props.isAscending
     };
   }
 
@@ -22,10 +23,10 @@ class TableInfo extends React.Component {
       {
         this.props.data && this.props.data.map(info => <div key={info.label}>
           <Row>
-            <Col xs="6">{info.label}</Col>
-            <Col xs="6">{info.value}</Col>
+            <Col xs="6" className={this.props.title ? 'text-primary' : ''}>{info.label}</Col>
+            <Col xs="6" className={info.projects ? 'font-weight-bold' : ''}>{info.value}</Col>
           </Row>
-          {info.projects && <TableProjects projects={info.projects}/>}
+          {info.projects && <TableProjects projects={info.projects} isAscending={this.state.isAscending}/>}
         </div>)
       }
     </div>)

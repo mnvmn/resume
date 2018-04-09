@@ -7,15 +7,23 @@ class TableProjects extends React.Component {
     super(props);
 
     this.state = {
-      projects: props.projects
+      projects: props.projects,
+      isAscending: props.isAscending
     };
   }
 
   render() {
-    return (this.state.projects.map(project => <div key={project.project} className="clearfix">
+
+    const projects = this.state.isAscending
+      ? this.state.projects
+      : [...this.state.projects].reverse()
+
+    return (projects.map(project => <Row  key={Math.random()}>
+      <Col className="clearfix" xs="12">
         <div className="float-left">{project.project}</div>
         <div className="float-right text-right text-primary">{project.skill}</div>
-    </div>))
+      </Col>
+    </Row>))
   }
 }
 

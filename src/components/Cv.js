@@ -15,6 +15,15 @@ class Cv extends React.Component {
       isLoading: false,
       isAscending: true
     };
+
+    this.changeOrder = this.changeOrder.bind(this);
+  }
+
+  changeOrder() {
+    console.log('I was clisked')
+    this.setState(prevState => ({
+      isAscending: !prevState.isAscending
+    }));
   }
 
   componentDidMount() {
@@ -30,6 +39,7 @@ class Cv extends React.Component {
       }
     }).then(data => this.setState({data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
   }
+
   componentWillUpdate(nextProps, nextState) {
     console.log(nextState)
   }
@@ -38,7 +48,8 @@ class Cv extends React.Component {
     return (<div className="cv-container">
 
       <Container>
-        <Controls/>
+
+        <Controls btnHandler={this.changeOrder}/>
 
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
 
