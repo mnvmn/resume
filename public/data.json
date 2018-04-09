@@ -69,7 +69,10 @@
           "skill": "OpenCms, java, css"
         },
         {
-          "project": "CMS customization, development and deployment www.volis.sk, www.silnereci.sk, www.customboards.sk …",
+          "project": "CMS customization, development and deployment"
+        },
+        {
+          "project": "www.volis.sk, www.silnereci.sk, www.customboards.sk …",
           "skill": "Drupal, php, js, css"
         }
       ]
@@ -99,7 +102,7 @@
       "label": "2015 – 2018",
       "value": "Lomnido GmbH",
       "projects": [{
-          "project": "Frontend layer implementation for data integration application. Rewrite into single page.",
+          "project": "Frontend layer implementation for data integration application. Rewrite into single page application",
           "skill": "Grails, Groovy, Backbone.js, Marionette.js, Bootstrap 4, Datatables, jsPlumb, Node, Sass"
         },
         {

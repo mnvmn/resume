@@ -11,7 +11,11 @@ class Cv extends React.Component {
     super(props);
 
     this.state = {
-      data: {},
+      data: {
+        info: [],
+        education: [],
+        work: []
+      },
       isLoading: false,
       isAscending: true
     };

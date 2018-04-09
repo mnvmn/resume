@@ -9,11 +9,11 @@ class Controls extends React.Component {
 
       <Col className="d-flex justify-content-end">
         <ButtonGroup>
-          <Button outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/resume">
+          <Button outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/resume" target="_blank">
             <FontAwesome.FaCodeFork/>
             &nbsp; View Source
           </Button>
-          <Button outline={true} size="xs" className="d-flex align-items-center" href="/CV_MN.pdf">
+          <Button outline={true} size="xs" className="d-flex align-items-center" href="/CV_MN.pdf" target="_blank">
             <FontAwesome.FaDownload/>
             &nbsp; Download PDF
           </Button>

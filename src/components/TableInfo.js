@@ -5,6 +5,7 @@ import TableProjects from './TableProjects.js';
 class TableInfo extends React.Component {
 
   render() {
+
     const infoList = this.props.data
       ? (
         this.props.isAscending
@@ -21,18 +22,21 @@ class TableInfo extends React.Component {
           </Row>
       }
       {
-        infoList && infoList.map(info => <div key={info.label}>
-          <Row>
-            <Col xs="6" className={this.props.title
-                ? 'text-primary'
-                : ''}>{info.label}
-            </Col>
-            <Col xs="6" className={info.projects
-                ? 'font-weight-bold'
-                : ''}>{info.value}</Col>
-          </Row>
-          {info.projects && <TableProjects projects={info.projects} isAscending={this.props.isAscending}/>}
-        </div>)
+        (
+          this.props.title
+          ? infoList
+          : this.props.data).map(info => <div key={info.label}>
+            <Row className={info.projects ? 'mt-4' : ''}>
+              <Col xs="6" className={this.props.title
+                  ? 'text-primary'
+                  : ''}>{info.label}
+              </Col>
+              <Col xs="6" className={info.projects
+                  ? 'font-weight-bold'
+                  : ''}>{info.value}</Col>
+            </Row>
+            {info.projects && <TableProjects projects={info.projects} isAscending={this.props.isAscending}/>}
+          </div>)
       }
     </div>)
   }

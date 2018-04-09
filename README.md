@@ -1,1 +1,3 @@
-demo React application
+Demo React application.
+
+Deployed at https://mnvmn.github.io
