@@ -53,7 +53,7 @@ class Cv extends React.Component {
 
         <TableInfo data={this.state.data.info}/>
 
-        <Controls btnHandler={this.changeOrder}/>
+        <Controls btnHandler={this.changeOrder} isAscending={isAsc}/>
 
         <TableInfo data={this.state.data.education} isAscending={isAsc} title="EDUCATION"/>
         <TableInfo data={this.state.data.work} isAscending={isAsc} title="WORK EXPERIENCE"/>
