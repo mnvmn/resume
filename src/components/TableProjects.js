@@ -3,25 +3,15 @@ import {Col, Row} from 'reactstrap';
 
 class TableProjects extends React.Component {
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      projects: props.projects,
-      isAscending: props.isAscending
-    };
-  }
-
   componentWillUpdate(nextProps, nextState) {
     // console.log('Projects state', nextState)
     // console.log('Projects state', nextState.isAscending)
   }
 
   render() {
-
-    const projects = this.state.isAscending
-      ? this.state.projects
-      : [...this.state.projects].reverse()
+    const projects = this.props.isAscending
+      ? this.props.projects
+      : [...this.props.projects].reverse()
 
     return (projects.map(project => <Row  key={Math.random()}>
       <Col className="clearfix" xs="12">

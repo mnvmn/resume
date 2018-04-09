@@ -3,19 +3,15 @@ import {Col, Row} from 'reactstrap';
 import TableProjects from './TableProjects.js';
 
 class TableInfo extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: props.data,
-      isAscending: props.isAscending
-    };
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-    console.log('Info state', nextState.isAscending)
-  }
 
   render() {
+    const infoList = this.props.data
+      ? (
+        this.props.isAscending
+        ? this.props.data
+        : [...this.props.data].reverse())
+      : ''
+
     return (<div className="mb-4">
       {
         this.props.title && <Row>
@@ -25,12 +21,17 @@ class TableInfo extends React.Component {
           </Row>
       }
       {
-        this.props.data && this.props.data.map(info => <div key={info.label}>
+        infoList && infoList.map(info => <div key={info.label}>
           <Row>
-            <Col xs="6" className={this.props.title ? 'text-primary' : ''}>{info.label}</Col>
-            <Col xs="6" className={info.projects ? 'font-weight-bold' : ''}>{info.value}</Col>
+            <Col xs="6" className={this.props.title
+                ? 'text-primary'
+                : ''}>{info.label}
+            </Col>
+            <Col xs="6" className={info.projects
+                ? 'font-weight-bold'
+                : ''}>{info.value}</Col>
           </Row>
-          {info.projects && <TableProjects projects={info.projects} isAscending={this.state.isAscending}/>}
+          {info.projects && <TableProjects projects={info.projects} isAscending={this.props.isAscending}/>}
         </div>)
       }
     </div>)
