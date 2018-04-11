@@ -64,19 +64,13 @@ class Cv extends React.Component {
     const isAsc = this.state.isAscending;
     const data = this.state.data;
     return (<div className="cv-container">
-
       <Container>
-
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
-
         <TableInfo data={data.info} language={lang}/>
-
-        <Controls btnHandler={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} language={lang}/>
-
+        <Controls btnHandler={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} language={lang} strings={data.strings.btns}/>
         <TableInfo data={data.education} isAscending={isAsc} language={lang} title={data.strings.education}/>
         <TableInfo data={data.work} isAscending={isAsc} language={lang} title={data.strings.work}/>
       </Container>
-
     </div>)
   }
 }

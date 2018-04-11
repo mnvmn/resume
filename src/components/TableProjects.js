@@ -1,4 +1,5 @@
 import React from 'react';
+import Str from './Str.js';
 import {Col, Row} from 'reactstrap';
 
 class TableProjects extends React.Component {
@@ -10,8 +11,12 @@ class TableProjects extends React.Component {
 
     return (projects.map(project => <Row key={Math.random()}>
       <Col className="clearfix" xs="12">
-        <div className="float-left">{project.project[lang] ? project.project[lang] : project.project}</div>
-        <div className="float-right text-right text-primary">{project.skill && project.skill[lang] ? project.skill[lang] : project.skill}</div>
+        <div className="float-left">
+          <Str msg={project.project} lang={lang}/>
+        </div>
+        <div className="float-right text-right text-primary">
+          <Str msg={project.project} lang={lang}/>
+        </div>
       </Col>
     </Row>))
   }

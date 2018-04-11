@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Row} from 'reactstrap';
 import TableProjects from './TableProjects.js';
+import Str from './Str.js';
 
 class TableInfo extends React.Component {
 
@@ -18,11 +19,9 @@ class TableInfo extends React.Component {
       {
         this.props.title && <Row>
             <Col>
-              <h5 className="ml-1 font-weight-bold text-uppercase">{
-                  this.props.title[lang]
-                    ? this.props.title[lang]
-                    : this.props.title
-                }</h5>
+              <h5 className="ml-1 font-weight-bold text-uppercase">
+                <Str msg={this.props.title} lang={lang}/>
+              </h5>
             </Col>
           </Row>
       }
@@ -36,19 +35,14 @@ class TableInfo extends React.Component {
                 : ''}>
               <Col xs="6" className={this.props.title
                   ? 'text-primary'
-                  : ''}>{
-                  info.label[lang]
-                    ? info.label[lang]
-                    : info.label
-                }
+                  : ''}>
+                <Str msg={info.label} lang={lang}/>
               </Col>
               <Col xs="6" className={info.projects
                   ? 'font-weight-bold'
-                  : ''}>{
-                  info.value[lang]
-                    ? info.value[lang]
-                    : info.value
-                }</Col>
+                  : ''}>
+                <Str msg={info.value} lang={lang}/>
+              </Col>
             </Row>
             {info.projects && <TableProjects projects={info.projects} isAscending={this.props.isAscending} language={lang}/>}
           </div>)

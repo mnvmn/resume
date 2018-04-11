@@ -1,41 +1,43 @@
 import React from 'react';
 import {Col, Row, ButtonGroup, Button} from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa'
+import Str from './Str.js';
 
 class Controls extends React.Component {
 
   render() {
-    return (<Row>
 
+    const strings = this.props.strings
+      ? this.props.strings
+      : {}
+    const lang = this.props.language
+    const isAscending = this.props.isAscending
+
+    return (<Row>
       <Col className="d-flex justify-content-end">
         <ButtonGroup>
           <Button outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/resume" target="_blank">
             <FontAwesome.FaCodeFork/>
-            &nbsp; View Source
+            &nbsp;&nbsp;<Str msg={strings.viewSource} lang={lang}/>
           </Button>
           <Button outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/mnvmn.github.io/raw/master/CV_MN.pdf" target="_blank">
             <FontAwesome.FaDownload/>
-            &nbsp; Download PDF
+            &nbsp;&nbsp;<Str msg={strings.downloadPdf} lang={lang}/>
           </Button>
           <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLang}>
             <FontAwesome.FaLanguage/>
-            &nbsp;
-            {
-              this.props.language === 'sk'
-                ? 'En'
-                : 'Sk'
-            }
+            &nbsp;&nbsp;<Str msg={strings.changeLanguage} lang={lang}/>
           </Button>
           <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.btnHandler}>
             {
-              this.props.isAscending
+              isAscending
                 ? <FontAwesome.FaSortAmountDesc/>
                 : <FontAwesome.FaSortAmountAsc/>
             }
-            &nbsp; {
-              this.props.isAscending
-                ? 'Latest First'
-                : 'Oldest First'
+            &nbsp;&nbsp; {
+              isAscending
+                ? <Str msg={strings.orderByDateAsc} lang={lang}/>
+                : <Str msg={strings.orderByDateDesc} lang={lang}/>
             }
           </Button>
         </ButtonGroup>
