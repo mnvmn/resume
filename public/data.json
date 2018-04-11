@@ -201,12 +201,12 @@
         "sk": "Stiahni PDF"
       },
       "orderByDateAsc": {
-        "en": "Oldest First",
-        "sk": "Najstaršie Hore"
+        "en": "Show Oldest First",
+        "sk": "Zobraz Najstaršie Hore"
       },
       "orderByDateDesc": {
-        "en": "Latest First",
-        "sk": "Najnovšie Hore"
+        "en": "Show Latest First",
+        "sk": "Zobraz Najnovšie Hore"
       },
       "changeLanguage": {
         "en": "Sk",

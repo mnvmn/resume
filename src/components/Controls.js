@@ -24,21 +24,23 @@ class Controls extends React.Component {
             <FontAwesome.FaDownload/>
             &nbsp;&nbsp;<Str msg={strings.downloadPdf} lang={lang}/>
           </Button>
+          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.btnHandler}>
+            <span className="">
+              {
+                isAscending
+                  ? <FontAwesome.FaSortAmountDesc/>
+                  : <FontAwesome.FaSortAmountAsc/>
+              }
+            </span>
+            &nbsp;&nbsp; {
+              isAscending
+                ? <Str msg={strings.orderByDateDesc} lang={lang}/>
+                : <Str msg={strings.orderByDateAsc} lang={lang}/>
+            }
+          </Button>
           <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLang}>
             <FontAwesome.FaLanguage/>
             &nbsp;&nbsp;<Str msg={strings.changeLanguage} lang={lang}/>
-          </Button>
-          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.btnHandler}>
-            {
-              isAscending
-                ? <FontAwesome.FaSortAmountDesc/>
-                : <FontAwesome.FaSortAmountAsc/>
-            }
-            &nbsp;&nbsp; {
-              isAscending
-                ? <Str msg={strings.orderByDateAsc} lang={lang}/>
-                : <Str msg={strings.orderByDateDesc} lang={lang}/>
-            }
           </Button>
         </ButtonGroup>
       </Col>
