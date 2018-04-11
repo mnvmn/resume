@@ -15,16 +15,7 @@ class Cv extends React.Component {
         info: [],
         education: [],
         work: [],
-      },
-      strings: {
-        education: {
-          en: 'education',
-          sk: 'vzdelanie'
-        },
-        work: {
-          en: 'work experience',
-          sk: 'zamestnanie'
-        }
+        strings: {}
       },
       isLoading: false,
       isAscending: true,
@@ -43,7 +34,9 @@ class Cv extends React.Component {
 
   changeLang() {
     this.setState(prevState => ({
-      language: prevState.language == 'en' ? 'sk' : 'en'
+      language: prevState.language === 'en'
+        ? 'sk'
+        : 'en'
     }));
   }
 
@@ -56,6 +49,7 @@ class Cv extends React.Component {
       if (response.ok) {
         return response.json()
       } else {
+        console.log('fetch failed');
         throw new Error('Something went wrong ...');
       }
     }).then(data => this.setState({data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
@@ -79,8 +73,8 @@ class Cv extends React.Component {
 
         <Controls btnHandler={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} language={lang}/>
 
-        <TableInfo data={data.education} isAscending={isAsc} language={lang} title={this.state.strings.education[lang]}/>
-        <TableInfo data={data.work} isAscending={isAsc} language={lang} title={this.state.strings.work[lang]}/>
+        <TableInfo data={data.education} isAscending={isAsc} language={lang} title={data.strings.education}/>
+        <TableInfo data={data.work} isAscending={isAsc} language={lang} title={data.strings.work}/>
       </Container>
 
     </div>)

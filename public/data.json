@@ -181,5 +181,15 @@
         }
       ]
     }
-  ]
+  ],
+  "strings": {
+    "education": {
+      "en": "education",
+      "sk": "vzdelanie"
+    },
+    "work": {
+      "en": "work experience",
+      "sk": "zamestnanie"
+    }
+  }
 }
