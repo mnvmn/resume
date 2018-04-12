@@ -15,7 +15,7 @@ class TableInfo extends React.Component {
         : [...this.props.data].reverse())
       : ''
 
-    return (<div className="mb-4">
+    return <div className="mb-4">
       {
         this.props.title && <Row>
             <Col>
@@ -47,7 +47,7 @@ class TableInfo extends React.Component {
             {info.projects && <TableProjects projects={info.projects} isAscending={this.props.isAscending} language={lang}/>}
           </div>)
       }
-    </div>)
+    </div>
   }
 }
 

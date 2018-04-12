@@ -29,7 +29,9 @@ class Cv extends React.Component {
   changeOrder() {
     this.setState(prevState => ({
       isAscending: !prevState.isAscending
-    }));
+    }), function() {
+      this.saveLocal("isAscending", this.state.isAscending);
+    });
   }
 
   changeLang() {
@@ -37,7 +39,9 @@ class Cv extends React.Component {
       language: prevState.language === 'en'
         ? 'sk'
         : 'en'
-    }));
+    }), function() {
+      this.saveLocal("language", this.state.language);
+    });
   }
 
   componentDidMount() {
@@ -56,7 +60,14 @@ class Cv extends React.Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
-    // console.log('CV state', nextState)
+    // console.log('CV state', nextState.language)
+  }
+
+  saveLocal(key, val) {
+    if (typeof(Storage) !== "undefined") {
+      localStorage.setItem(key, val);
+      console.log('storing local', key, val)
+    }
   }
 
   render() {
