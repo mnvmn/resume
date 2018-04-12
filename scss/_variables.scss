@@ -13,6 +13,6 @@ $container-max-widths: (
 );
 @include _assert-ascending($container-max-widths, "$container-max-widths"); // $primary: #1a237e;
 
-$primary: #0277bd;
 $primary: #01579b;
+$primary: #0a67c3;
 $secondary: #1976d2;

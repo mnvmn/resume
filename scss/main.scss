@@ -3,20 +3,14 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "variables";
 
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
 @import "page";
 @import "btns";
+@import "utils";
 
-@import "node_modules/bootstrap/scss/bootstrap";
 
 .btn-link, .btn-link:hover, .btn-link:focus {
   text-decoration: none;
-}
-@import "variables";
-
-
-.text-primary {
-  color: $primary !important;
-}
-.text-secondary {
-  color: $secondary !important;
 }
