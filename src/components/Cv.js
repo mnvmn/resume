@@ -11,8 +11,7 @@ class Cv extends React.Component {
   constructor(props) {
     super(props);
 
-    const hasLocalStorage = typeof(Storage) !== 'undefined';
-
+    const localSettings = this.loadLocal();
     this.state = {
       data: {
         info: [],
@@ -20,16 +19,16 @@ class Cv extends React.Component {
         work: []
       },
       isLoading: false,
-      isAscending: hasLocalStorage
-        ? localStorage.getItem('isAscending') === 'true'
+      isAscending: isAsc !== null
+        ? isAsc
         : this.props.isAscending,
-      language: hasLocalStorage
-        ? localStorage.getItem('language')
-        : this.props.language
+      lang: localSettings.lang !== null
+        ? lang
+        : this.props.lang
     };
 
     this.changeOrder = this.changeOrder.bind(this);
-    this.changeLang = this.changeLang.bind(this);
+    this.changeLanguage = this.changeLang.bind(this);
   }
 
   changeOrder() {
@@ -40,13 +39,13 @@ class Cv extends React.Component {
     });
   }
 
-  changeLang() {
+  changeLanguage() {
     this.setState(prevState => ({
-      language: prevState.language === 'en'
+      lang: prevState.lang === 'en'
         ? 'sk'
         : 'en'
     }), function() {
-      this.saveLocal('language', this.state.language);
+      this.saveLocal('lang', this.state.lang);
     });
   }
 
@@ -66,7 +65,7 @@ class Cv extends React.Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
-    // console.log('CV state', nextState.language)
+    // console.log('updated state', nextState)
   }
 
   saveLocal(key, val) {
@@ -76,17 +75,30 @@ class Cv extends React.Component {
     }
   }
 
+  loadLocal() {
+    const hasLocalStorage = typeof(Storage) !== 'undefined';
+
+    return {
+      lang: hasLocalStorage
+        ? localStorage.getItem('lang')
+        : null,
+      isAsc: hasLocalStorage
+        ? localStorage.getItem('isAscending') === 'true'
+        : null
+    }
+  }
+
   render() {
-    const lang = this.state.language
+    const lang = this.state.lang
     const isAsc = this.state.isAscending;
     const data = this.state.data;
     return (<div className="cv-container">
       <Container>
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
-        <TableInfo data={data.info} language={lang}/>
-        <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} language={lang}/>
-        <TableInfo data={data.education} isAscending={isAsc} title={msgs.title.education} language={lang}/>
-        <TableInfo data={data.work} isAscending={isAsc} title={msgs.title.work} language={lang}/>
+        <TableInfo data={data.info} lang={lang}/>
+        <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} lang={lang}/>
+        <TableInfo data={data.education} isAscending={isAsc} title={msgs.title.education} lang={lang}/>
+        <TableInfo data={data.work} isAscending={isAsc} title={msgs.title.work} lang={lang}/>
       </Container>
     </div>)
   }
@@ -94,7 +106,7 @@ class Cv extends React.Component {
 
 Cv.defaultProps = {
   isAscending: true,
-  language: 'en'
+  lang: 'en'
 }
 
 export default Cv;

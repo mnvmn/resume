@@ -7,7 +7,7 @@ import Str from './Str.js';
 class Controls extends React.Component {
 
   render() {
-    const lang = this.props.language
+    const lang = this.props.lang
     const isAscending = this.props.isAscending
 
     return (<Row>
@@ -35,7 +35,7 @@ class Controls extends React.Component {
                 : <Str msg={msgs.btns.orderByDateAsc} lang={lang}/>
             }
           </Button>
-          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLang}>
+          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLanguage}>
             <FontAwesome.FaLanguage/>
             &nbsp;&nbsp;<Str msg={msgs.btns.changeLanguage} lang={lang}/>
           </Button>

@@ -7,7 +7,7 @@ class TableInfo extends React.Component {
 
   render() {
 
-    const lang = this.props.language
+    const lang = this.props.lang
     const infoList = this.props.data
       ? (
         this.props.isAscending
@@ -44,7 +44,7 @@ class TableInfo extends React.Component {
                 <Str msg={info.value} lang={lang}/>
               </Col>
             </Row>
-            {info.projects && <TableProjects projects={info.projects} isAscending={this.props.isAscending} language={lang}/>}
+            {info.projects && <TableProjects projects={info.projects} isAscending={this.props.isAscending} lang={lang}/>}
           </div>)
       }
     </div>

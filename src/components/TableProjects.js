@@ -6,7 +6,7 @@ class TableProjects extends React.Component {
 
   render() {
 
-    const lang = this.props.language
+    const lang = this.props.lang
     const projects = this.props.projects
 
     return (projects.map(project => <Row key={Math.random()}>
