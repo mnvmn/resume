@@ -19,7 +19,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "watch": "cpx 'build/**/*' ./../mnvmn.github.io -w",
-    "sass": "node-sass --watch scss/main.scss --output src/ --include-path scss/"
+    "sass": "node-sass --watch scss/main.scss --output src/css --include-path scss/"
   },
   "devDependencies": {
     "cpx": "^1.5.0"

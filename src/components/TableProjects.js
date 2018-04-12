@@ -15,7 +15,7 @@ class TableProjects extends React.Component {
           <Str msg={project.project} lang={lang}/>
         </div>
         <div className="float-right text-right text-primary">
-          <Str msg={project.project} lang={lang}/>
+          <Str msg={project.skill} lang={lang}/>
         </div>
       </Col>
     </Row>))
