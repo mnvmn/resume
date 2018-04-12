@@ -4,16 +4,15 @@ import Cv from './components/Cv.js';
 import Footer from './components/Footer.js';
 import './css/main.css';
 
-
 class App extends Component {
+
   render() {
-    return (
-      <div className="App  d-flex flex-column">
+    return (<div className="App  d-flex flex-column">
 
-        <Cv/>
-        <Footer/>
+      <Cv/>
+      <Footer/>
 
-      </div>);
+    </div>);
   }
 }
 

@@ -34,6 +34,12 @@ footer#footer {
   z-index: 10;
 }
 
+#bootstrap-grid-util {
+  left: 20px;
+  color: $footer-color;
+}
+
+
 .row {
   margin-bottom: 8px;
 }
@@ -44,28 +50,4 @@ h3,
 h4,
 h5 {
   font-weight: bold;
-}
-
-#bootstrap-grid-util {
-  left: 20px;
-  color: $footer-color;
-}
-
-
-.rotate-180 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.rotate-x {
-  -webkit-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-}
-
-.rotate-y {
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
 }

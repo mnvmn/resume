@@ -10,10 +10,8 @@ class Cv extends React.Component {
 
   constructor(props) {
     super(props);
-    const hasLocalStorage = typeof(Storage) !== 'undefined';
 
-    // var isAscending = localStorage.getItem('isAscending')
-    // console.log('A', isAscending);
+    const hasLocalStorage = typeof(Storage) !== 'undefined';
 
     this.state = {
       data: {
