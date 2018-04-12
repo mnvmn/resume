@@ -10,6 +10,10 @@ class Cv extends React.Component {
 
   constructor(props) {
     super(props);
+    const hasLocalStorage = typeof(Storage) !== 'undefined';
+
+    // var isAscending = localStorage.getItem('isAscending')
+    // console.log('A', isAscending);
 
     this.state = {
       data: {
@@ -18,8 +22,12 @@ class Cv extends React.Component {
         work: []
       },
       isLoading: false,
-      isAscending: true,
-      language: 'en'
+      isAscending: hasLocalStorage
+        ? localStorage.getItem('isAscending') === 'true'
+        : this.props.isAscending,
+      language: hasLocalStorage
+        ? localStorage.getItem('language')
+        : this.props.language
     };
 
     this.changeOrder = this.changeOrder.bind(this);
@@ -30,7 +38,7 @@ class Cv extends React.Component {
     this.setState(prevState => ({
       isAscending: !prevState.isAscending
     }), function() {
-      this.saveLocal("isAscending", this.state.isAscending);
+      this.saveLocal('isAscending', this.state.isAscending.toString());
     });
   }
 
@@ -40,7 +48,7 @@ class Cv extends React.Component {
         ? 'sk'
         : 'en'
     }), function() {
-      this.saveLocal("language", this.state.language);
+      this.saveLocal('language', this.state.language);
     });
   }
 
@@ -64,7 +72,7 @@ class Cv extends React.Component {
   }
 
   saveLocal(key, val) {
-    if (typeof(Storage) !== "undefined") {
+    if (typeof(Storage) !== 'undefined') {
       localStorage.setItem(key, val);
       console.log('storing local', key, val)
     }
@@ -84,6 +92,11 @@ class Cv extends React.Component {
       </Container>
     </div>)
   }
+}
+
+Cv.defaultProps = {
+  isAscending: true,
+  language: 'en'
 }
 
 export default Cv;
