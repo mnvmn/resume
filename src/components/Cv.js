@@ -4,7 +4,8 @@ import Controls from './Controls.js';
 import {Container} from 'reactstrap';
 import msgs from './../translations.json';
 
-const REST_URL = '/data.json';
+const URL_DATA = '/data.json';
+const URL_REPO = 'https://api.github.com/repos/mnvmn/mnvmn.github.io';
 
 class Cv extends React.Component {
 
@@ -35,19 +36,28 @@ class Cv extends React.Component {
 
     this.setState({isLoading: true});
 
-    fetch(REST_URL).then(response => {
+    fetch(URL_REPO).then(response => {
       console.log(response)
       if (response.ok) {
         return response.json()
       } else {
-        console.log('fetch failed');
-        throw new Error('Something went wrong ...');
+        throw new Error('fetch repo failed');
+      }
+    }).then(data => this.setState({repo: data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
+
+
+    fetch(URL_DATA).then(response => {
+      console.log(response)
+      if (response.ok) {
+        return response.json()
+      } else {
+        throw new Error('fetch data failed');
       }
     }).then(data => this.setState({data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
   }
 
   componentWillUpdate(nextProps, nextState) {
-    // console.log('updated state', nextState)
+    console.log('updated state', nextState)
   }
 
   saveLocal(key, val) {
