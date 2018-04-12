@@ -33,12 +33,12 @@ class TableInfo extends React.Component {
             <Row className={info.projects && index > 0
                 ? 'mt-4'
                 : ''}>
-              <Col xs="6" className={this.props.title
+              <Col xs="5" className={this.props.title
                   ? 'text-primary'
                   : ''}>
                 <Str msg={info.label} lang={lang}/>
               </Col>
-              <Col xs="6" className={info.projects
+              <Col xs="7" className={info.projects
                   ? 'font-weight-bold'
                   : ''}>
                 <Str msg={info.value} lang={lang}/>
