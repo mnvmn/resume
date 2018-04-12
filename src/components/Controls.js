@@ -35,7 +35,7 @@ class Controls extends React.Component {
                 : <Str msg={msgs.btns.orderByDateAsc} lang={lang}/>
             }
           </Button>
-          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLanguage}>
+          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLang}>
             <FontAwesome.FaLanguage/>
             &nbsp;&nbsp;<Str msg={msgs.btns.changeLanguage} lang={lang}/>
           </Button>

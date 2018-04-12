@@ -28,25 +28,7 @@ class Cv extends React.Component {
     };
 
     this.changeOrder = this.changeOrder.bind(this);
-    this.changeLanguage = this.changeLanguage.bind(this);
-  }
-
-  changeOrder() {
-    this.setState(prevState => ({
-      isAsc: !prevState.isAsc
-    }), function() {
-      this.saveLocal('isAsc', this.state.isAsc.toString());
-    });
-  }
-
-  changeLanguage() {
-    this.setState(prevState => ({
-      lang: prevState.lang === 'en'
-        ? 'sk'
-        : 'en'
-    }), function() {
-      this.saveLocal('lang', this.state.lang);
-    });
+    this.changeLang = this.changeLang.bind(this);
   }
 
   componentDidMount() {
@@ -86,6 +68,24 @@ class Cv extends React.Component {
         ? localStorage.getItem('isAsc') === 'true'
         : null
     }
+  }
+
+  changeOrder() {
+    this.setState(prevState => ({
+      isAsc: !prevState.isAsc
+    }), function() {
+      this.saveLocal('isAsc', this.state.isAsc.toString());
+    });
+  }
+
+  changeLang() {
+    this.setState(prevState => ({
+      lang: prevState.lang === 'en'
+        ? 'sk'
+        : 'en'
+    }), function() {
+      this.saveLocal('lang', this.state.lang);
+    });
   }
 
   render() {
