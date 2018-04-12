@@ -1,0 +1,34 @@
+{
+  "title": {
+    "education": {
+      "en": "education",
+      "sk": "vzdelanie"
+    },
+    "work": {
+      "en": "work experience",
+      "sk": "zamestnanie"
+    }
+  },
+  "btns": {
+    "viewSource": {
+      "en": "View Source @github",
+      "sk": "Navštív repo @github"
+    },
+    "downloadPdf": {
+      "en": "Download PDF",
+      "sk": "Stiahni PDF"
+    },
+    "orderByDateAsc": {
+      "en": "Show Oldest First",
+      "sk": "Zobraz Najstaršie Hore"
+    },
+    "orderByDateDesc": {
+      "en": "Show Latest First",
+      "sk": "Zobraz Najnovšie Hore"
+    },
+    "changeLanguage": {
+      "en": "Sk",
+      "sk": "En"
+    }
+  }
+}

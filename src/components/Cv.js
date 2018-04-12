@@ -2,6 +2,7 @@ import React from 'react';
 import TableInfo from './TableInfo.js';
 import Controls from './Controls.js';
 import {Container} from 'reactstrap';
+import msgs from './../translations.json';
 
 const REST_URL = '/data.json';
 
@@ -14,8 +15,7 @@ class Cv extends React.Component {
       data: {
         info: [],
         education: [],
-        work: [],
-        strings: {}
+        work: []
       },
       isLoading: false,
       isAscending: true,
@@ -67,9 +67,9 @@ class Cv extends React.Component {
       <Container>
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
         <TableInfo data={data.info} language={lang}/>
-        <Controls btnHandler={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} language={lang} strings={data.strings.btns}/>
-        <TableInfo data={data.education} isAscending={isAsc} language={lang} title={data.strings.education}/>
-        <TableInfo data={data.work} isAscending={isAsc} language={lang} title={data.strings.work}/>
+        <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} language={lang}/>
+        <TableInfo data={data.education} isAscending={isAsc} title={msgs.title.education} language={lang}/>
+        <TableInfo data={data.work} isAscending={isAsc} title={msgs.title.work} language={lang}/>
       </Container>
     </div>)
   }
