@@ -10,7 +10,7 @@ class TableInfo extends React.Component {
     const lang = this.props.lang
     const infoList = this.props.data
       ? (
-        this.props.isAscending
+        this.props.isAsc
         ? this.props.data
         : [...this.props.data].reverse())
       : ''
@@ -44,7 +44,7 @@ class TableInfo extends React.Component {
                 <Str msg={info.value} lang={lang}/>
               </Col>
             </Row>
-            {info.projects && <TableProjects projects={info.projects} isAscending={this.props.isAscending} lang={lang}/>}
+            {info.projects && <TableProjects projects={info.projects} isAsc={this.props.isAsc} lang={lang}/>}
           </div>)
       }
     </div>

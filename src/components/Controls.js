@@ -8,7 +8,7 @@ class Controls extends React.Component {
 
   render() {
     const lang = this.props.lang
-    const isAscending = this.props.isAscending
+    const isAsc = this.props.isAsc
 
     return (<Row>
       <Col className="d-flex justify-content-end">
@@ -24,13 +24,13 @@ class Controls extends React.Component {
           <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeOrder}>
             <span className="">
               {
-                isAscending
+                isAsc
                   ? <FontAwesome.FaSortAmountDesc/>
                   : <FontAwesome.FaSortAmountAsc/>
               }
             </span>
             &nbsp;&nbsp; {
-              isAscending
+              isAsc
                 ? <Str msg={msgs.btns.orderByDateDesc} lang={lang}/>
                 : <Str msg={msgs.btns.orderByDateAsc} lang={lang}/>
             }

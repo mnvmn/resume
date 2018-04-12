@@ -11,7 +11,7 @@ class Cv extends React.Component {
   constructor(props) {
     super(props);
 
-    const localSettings = this.loadLocal();
+    const settings = this.loadLocal();
     this.state = {
       data: {
         info: [],
@@ -19,23 +19,23 @@ class Cv extends React.Component {
         work: []
       },
       isLoading: false,
-      isAscending: isAsc !== null
-        ? isAsc
-        : this.props.isAscending,
-      lang: localSettings.lang !== null
-        ? lang
+      isAsc: settings.isAsc !== null
+        ? settings.isAsc
+        : this.props.isAsc,
+      lang: settings.lang !== null
+        ? settings.lang
         : this.props.lang
     };
 
     this.changeOrder = this.changeOrder.bind(this);
-    this.changeLanguage = this.changeLang.bind(this);
+    this.changeLanguage = this.changeLanguage.bind(this);
   }
 
   changeOrder() {
     this.setState(prevState => ({
-      isAscending: !prevState.isAscending
+      isAsc: !prevState.isAsc
     }), function() {
-      this.saveLocal('isAscending', this.state.isAscending.toString());
+      this.saveLocal('isAsc', this.state.isAsc.toString());
     });
   }
 
@@ -83,29 +83,29 @@ class Cv extends React.Component {
         ? localStorage.getItem('lang')
         : null,
       isAsc: hasLocalStorage
-        ? localStorage.getItem('isAscending') === 'true'
+        ? localStorage.getItem('isAsc') === 'true'
         : null
     }
   }
 
   render() {
     const lang = this.state.lang
-    const isAsc = this.state.isAscending;
+    const isAsc = this.state.isAsc;
     const data = this.state.data;
     return (<div className="cv-container">
       <Container>
         <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
         <TableInfo data={data.info} lang={lang}/>
-        <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAscending={isAsc} lang={lang}/>
-        <TableInfo data={data.education} isAscending={isAsc} title={msgs.title.education} lang={lang}/>
-        <TableInfo data={data.work} isAscending={isAsc} title={msgs.title.work} lang={lang}/>
+        <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAsc={isAsc} lang={lang}/>
+        <TableInfo data={data.education} isAsc={isAsc} title={msgs.title.education} lang={lang}/>
+        <TableInfo data={data.work} isAsc={isAsc} title={msgs.title.work} lang={lang}/>
       </Container>
     </div>)
   }
 }
 
 Cv.defaultProps = {
-  isAscending: true,
+  isAsc: true,
   lang: 'en'
 }
 
