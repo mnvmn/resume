@@ -28,7 +28,9 @@ $link-hover-decoration:     underline !default;
 $link-color:                #5059a2;
 $link-color:                #7c808e;
 $link-color:                $dark-blue;
-$link-hover-color:          #2332a9;
+$link-color:               darken($secondary, 16%);
+
+$link-hover-color:          #2332a9
 $link-hover-color:          #efb400;
 $link-hover-color:          #5059a2;
 $link-hover-color:          darken($secondary, 30%);

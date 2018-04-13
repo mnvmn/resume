@@ -13,7 +13,7 @@ class Str extends React.Component {
       ? this.createLinks(trans)
       : ''
 
-    return (<div>{finalText}</div>)
+    return (<div className={this.props.className}>{finalText}</div>)
   }
 
   createLinks(str) {

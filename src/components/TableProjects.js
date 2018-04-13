@@ -12,7 +12,7 @@ class TableProjects extends React.Component {
     return (projects.map(project => <Row key={Math.random()}>
       <Col className="clearfix" xs="12">
         <div className="float-left">
-          <Str msg={project.project} lang={lang}/>
+          <Str msg={project.project} lang={lang} className="pl-1"/>
         </div>
         <div className="float-right text-right text-primary">
           <Str msg={project.skill} lang={lang}/>
