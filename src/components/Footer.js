@@ -52,7 +52,7 @@ class Footer extends React.Component {
                   <small>
                     <span>Deployed</span>
                     &nbsp;
-                    <span  className="font-weight-bold">
+                    <span className="font-weight-bold">
                       <Moment format="Do MMM YYYY" date={this.state.repo.pushed_at}/>
                     </span>
                   </small>
