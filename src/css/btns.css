@@ -8,12 +8,6 @@
 a.btn {
   text-decoration: none !important; }
 
-a.btn-link:active,
-a.btn-link:focus,
-a.btn-link:focus,
-a.btn-link:visited {
-  text-decoration: none; }
-
 .btn,
 button {
   box-shadow: none !important;
@@ -35,7 +29,7 @@ button {
     button.btn-outline-secondary:active,
     button.btn-outline-secondary:hover {
       border-color: #12579b !important;
-      color: #145ca4 !important; }
+      color: #11508e !important; }
 
 .btn,
 button,
@@ -47,3 +41,8 @@ input[type=submit] {
   input[type=submit].disabled,
   input[type=submit]:disabled {
     cursor: default !important; }
+
+@media (max-width: 575.98px) {
+  .btn-xs-block {
+    display: block;
+    width: 100%; } }

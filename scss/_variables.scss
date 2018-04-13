@@ -13,14 +13,25 @@ $container-max-widths: (
 );
 @include _assert-ascending($container-max-widths, "$container-max-widths"); // $primary: #1a237e;
 
-$primary: #01579b;
+$dark-blue: #01579b; // dark blue
 $primary: #0a67c3;
 $secondary: #1976d2;
+
 // $secondary: #394396;
 
-$link-color:                $body-color;
-$link-color:                #2332a9;
-$link-decoration:           none;
-$link-hover-color:          darken($link-color, 15%);
-$link-hover-color:          #2332a9;
+// $link-color:                $body-color;
+// $link-color:                #0c1c9a;
+// $link-hover-color:          darken($link-color, 15%);
+$link-decoration:           underline;
 $link-hover-decoration:     underline !default;
+
+$link-color:                #5059a2;
+$link-color:                #7c808e;
+$link-color:                $dark-blue;
+$link-hover-color:          #2332a9;
+$link-hover-color:          #efb400;
+$link-hover-color:          #5059a2;
+$link-hover-color:          darken($secondary, 30%);
+
+// $link-color:                #2332a9;
+// $link-hover-color:          #5059a2 !important;

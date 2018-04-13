@@ -19,7 +19,7 @@ a.btn-link:active,
 a.btn-link:focus,
 a.btn-link:focus,
 a.btn-link:visited {
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 .btn,
@@ -48,9 +48,9 @@ button {
     &:hover {
       // background-color: $gray-100 !important;
       border-color: darken($secondary, 12%) !important;
-      color: darken($secondary, 10%) !important;
-      // border-color: darken($link-hover-color, 10%) !important;
-      // color: darken($link-hover-color, 10%) !important;
+      color: darken($secondary, 15%) !important;
+      // border-color: $link-hover-color !important;
+      // color: darken($link-hover-color, 2%) !important;
     }
   }
 }
@@ -63,5 +63,12 @@ input[type=submit] {
   &.disabled,
   &:disabled {
     cursor: default !important;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .btn-xs-block {
+    display: block;
+    width: 100%;
   }
 }

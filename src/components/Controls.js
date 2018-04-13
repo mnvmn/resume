@@ -9,10 +9,13 @@ class Controls extends React.Component {
   render() {
     const lang = this.props.lang
     const isAsc = this.props.isAsc
+    const isVertical = this.props.isVertical
 
     return (<Row>
       <Col className="d-flex justify-content-end">
-        <ButtonGroup>
+        <ButtonGroup className={isVertical
+            ? "btn-group-vertical"
+            : ''}>
           <Button outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/resume" target="_blank">
             <FontAwesome.FaCodeFork/>
             &nbsp;&nbsp;<Str msg={msgs.btns.viewSource} lang={lang}/>
@@ -35,7 +38,7 @@ class Controls extends React.Component {
                 : <Str msg={msgs.btns.orderByDateAsc} lang={lang}/>
             }
           </Button>
-          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeLang}>
+          <Button outline={true} size="xs" className="bt-xs-block d-flex align-items-center" onClick={this.props.changeLang}>
             <FontAwesome.FaLanguage/>
             &nbsp;&nbsp;<Str msg={msgs.btns.changeLanguage} lang={lang}/>
           </Button>
