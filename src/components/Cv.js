@@ -5,7 +5,6 @@ import {Container} from 'reactstrap';
 import msgs from './../translations.json';
 
 const URL_DATA = '/data.json';
-const URL_REPO = 'https://api.github.com/repos/mnvmn/mnvmn.github.io';
 
 class Cv extends React.Component {
 
@@ -36,34 +35,24 @@ class Cv extends React.Component {
 
     this.setState({isLoading: true});
 
-    fetch(URL_REPO).then(response => {
-      console.log(response)
-      if (response.ok) {
-        return response.json()
-      } else {
-        throw new Error('fetch repo failed');
-      }
-    }).then(data => this.setState({repo: data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
-
-
     fetch(URL_DATA).then(response => {
-      console.log(response)
+      // console.log(response)
       if (response.ok) {
         return response.json()
       } else {
         throw new Error('fetch data failed');
       }
-    }).then(data => this.setState({data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
+    }).then(data => this.setState({data: data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
   }
 
   componentWillUpdate(nextProps, nextState) {
-    console.log('updated state', nextState)
+    // console.log('updated state', nextState)
   }
 
   saveLocal(key, val) {
     if (typeof(Storage) !== 'undefined') {
       localStorage.setItem(key, val);
-      console.log('storing local', key, val)
+      // console.log('storing local', key, val)
     }
   }
 

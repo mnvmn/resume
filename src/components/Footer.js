@@ -1,9 +1,36 @@
 import React from 'react';
 import {Container, Col, Row} from 'reactstrap';
+import Moment from 'react-moment';
+
+const URL_REPO = 'https://api.github.com/repos/mnvmn/mnvmn.github.io';
 
 class Footer extends React.Component {
 
-  // const REST_URL = 'https://api.github.com/repos/mnvn/mnvmn.github.io/commits/master';
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      repo: {},
+      isLoading: false
+    }
+  }
+
+  componentDidMount() {
+    this.setState({isLoading: true});
+
+    fetch(URL_REPO).then(response => {
+      // console.log(response)
+      if (response.ok) {
+        return response.json()
+      } else {
+        throw new Error('fetch repo failed');
+      }
+    }).then(data => this.setState({repo: data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    // console.log('updated state', nextState)
+  }
 
   render() {
     const version = React.version
@@ -15,14 +42,26 @@ class Footer extends React.Component {
           <span className="d-none d-md-block d-lg-none">MD</span>
           <span className="d-none d-lg-block d-xl-none">LG</span>
           <span className="d-none d-xl-block">XL</span>
-        </div> */}
+        </div> */
+        }
 
         <Container>
           <Row>
+            {
+              this.state.repo.pushed_at && <Col className="text-sm text-left text-muted">
+                  <small>
+                    <span>Deployed</span>
+                    &nbsp;
+                    <span  className="font-weight-bold">
+                      <Moment format="Do MMM YYYY" date={this.state.repo.pushed_at}/>
+                    </span>
+                  </small>
+                </Col>
+            }
             <Col className="text-sm text-right text-muted">
               <small>
                 <span>#</span>
-                {' '}
+                &nbsp;
                 <span className="font-weight-bold">React v{version}</span>
               </small>
             </Col>
