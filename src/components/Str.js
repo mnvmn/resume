@@ -10,41 +10,35 @@ class Str extends React.Component {
       : msg;
 
     const finalText = trans
-      ? this.findLinks(trans)
+      ? this.createLinks(trans)
       : ''
 
     return (<div>{finalText}</div>)
   }
 
-  findLinks(str) {
-    const that = this
+  createLinks(str) {
     const links = str.match(/www\.[\w\.]*/g);
-    links && console.log(links);
 
     let initialIndex = 0
     if (links && links.length > 0) {
       let buffer = links.reduce(function(buff, link) {
         const index = str.indexOf(link);
-        const text = str.substr(initialIndex, index);
+        const text = str.substr(initialIndex, index - initialIndex);
 
-        console.log(text.length, text)
-        console.log(link.length, link)
         initialIndex += (text.length + link.length);
 
-        buff.push(<span key={Math.random()}>{text}</span>);
-        buff.push(<a key={Math.random()} href={link}>{link}</a>);
+        buff.push(<span key={link + 'a'}>{text}</span>);
+        buff.push(<a key={link + 'b'} href={link}>{link}</a>);
 
         return buff;
       }, [])
+
+      // initialIndex
 
       return buffer
     } else {
       return str;
     }
-  }
-
-  makeLink(substr) {
-    return <a href={substr}>substr</a>
   }
 }
 
