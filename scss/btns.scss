@@ -3,9 +3,22 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "variables";
 
-.btn-link,
-.btn-link:focus,
-.btn-link:hover {
+.btn-group-xs > .btn,
+.btn.btn-xs {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+a.btn {
+  text-decoration: none !important;
+}
+
+a.btn-link:active,
+a.btn-link:focus,
+a.btn-link:focus,
+a.btn-link:visited {
   text-decoration: none;
 }
 
@@ -14,7 +27,6 @@ button {
   box-shadow: none !important;
   background-color: white !important;
   // transition: none;
-
   &.disabled {
     &:active,
     &:focus,
@@ -26,23 +38,17 @@ button {
   }
 
   &.btn-outline-secondary {
-    border-color: lighten($secondary, 10%) !important;
+    border-color: $secondary !important;
     // border-color: $secondary;
-    color: $secondary;
-
-    &.hover,
-    &:hover {
-      // border-color: $secondary;
-      border-color: darken($secondary, 8%) !important;
-      color: darken($secondary, 10%);
-      // color: $primary;
-    }
+    color: darken($secondary, 5%) !important;
 
     &.active,
-    &:active {
-      background-color: $gray-200 !important;
+    &.hover,
+    &:active,
+    &:hover {
+      // background-color: $gray-100 !important;
       border-color: darken($secondary, 12%) !important;
-      color: darken($secondary, 20%) !important;
+      color: darken($secondary, 10%) !important;
       // border-color: darken($link-hover-color, 10%) !important;
       // color: darken($link-hover-color, 10%) !important;
     }
@@ -58,12 +64,4 @@ input[type=submit] {
   &:disabled {
     cursor: default !important;
   }
-}
-
-.btn-group-xs > .btn,
-.btn.btn-xs {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
 }

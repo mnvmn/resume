@@ -2,15 +2,12 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "variables";
-
 @import "node_modules/bootstrap/scss/bootstrap";
-
-
 @import "page";
 @import "btns";
 @import "utils";
 
 
-.btn-link, .btn-link:hover, .btn-link:focus {
-  text-decoration: none;
+.aa {
+  color: red;
 }

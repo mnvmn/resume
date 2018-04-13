@@ -28,7 +28,7 @@ class Str extends React.Component {
         initialIndex += (text.length + link.length);
 
         buff.push(<span key={link + 'a'}>{text}</span>);
-        buff.push(<a key={link + 'b'} href={link}>{link}</a>);
+        buff.push(<a className="btn-link" key={link + 'b'} target="_blank" href={'http://' + link}>{link}</a>);
 
         return buff;
       }, [])

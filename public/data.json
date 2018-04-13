@@ -98,26 +98,16 @@
       "value": "freelance",
       "projects": [{
           "project": {
-            "en": "Theme implementation for portal www.citygalleryprague.cz",
-            "sk": "Implementácia témy portálu www.citygalleryprague.cz"
+            "en": "Theme implementation for portal www.ghmp.cz",
+            "sk": "Implementácia témy portálu www.ghmp.cz"
           },
           "skill": "Liferay, java, css"
         },
         {
           "project": {
-            "en": "Frontend web development for portal www.studentagency.cz",
-            "sk": "Frontend web development pre portál www.studentagency.cz"
+            "en": "CMS customization, development and deployment www.volis.sk …",
+            "sk": "Konfigurácia, development a deployment CMS www.volis.sk …"
           },
-          "skill": "OpenCms, java, css"
-        },
-        {
-          "project": {
-            "en": "CMS customization, development and deployment",
-            "sk": "Konfigurácia, development a deployment CMS"
-          }
-        },
-        {
-          "project": "www.volis.sk, www.silnereci.sk, www.customboards.sk …",
           "skill": "Drupal, php, js, css"
         }
       ]

@@ -16,3 +16,11 @@ $container-max-widths: (
 $primary: #01579b;
 $primary: #0a67c3;
 $secondary: #1976d2;
+// $secondary: #394396;
+
+$link-color:                $body-color;
+$link-color:                #2332a9;
+$link-decoration:           none;
+$link-hover-color:          darken($link-color, 15%);
+$link-hover-color:          #2332a9;
+$link-hover-decoration:     underline !default;
