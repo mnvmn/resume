@@ -12,10 +12,10 @@ class TableProjects extends React.Component {
     return (projects.map(project => <Row key={Math.random()}>
       <Col className="clearfix" xs="12">
         <div className="float-left  text-dark">
-          <Str msg={project.project} lang={lang} className="pl-1"/>
+          <Str msg={project.project} className="pl-1"/>
         </div>
         <div className="float-right text-right text-secondary">
-          <Str msg={project.skill} lang={lang}/>
+          <Str msg={project.skill}/>
         </div>
       </Col>
     </Row>))

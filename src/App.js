@@ -22,7 +22,6 @@ class App extends Component {
 
   componentDidMount() {
     fetch(URL_DATA).then(response => {
-      console.log(response)
       if (response.ok) {
         return response.json()
       } else {
@@ -41,7 +40,7 @@ class App extends Component {
           <NavbarToggler onClick={this.props.toggleNavbar} className="mt-2 mr-2"/>
         </Navbar>
       </div>
-      <Container className="d-none d-sm-block mt-2">
+      <Container className="d-none d-sm-block mt-3">
         <Row>
           <Col>
             <Controls isVertical={false}/>

@@ -10,8 +10,6 @@ import reducer from './../store/reducers.js';
 class Cv extends React.Component {
   render() {
     const data = this.props.data;
-    console.log(this.props.isAsc);
-
     return (<div className="cv-container">
       <Container>
         <h3 className="text-center text-dark mt-2 mb-4">CV</h3>

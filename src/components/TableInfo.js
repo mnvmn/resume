@@ -20,7 +20,7 @@ class TableInfo extends React.Component {
         this.props.title && <Row>
             <Col>
               <h5 className="text-label text-uppercase">
-                <Str msg={this.props.title} lang={lang}/>
+                <Str msg={this.props.title}/>
               </h5>
             </Col>
           </Row>
@@ -33,14 +33,14 @@ class TableInfo extends React.Component {
             <Col xs="5" lg="4" className={this.props.title
                 ? 'text-primary'
                 : 'text-dark'}>
-              <Str msg={info.label} lang={lang} className={this.props.title
+              <Str msg={info.label} className={this.props.title
                   ? 'pl-1'
                   : ''}/>
             </Col>
             <Col xs="7" lg="8" className={info.projects
                 ? 'font-weight-bold  text-label'
                 : 'text-dark'}>
-              <Str msg={info.value} lang={lang}/>
+              <Str msg={info.value}/>
             </Col>
           </Row>
           {info.projects && <TableProjects projects={info.projects} isAsc={this.props.isAsc} lang={lang}/>}
