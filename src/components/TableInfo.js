@@ -19,7 +19,7 @@ class TableInfo extends React.Component {
       {
         this.props.title && <Row>
             <Col>
-              <h5 className="font-weight-bold text-uppercase">
+              <h5 className="text-dark text-uppercase">
                 <Str msg={this.props.title} lang={lang}/>
               </h5>
             </Col>
@@ -39,7 +39,7 @@ class TableInfo extends React.Component {
                 <Str msg={info.label} lang={lang} className="pl-1"/>
               </Col>
               <Col xs="7" lg="8" className={info.projects
-                  ? 'font-weight-bold'
+                  ? 'font-weight-bold text-dark'
                   : ''}>
                 <Str msg={info.value} lang={lang}/>
               </Col>

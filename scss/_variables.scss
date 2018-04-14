@@ -16,21 +16,25 @@ $container-max-widths: (
 $dark-blue: #01579b; // dark blue
 $primary: #0a67c3;
 $secondary: #1976d2;
-
+$dark: #40454a;
 // $secondary: #394396;
 
 // $link-color:                $body-color;
 // $link-color:                #0c1c9a;
 // $link-hover-color:          darken($link-color, 15%);
+// $link-decoration:           underline;
 $link-decoration:           underline;
-$link-hover-decoration:     underline !default;
+$link-decoration:           none;
+$link-hover-decoration:     underline;
+// $link-hover-decoration:     none;
 
 $link-color:                #5059a2;
 $link-color:                #7c808e;
 $link-color:                $dark-blue;
 $link-color:               darken($secondary, 16%);
+$body-color: $link-color;
 
-$link-hover-color:          #2332a9
+$link-hover-color:          #2332a9;
 $link-hover-color:          #efb400;
 $link-hover-color:          #5059a2;
 $link-hover-color:          darken($secondary, 30%);

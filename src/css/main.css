@@ -59,7 +59,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #104d89;
   text-align: left;
   background-color: #fff; }
 
@@ -137,8 +137,8 @@ sup {
   top: -.5em; }
 
 a {
-  color: #01579b;
-  text-decoration: underline;
+  color: #104d89;
+  text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
@@ -2001,7 +2001,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #01579b;
+  color: #104d89;
   background-color: transparent; }
   .btn-link:hover {
     color: #092949;
@@ -2091,7 +2091,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #104d89;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -6087,6 +6087,12 @@ h5 {
 
 a.btn {
   text-decoration: none !important; }
+
+a.btn-link:active,
+a.btn-link:focus,
+a.btn-link:focus,
+a.btn-link:visited {
+  text-decoration: none; }
 
 .btn,
 button {

@@ -23,6 +23,8 @@ class App extends Component {
         </Row>
       </Container> */}
 
+      {/* <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAsc={isAsc} lang={lang}/> */}
+
       <Cv/>
       <Footer/>
 

@@ -93,12 +93,9 @@ class Cv extends React.Component {
     const data = this.state.data;
     return (<div className="cv-container">
       <Container>
-
-        <h3 className="text-center font-weight-bold mt-2 mb-4">CV</h3>
+        <h3 className="text-center text-dark mt-2 mb-4">CV</h3>
 
         <TableInfo data={data.info} lang={lang}/>
-
-        <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAsc={isAsc} lang={lang}/>
 
         <TableInfo data={data.education} isAsc={isAsc} title={msgs.title.education} lang={lang}/>
         <TableInfo data={data.work} isAsc={isAsc} title={msgs.title.work} lang={lang}/>

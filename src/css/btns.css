@@ -8,6 +8,12 @@
 a.btn {
   text-decoration: none !important; }
 
+a.btn-link:active,
+a.btn-link:focus,
+a.btn-link:focus,
+a.btn-link:visited {
+  text-decoration: none; }
+
 .btn,
 button {
   box-shadow: none !important;
