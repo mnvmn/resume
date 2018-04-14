@@ -11,22 +11,6 @@ class Cv extends React.Component {
   constructor(props) {
     super(props);
 
-    const settings = this.loadLocal();
-    this.state = {
-      data: {
-        info: [],
-        education: [],
-        work: []
-      },
-      isLoading: false,
-      isAsc: settings.isAsc !== null
-        ? settings.isAsc
-        : this.props.isAsc,
-      lang: settings.lang !== null
-        ? settings.lang
-        : this.props.lang
-    };
-
     this.changeOrder = this.changeOrder.bind(this);
     this.changeLang = this.changeLang.bind(this);
   }
@@ -49,44 +33,6 @@ class Cv extends React.Component {
     // console.log('updated state', nextState)
   }
 
-  saveLocal(key, val) {
-    if (typeof(Storage) !== 'undefined') {
-      localStorage.setItem(key, val);
-      // console.log('storing local', key, val)
-    }
-  }
-
-  loadLocal() {
-    const hasLocalStorage = typeof(Storage) !== 'undefined';
-
-    return {
-      lang: hasLocalStorage
-        ? localStorage.getItem('lang')
-        : null,
-      isAsc: hasLocalStorage
-        ? localStorage.getItem('isAsc') === 'true'
-        : null
-    }
-  }
-
-  changeOrder() {
-    this.setState(prevState => ({
-      isAsc: !prevState.isAsc
-    }), function() {
-      this.saveLocal('isAsc', this.state.isAsc.toString());
-    });
-  }
-
-  changeLang() {
-    this.setState(prevState => ({
-      lang: prevState.lang === 'en'
-        ? 'sk'
-        : 'en'
-    }), function() {
-      this.saveLocal('lang', this.state.lang);
-    });
-  }
-
   render() {
     const lang = this.state.lang
     const isAsc = this.state.isAsc;
@@ -102,9 +48,13 @@ class Cv extends React.Component {
   }
 }
 
-Cv.defaultProps = {
-  isAsc: true,
-  lang: 'en'
+const mapStateToProps = state => {
+  return {todo: state.todos[0]}
 }
 
-export default Cv;
+const mapDispatchToProps = dispatch => {
+  return {
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cv)

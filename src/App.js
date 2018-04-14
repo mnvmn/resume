@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Navbar, NavbarToggler, Collapse} from 'reactstrap';
+import {
+  Container,
+  Row,
+  Col,
+  Navbar,
+  NavbarToggler,
+  Collapse
+} from 'reactstrap';
 import Controls from './components/Controls.js';
 import Cv from './components/Cv.js';
 import Footer from './components/Footer.js';
@@ -21,9 +28,10 @@ class App extends Component {
             </Navbar>
           </Col>
         </Row>
-      </Container> */}
+      </Container> */
+      }
 
-      {/* <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAsc={isAsc} lang={lang}/> */}
+      <Controls isVertical={false}/>
 
       <Cv/>
       <Footer/>
@@ -32,4 +40,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(Cv)

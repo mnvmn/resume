@@ -48,4 +48,18 @@ class Controls extends React.Component {
   }
 }
 
-export default Controls;
+const mapStateToProps = state => {
+  return {
+    lang : state.lang,
+    isAsc : state.isAsc
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    changeOrder: () => dispatch({type: 'CHANGE_ORDER'}),
+    changeLang: () => dispatch({type: 'CHANGE_LANG'})
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Controls)
