@@ -13,6 +13,8 @@ import Cv from './components/Cv.js';
 import Footer from './components/Footer.js';
 import './css/main.css';
 
+import {dispatcherData} from './store/dispatchers.js';
+import reducer from './store/reducers.js';
 
 const URL_DATA = '/data.json';
 
@@ -26,7 +28,7 @@ class App extends Component {
       } else {
         throw new Error('fetch data failed');
       }
-    }).then(data => this.props.dataLoaded({data: data})).catch(error => this.setState({error}));
+    }).then(data => this.props.dataReceived(data)).catch(error => this.setState({error}));
   }
 
   render() {
@@ -55,14 +57,4 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {}
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    dataLoaded: (data) => dispatch({type: 'DATA_LOADED', data: data})
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(reducer, dispatcherData)(App)

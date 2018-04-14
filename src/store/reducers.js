@@ -1,33 +1,41 @@
-import {combineReducers} from 'redux';
-
-export const ReducerToggle = (state = {}, action) => {
-    switch (action.type) {
-
-      case CANGE_ORDER:
-        const isAsc = !state.isAsc
-
-        return
-
-    }),
-    function() {
-      this.saveLocal('isAsc', this.state.isAsc.toString());
-    });
+function saveLocal(key, val) {
+  if (typeof(Storage) !== 'undefined') {
+    localStorage.setItem(key, val);
+    // console.log('storing local', key, val)
   }
+}
 
-  changeLang() {
-    this.setState(prevState => ({
-      lang: prevState.lang === 'en'
+const reducers = (state = {}, action) => {
+  switch (action.type) {
+    case 'DATA_RECEIVED':
+      console.log(action.data);
+      return {
+        ...state,
+        data: action.data
+      }
+    case 'TOGGLE_LANG':
+      const lang = state.lang === 'en'
         ? 'sk'
         : 'en'
-    }), function() {
-      this.saveLocal('lang', this.state.lang);
-    });
+      saveLocal('lang', lang)
+      return {
+        ...state,
+        lang: lang
+      }
+    case 'TOGGLE_ORDER':
+      const isAsc = !state.isAsc;
+      saveLocal('isAsc', isAsc.toString())
+      return {
+        ...state,
+        isAsc: isAsc
+      }
+    default:
+      return state
   }
-
-  return action.geod;
-  case 'CLOSE_GEOD' : return {};
-  default: return state;
 }
-};
 
-export const reducers = combineReducers({geod});
+export const reducerLanguage = (state = {}, action) => {
+  return {lang: state.lang}
+}
+
+export default reducers;

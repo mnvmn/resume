@@ -4,7 +4,8 @@ import {Col, Row, ButtonGroup, Button} from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa'
 import msgs from './../translations.json';
 import Str from './Str.js';
-
+import {dispatcherToggles} from './../store/dispatchers.js';
+import reducer from './../store/reducers.js';
 
 
 class Controls extends React.Component {
@@ -51,18 +52,4 @@ class Controls extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    lang : state.lang,
-    isAsc : state.isAsc
-  }
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    changeOrder: () => dispatch({type: 'TOGGLE_ORDER'}),
-    changeLang: () => dispatch({type: 'TOGGLE_LANG'})
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Controls)
+export default connect(reducer, dispatcherToggles)(Controls)

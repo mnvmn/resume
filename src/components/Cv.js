@@ -2,14 +2,9 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Container} from 'reactstrap';
 import TableInfo from './TableInfo.js';
-import Controls from './Controls.js';
 import msgs from './../translations.json';
 
 class Cv extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
 
   componentWillUpdate(nextProps, nextState) {
     // console.log('updated state', nextState)

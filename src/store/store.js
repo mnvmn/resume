@@ -1,11 +1,23 @@
 import {
-  applyMiddleware,
-  createStore,
+  createStore
 } from 'redux';
 
-import {Reducers} from './reducers.js';
+import reducers from './reducers.js';
 
-const settings = this.loadLocal();
+const settings = loadLocal();
+
+function loadLocal() {
+  const hasLocalStorage = typeof(Storage) !== 'undefined';
+
+  return {
+    lang: hasLocalStorage
+      ? localStorage.getItem('lang')
+      : null,
+    isAsc: hasLocalStorage
+      ? localStorage.getItem('isAsc') === 'true'
+      : null
+  }
+}
 
 const defaultState = {
   data: {
@@ -21,10 +33,6 @@ const defaultState = {
     ? settings.lang
     : 'en'
 };
-
-
-
-
 
 
 export const store = createStore(reducers, defaultState);
