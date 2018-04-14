@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import {
   Container,
   Row,
@@ -12,7 +13,21 @@ import Cv from './components/Cv.js';
 import Footer from './components/Footer.js';
 import './css/main.css';
 
+
+const URL_DATA = '/data.json';
+
 class App extends Component {
+
+  componentDidMount() {
+    fetch(URL_DATA).then(response => {
+      console.log(response)
+      if (response.ok) {
+        return response.json()
+      } else {
+        throw new Error('fetch data failed');
+      }
+    }).then(data => this.props.dataLoaded({data: data})).catch(error => this.setState({error}));
+  }
 
   render() {
     return (<div className="App  d-flex flex-column">
@@ -40,4 +55,14 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cv)
+const mapStateToProps = state => {
+  return {}
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    dataLoaded: (data) => dispatch({type: 'DATA_LOADED', data: data})
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

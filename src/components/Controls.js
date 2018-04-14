@@ -1,8 +1,11 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {Col, Row, ButtonGroup, Button} from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa'
 import msgs from './../translations.json';
 import Str from './Str.js';
+
+
 
 class Controls extends React.Component {
 
@@ -57,8 +60,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    changeOrder: () => dispatch({type: 'CHANGE_ORDER'}),
-    changeLang: () => dispatch({type: 'CHANGE_LANG'})
+    changeOrder: () => dispatch({type: 'TOGGLE_ORDER'}),
+    changeLang: () => dispatch({type: 'TOGGLE_LANG'})
   }
 }
 
