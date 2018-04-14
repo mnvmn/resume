@@ -10,6 +10,9 @@ function loadLocal() {
   const hasLocalStorage = typeof(Storage) !== 'undefined';
 
   return {
+    navbarOpen: hasLocalStorage
+      ? localStorage.getItem('navbarOpen') === 'true'
+      : null,
     lang: hasLocalStorage
       ? localStorage.getItem('lang')
       : null,

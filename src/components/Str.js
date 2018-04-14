@@ -11,7 +11,7 @@ class Str extends React.Component {
       ? msg[lang]
       : msg;
 
-    console.log('translating:', lang, msg, trans)
+    // console.log('translating:', lang, msg, trans)
 
     const finalText = trans
       ? this.createLinks(trans)

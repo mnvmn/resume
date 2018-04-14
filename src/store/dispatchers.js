@@ -1,12 +1,10 @@
-export const dispatcherToggles = dispatch => {
+export const dispatcher = dispatch => {
   return {
-    changeOrder: () => dispatch({type: 'TOGGLE_ORDER'}),
-    changeLang: () => dispatch({type: 'TOGGLE_LANG'})
-  }
-}
-
-export const dispatcherData = dispatch => {
-  return {
+    toggleOrder: () => dispatch({type: 'TOGGLE_ORDER'}),
+    toggleLang: () => dispatch({type: 'TOGGLE_LANG'}),
+    toggleNavbar: () => dispatch({type: 'TOGGLE_NAVBAR'}),
     dataReceived: (data) => dispatch({type: 'DATA_RECEIVED', data})
   }
 }
+
+export default dispatcher

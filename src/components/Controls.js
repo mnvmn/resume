@@ -4,7 +4,7 @@ import {Col, Row, ButtonGroup, Button} from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa'
 import msgs from './../translations.json';
 import Str from './Str.js';
-import {dispatcherToggles} from './../store/dispatchers.js';
+import dispatcher from './../store/dispatchers.js';
 import reducer from './../store/reducers.js';
 
 
@@ -28,7 +28,7 @@ class Controls extends React.Component {
             <FontAwesome.FaDownload/>
             &nbsp;&nbsp;<Str msg={msgs.btns.downloadPdf} lang={lang}/>
           </Button>
-          <Button color="primary" outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeOrder}>
+          <Button color="primary" outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.toggleOrder}>
             <span className="">
               {
                 isAsc
@@ -42,7 +42,7 @@ class Controls extends React.Component {
                 : <Str msg={msgs.btns.orderByDateAsc} lang={lang}/>
             }
           </Button>
-          <Button color="primary" outline={true} size="xs" className="bt-xs-block d-flex align-items-center" onClick={this.props.changeLang}>
+          <Button color="primary" outline={true} size="xs" className="bt-xs-block d-flex align-items-center" onClick={this.props.toggleLang}>
             <FontAwesome.FaLanguage/>
             &nbsp;&nbsp;<Str msg={msgs.btns.changeLanguage} lang={lang}/>
           </Button>
@@ -52,4 +52,4 @@ class Controls extends React.Component {
   }
 }
 
-export default connect(reducer, dispatcherToggles)(Controls)
+export default connect(reducer, dispatcher)(Controls)

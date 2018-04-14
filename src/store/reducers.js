@@ -8,10 +8,16 @@ function saveLocal(key, val) {
 const reducers = (state = {}, action) => {
   switch (action.type) {
     case 'DATA_RECEIVED':
-      console.log(action.data);
       return {
         ...state,
         data: action.data
+      }
+    case 'TOGGLE_NAVBAR':
+      const navbarOpen = !state.navbarOpen
+      saveLocal('navbarOpen', navbarOpen.toString())
+      return {
+        ...state,
+        navbarOpen: navbarOpen
       }
     case 'TOGGLE_LANG':
       const lang = state.lang === 'en'

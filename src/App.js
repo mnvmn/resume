@@ -13,7 +13,7 @@ import Cv from './components/Cv.js';
 import Footer from './components/Footer.js';
 import './css/main.css';
 
-import {dispatcherData} from './store/dispatchers.js';
+import dispatcher from './store/dispatchers.js';
 import reducer from './store/reducers.js';
 
 const URL_DATA = '/data.json';
@@ -34,21 +34,24 @@ class App extends Component {
   render() {
     return (<div className="App  d-flex flex-column">
 
-      {/* <Container>
+      <Container>
         <Row>
           <Col>
-            <Navbar color="faded" light="light">
-              <NavbarToggler onClick={this.toggleNavbar} className="mr-2"/>
-              <Collapse isOpen={false} navbar="navbar">
-                <Controls changeOrder={this.changeOrder} changeLang={this.changeLang}/>
+
+            <Navbar color="faded" light={true} className="d-sm-none justify-content-end">
+              <Collapse isOpen={this.props.navbarOpen} navbar>
+                <Controls isVertical={true}/>
               </Collapse>
+              <NavbarToggler onClick={this.props.toggleNavbar} className="mr-2"/>
             </Navbar>
+
+            <div className="d-none d-sm-block">
+              <Controls isVertical={false}/>
+            </div>
+
           </Col>
         </Row>
-      </Container> */
-      }
-
-      <Controls isVertical={false}/>
+      </Container>
 
       <Cv/>
       <Footer/>
@@ -57,4 +60,4 @@ class App extends Component {
   }
 }
 
-export default connect(reducer, dispatcherData)(App)
+export default connect(reducer, dispatcher)(App)

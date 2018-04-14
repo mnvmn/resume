@@ -15,7 +15,7 @@ class TableInfo extends React.Component {
         : [...this.props.data].reverse())
       : ''
 
-    console.log(infoList);
+    // console.log(infoList);
 
     return <div className="mb-4">
       {
