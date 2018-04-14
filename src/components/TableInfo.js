@@ -13,9 +13,7 @@ class TableInfo extends React.Component {
         this.props.isAsc
         ? this.props.data
         : [...this.props.data].reverse())
-      : ''
-
-    // console.log(infoList);
+      : []
 
     return <div className="mb-4">
       {

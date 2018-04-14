@@ -24,11 +24,11 @@ class Controls extends React.Component {
     return (<ButtonGroup color="primary" className={groupClass}>
       <Button color="primary" outline={true} size="xs" className={btnClass} href="https://github.com/mnvmn/resume" target="_blank">
         <FontAwesome.FaCodeFork/>
-        &nbsp;&nbsp;<Str msg={msgs.btns.viewSource} lang={lang}/>
+        &nbsp;&nbsp;<Str msg={msgs.btns.viewSource}/>
       </Button>
       <Button color="primary" outline={true} size="xs" className={btnClass} href="https://github.com/mnvmn/mnvmn.github.io/raw/master/CV_MN.pdf" target="_blank">
         <FontAwesome.FaDownload/>
-        &nbsp;&nbsp;<Str msg={msgs.btns.downloadPdf} lang={lang}/>
+        &nbsp;&nbsp;<Str msg={msgs.btns.downloadPdf}/>
       </Button>
       <Button color="primary" outline={true} size="xs" className={btnClass} onClick={this.props.toggleOrder}>
         <span className="">
@@ -40,13 +40,13 @@ class Controls extends React.Component {
         </span>
         &nbsp;&nbsp; {
           isAsc
-            ? <Str msg={msgs.btns.orderByDateDesc} lang={lang}/>
-            : <Str msg={msgs.btns.orderByDateAsc} lang={lang}/>
+            ? <Str msg={msgs.btns.orderByDateDesc}/>
+            : <Str msg={msgs.btns.orderByDateAsc}/>
         }
       </Button>
       <Button color="primary" outline={true} size="xs" className={btnClass} onClick={this.props.toggleLang}>
         <FontAwesome.FaLanguage/>
-        &nbsp;&nbsp;<Str msg={msgs.btns.changeLanguage} lang={lang}/>
+        &nbsp;&nbsp;<Str msg={msgs.btns.changeLanguage}/>
       </Button>
     </ButtonGroup>)
   }

@@ -31,6 +31,7 @@ const reducers = (state = {}, action) => {
     case 'TOGGLE_ORDER':
       const isAsc = !state.isAsc;
       saveLocal('isAsc', isAsc.toString())
+      console.log(isAsc);
       return {
         ...state,
         isAsc: isAsc
