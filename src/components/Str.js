@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {reducerLanguage} from './../store/reducers.js';
 
 class Str extends React.Component {
 
@@ -9,6 +11,8 @@ class Str extends React.Component {
       ? msg[lang]
       : msg;
 
+    console.log('translating:', lang, msg, trans)
+
     const finalText = trans
       ? this.createLinks(trans)
       : ''
@@ -17,7 +21,7 @@ class Str extends React.Component {
   }
 
   createLinks(str) {
-    const links = str.match(/www\.[\w\.]*/g);
+    const links = str.match(/www\.[\w.]*/g);
 
     let initialIndex = 0
     if (links && links.length > 0) {
@@ -42,4 +46,4 @@ class Str extends React.Component {
   }
 }
 
-export default Str;
+export default connect(reducerLanguage, {})(Str)

@@ -1,8 +1,12 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {Col, Row, ButtonGroup, Button} from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa'
 import msgs from './../translations.json';
 import Str from './Str.js';
+import {dispatcherToggles} from './../store/dispatchers.js';
+import reducer from './../store/reducers.js';
+
 
 class Controls extends React.Component {
 
@@ -48,4 +52,4 @@ class Controls extends React.Component {
   }
 }
 
-export default Controls;
+export default connect(reducer, dispatcherToggles)(Controls)

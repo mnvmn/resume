@@ -1,11 +1,35 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Navbar, NavbarToggler, Collapse} from 'reactstrap';
+import {connect} from 'react-redux';
+import {
+  Container,
+  Row,
+  Col,
+  Navbar,
+  NavbarToggler,
+  Collapse
+} from 'reactstrap';
 import Controls from './components/Controls.js';
 import Cv from './components/Cv.js';
 import Footer from './components/Footer.js';
 import './css/main.css';
 
+import {dispatcherData} from './store/dispatchers.js';
+import reducer from './store/reducers.js';
+
+const URL_DATA = '/data.json';
+
 class App extends Component {
+
+  componentDidMount() {
+    fetch(URL_DATA).then(response => {
+      console.log(response)
+      if (response.ok) {
+        return response.json()
+      } else {
+        throw new Error('fetch data failed');
+      }
+    }).then(data => this.props.dataReceived(data)).catch(error => this.setState({error}));
+  }
 
   render() {
     return (<div className="App  d-flex flex-column">
@@ -21,9 +45,10 @@ class App extends Component {
             </Navbar>
           </Col>
         </Row>
-      </Container> */}
+      </Container> */
+      }
 
-      {/* <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAsc={isAsc} lang={lang}/> */}
+      <Controls isVertical={false}/>
 
       <Cv/>
       <Footer/>
@@ -32,4 +57,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(reducer, dispatcherData)(App)

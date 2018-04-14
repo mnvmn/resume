@@ -1,115 +1,35 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {Container} from 'reactstrap';
 import TableInfo from './TableInfo.js';
-import Controls from './Controls.js';
 import msgs from './../translations.json';
 
-const URL_DATA = '/data.json';
-
 class Cv extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    const settings = this.loadLocal();
-    this.state = {
-      data: {
-        info: [],
-        education: [],
-        work: []
-      },
-      isLoading: false,
-      isAsc: settings.isAsc !== null
-        ? settings.isAsc
-        : this.props.isAsc,
-      lang: settings.lang !== null
-        ? settings.lang
-        : this.props.lang
-    };
-
-    this.changeOrder = this.changeOrder.bind(this);
-    this.changeLang = this.changeLang.bind(this);
-  }
-
-  componentDidMount() {
-
-    this.setState({isLoading: true});
-
-    fetch(URL_DATA).then(response => {
-      // console.log(response)
-      if (response.ok) {
-        return response.json()
-      } else {
-        throw new Error('fetch data failed');
-      }
-    }).then(data => this.setState({data: data, isLoading: false})).catch(error => this.setState({error, isLoading: false}));
-  }
 
   componentWillUpdate(nextProps, nextState) {
     // console.log('updated state', nextState)
   }
 
-  saveLocal(key, val) {
-    if (typeof(Storage) !== 'undefined') {
-      localStorage.setItem(key, val);
-      // console.log('storing local', key, val)
-    }
-  }
-
-  loadLocal() {
-    const hasLocalStorage = typeof(Storage) !== 'undefined';
-
-    return {
-      lang: hasLocalStorage
-        ? localStorage.getItem('lang')
-        : null,
-      isAsc: hasLocalStorage
-        ? localStorage.getItem('isAsc') === 'true'
-        : null
-    }
-  }
-
-  changeOrder() {
-    this.setState(prevState => ({
-      isAsc: !prevState.isAsc
-    }), function() {
-      this.saveLocal('isAsc', this.state.isAsc.toString());
-    });
-  }
-
-  changeLang() {
-    this.setState(prevState => ({
-      lang: prevState.lang === 'en'
-        ? 'sk'
-        : 'en'
-    }), function() {
-      this.saveLocal('lang', this.state.lang);
-    });
-  }
-
   render() {
-    const lang = this.state.lang
-    const isAsc = this.state.isAsc;
-    const data = this.state.data;
-    return (<div>
-      <Container className="mt-2">
-        <Controls changeOrder={this.changeOrder} changeLang={this.changeLang} isAsc={isAsc} lang={lang}/>
+    const data = this.props.data;
+
+    return (<div className="cv-container">
+      <Container>
+        <h3 className="text-center text-dark mt-2 mb-4">CV</h3>
+        <TableInfo data={data.info}/>
+        <TableInfo data={data.education} title={msgs.title.education}/>
+        <TableInfo data={data.work} title={msgs.title.work}/>
       </Container>
-      <div className="cv-container">
-        <Container>
-          <h3 className="text-center text-dark mb-4">CV</h3>
-          <TableInfo data={data.info} lang={lang}/>
-          <TableInfo data={data.education} isAsc={isAsc} title={msgs.title.education} lang={lang}/>
-          <TableInfo data={data.work} isAsc={isAsc} title={msgs.title.work} lang={lang}/>
-        </Container>
-      </div>
     </div>)
   }
 }
 
-Cv.defaultProps = {
-  isAsc: true,
-  lang: 'en'
+const mapStateToProps = state => {
+  return {data: state.data}
 }
 
-export default Cv;
+const mapDispatchToProps = dispatch => {
+  return {}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cv)
