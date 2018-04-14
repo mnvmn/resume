@@ -6158,7 +6158,8 @@ body {
     font-size: 1.6em; }
   @media (max-width: 575.98px) {
     .cv-container {
-      padding-top: 20px; } }
+      padding-top: 0px;
+      margin-top: -30px; } }
 
 footer#footer {
   border-top: 1px solid #ededed;
@@ -6244,6 +6245,9 @@ input[type=submit] {
   .btn-xs-block {
     display: block;
     width: 100%; } }
+
+.navbar-toggler {
+  outline: none; }
 
 .text-primary {
   color: #0a67c3 !important; }

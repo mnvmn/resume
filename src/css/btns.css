@@ -61,3 +61,6 @@ input[type=submit] {
   .btn-xs-block {
     display: block;
     width: 100%; } }
+
+.navbar-toggler {
+  outline: none; }

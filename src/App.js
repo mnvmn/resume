@@ -33,22 +33,18 @@ class App extends Component {
 
   render() {
     return (<div className="App  d-flex flex-column">
-
-      <Container>
+      <div>
+        <Navbar color="faded" light={true} className="p-0 d-sm-none justify-content-end">
+          <Collapse isOpen={this.props.navbarOpen} navbar={true}>
+            <Controls isVertical={true}/>
+          </Collapse>
+          <NavbarToggler onClick={this.props.toggleNavbar} className="mt-2 mr-2"/>
+        </Navbar>
+      </div>
+      <Container className="d-none d-sm-block mt-2">
         <Row>
           <Col>
-
-            <Navbar color="faded" light={true} className="d-sm-none justify-content-end">
-              <Collapse isOpen={this.props.navbarOpen} navbar>
-                <Controls isVertical={true}/>
-              </Collapse>
-              <NavbarToggler onClick={this.props.toggleNavbar} className="mr-2"/>
-            </Navbar>
-
-            <div className="d-none d-sm-block">
-              <Controls isVertical={false}/>
-            </div>
-
+            <Controls isVertical={false}/>
           </Col>
         </Row>
       </Container>
