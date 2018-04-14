@@ -37,6 +37,19 @@ button {
     }
   }
 
+  &.btn-outline-primary {
+    transition: none;
+    border-color: #378fe7!important;
+    color: #1976d2;
+
+    &:hover {
+      border-color: darken($primary, 5%) !important;
+      color: darken($primary, 4%) !important;
+      // border-color: #1562ae!important;
+      // color: #145ca4;
+    }
+  }
+
   &.btn-outline-secondary {
     border-color: $secondary !important;
     // border-color: $secondary;
@@ -65,7 +78,6 @@ input[type=submit] {
     cursor: default !important;
   }
 }
-
 @include media-breakpoint-down(xs) {
   .btn-xs-block {
     display: block;

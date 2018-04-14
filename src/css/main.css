@@ -6208,6 +6208,15 @@ button {
     color: #343a40;
     box-shadow: none !important;
     background-color: white; }
+  .btn.btn-outline-primary,
+  button.btn-outline-primary {
+    transition: none;
+    border-color: #378fe7 !important;
+    color: #1976d2; }
+    .btn.btn-outline-primary:hover,
+    button.btn-outline-primary:hover {
+      border-color: #095aab !important;
+      color: #095db0 !important; }
   .btn.btn-outline-secondary,
   button.btn-outline-secondary {
     border-color: #01579b !important;

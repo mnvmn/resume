@@ -13,18 +13,18 @@ class Controls extends React.Component {
 
     return (<Row>
       <Col className="d-flex justify-content-end">
-        <ButtonGroup className={isVertical
+        <ButtonGroup color="primary" className={isVertical
             ? "btn-group-vertical"
             : ''}>
-          <Button outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/resume" target="_blank">
+          <Button color="primary" outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/resume" target="_blank">
             <FontAwesome.FaCodeFork/>
             &nbsp;&nbsp;<Str msg={msgs.btns.viewSource} lang={lang}/>
           </Button>
-          <Button outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/mnvmn.github.io/raw/master/CV_MN.pdf" target="_blank">
+          <Button color="primary"outline={true} size="xs" className="d-flex align-items-center" href="https://github.com/mnvmn/mnvmn.github.io/raw/master/CV_MN.pdf" target="_blank">
             <FontAwesome.FaDownload/>
             &nbsp;&nbsp;<Str msg={msgs.btns.downloadPdf} lang={lang}/>
           </Button>
-          <Button outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeOrder}>
+          <Button color="primary" outline={true} size="xs" className="d-flex align-items-center" onClick={this.props.changeOrder}>
             <span className="">
               {
                 isAsc
@@ -38,7 +38,7 @@ class Controls extends React.Component {
                 : <Str msg={msgs.btns.orderByDateAsc} lang={lang}/>
             }
           </Button>
-          <Button outline={true} size="xs" className="bt-xs-block d-flex align-items-center" onClick={this.props.changeLang}>
+          <Button color="primary" outline={true} size="xs" className="bt-xs-block d-flex align-items-center" onClick={this.props.changeLang}>
             <FontAwesome.FaLanguage/>
             &nbsp;&nbsp;<Str msg={msgs.btns.changeLanguage} lang={lang}/>
           </Button>
