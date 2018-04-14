@@ -12,32 +12,31 @@ $container-max-widths: (
   xl: 900px
 );
 @include _assert-ascending($container-max-widths, "$container-max-widths"); // $primary: #1a237e;
-
 $dark-blue: #01579b; // dark blue
-$primary: #0a67c3;
-$secondary: #1976d2;
-$dark: #40454a;
-// $secondary: #394396;
 
+$body-color: darken(#1976d2, 16%);
+$primary: #0a67c3;
+$secondary: #01579b;
+$dark: #40454a;
+$dark: #40454a;
+$label: #324354;
+
+$theme-colors: map-merge(("primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, "label": $label), $theme-colors); // $secondary: #394396;
 // $link-color:                $body-color;
 // $link-color:                #0c1c9a;
 // $link-hover-color:          darken($link-color, 15%);
 // $link-decoration:           underline;
-$link-decoration:           underline;
-$link-decoration:           none;
-$link-hover-decoration:     underline;
-// $link-hover-decoration:     none;
-
-$link-color:                #5059a2;
-$link-color:                #7c808e;
-$link-color:                $dark-blue;
-$link-color:               darken($secondary, 16%);
-$body-color: $link-color;
-
-$link-hover-color:          #2332a9;
-$link-hover-color:          #efb400;
-$link-hover-color:          #5059a2;
-$link-hover-color:          darken($secondary, 30%);
-
+$link-decoration: underline;
+$link-decoration: none;
+$link-hover-decoration: underline; // $link-hover-decoration:     none;
+$link-color: #5059a2;
+$link-color: #7c808e;
+$link-color: $dark-blue;
+$link-color: $label;
+$link-hover-color: #2332a9;
+$link-hover-color: #efb400;
+$link-hover-color: #5059a2;
+$link-hover-color: darken($link-color, 12%);
+$link-hover-color: lighten($primary, 5%);
 // $link-color:                #2332a9;
 // $link-hover-color:          #5059a2 !important;

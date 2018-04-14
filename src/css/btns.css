@@ -27,15 +27,15 @@ button {
     background-color: white; }
   .btn.btn-outline-secondary,
   button.btn-outline-secondary {
-    border-color: #1976d2 !important;
-    color: #1669bb !important; }
+    border-color: #01579b !important;
+    color: #014982 !important; }
     .btn.btn-outline-secondary.active, .btn.btn-outline-secondary.hover, .btn.btn-outline-secondary:active, .btn.btn-outline-secondary:hover,
     button.btn-outline-secondary.active,
     button.btn-outline-secondary.hover,
     button.btn-outline-secondary:active,
     button.btn-outline-secondary:hover {
-      border-color: #12579b !important;
-      color: #11508e !important; }
+      border-color: #01355e !important;
+      color: #012c4f !important; }
 
 .btn,
 button,

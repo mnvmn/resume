@@ -94,9 +94,7 @@ class Cv extends React.Component {
     return (<div className="cv-container">
       <Container>
         <h3 className="text-center text-dark mt-2 mb-4">CV</h3>
-
         <TableInfo data={data.info} lang={lang}/>
-
         <TableInfo data={data.education} isAsc={isAsc} title={msgs.title.education} lang={lang}/>
         <TableInfo data={data.work} isAsc={isAsc} title={msgs.title.work} lang={lang}/>
       </Container>
