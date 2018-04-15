@@ -10,7 +10,6 @@ import reducer from './../store/reducers.js';
 class Controls extends React.Component {
 
   render() {
-    const lang = this.props.lang
     const isAsc = this.props.isAsc
     const groupClass = 'd-flex' + (
       this.props.isVertical

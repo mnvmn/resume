@@ -12,6 +12,7 @@ import Controls from './components/Controls.js';
 import Cv from './components/Cv.js';
 import Footer from './components/Footer.js';
 import './css/main.css';
+import Logo from './components/Logo.js';
 
 import dispatcher from './store/dispatchers.js';
 import reducer from './store/reducers.js';
@@ -32,6 +33,14 @@ class App extends Component {
 
   render() {
     return (<div className="App  d-flex flex-column">
+      <Container className="position-relative">
+        <Row>
+          <Col>
+            <Logo/>
+          </Col>
+        </Row>
+      </Container>
+
       <div>
         <Navbar color="faded" light={true} className="p-0 d-sm-none justify-content-end">
           <Collapse isOpen={this.props.navbarOpen} navbar={true}>
