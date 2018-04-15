@@ -1,21 +1,15 @@
 import React, {Component} from 'react';
+
 import {connect} from 'react-redux';
-import {
-  Container,
-  Row,
-  Col,
-  Navbar,
-  NavbarToggler,
-  Collapse
-} from 'reactstrap';
-import Controls from './components/Controls.js';
-import Cv from './components/Cv.js';
-import Footer from './components/Footer.js';
-import './css/main.css';
-import Logo from './components/Logo.js';
 
 import dispatcher from './store/dispatchers.js';
 import reducer from './store/reducers.js';
+
+import PageCv from './pages/Cv.js';
+import Footer from './components/Footer.js';
+
+import './css/main.css';
+// import Logo from './components/Logo.js';
 
 const URL_DATA = '/data.json';
 
@@ -33,31 +27,8 @@ class App extends Component {
 
   render() {
     return (<div className="App  d-flex flex-column">
-      <Container className="position-relative">
-        <Row>
-          <Col>
-            <Logo/>
-          </Col>
-        </Row>
-      </Container>
 
-      <div>
-        <Navbar color="faded" light={true} className="p-0 d-sm-none justify-content-end">
-          <Collapse isOpen={this.props.navbarOpen} navbar={true}>
-            <Controls isVertical={true}/>
-          </Collapse>
-          <NavbarToggler onClick={this.props.toggleNavbar} className="mt-2 mr-2"/>
-        </Navbar>
-      </div>
-      <Container className="d-none d-sm-block mt-3">
-        <Row>
-          <Col>
-            <Controls isVertical={false}/>
-          </Col>
-        </Row>
-      </Container>
-
-      <Cv/>
+      <PageCv/>
       <Footer/>
 
     </div>);
