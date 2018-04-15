@@ -1,6 +1,10 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import dispatcher from './../store/dispatchers.js';
+import reducer from './../store/reducers.js';
 import Cv from './../components/Cv.js';
 import Controls from './../components/Controls.js';
+
 import {
   Container,
   Row,
@@ -35,4 +39,4 @@ class PageCv extends React.Component {
   }
 }
 
-export default PageCv
+export default connect(reducer, dispatcher)(PageCv)
