@@ -1,21 +1,20 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { ButtonGroup, Button } from 'reactstrap';
+import {connect} from 'react-redux';
+import {ButtonGroup, Button} from 'reactstrap';
+import PropTypes from 'prop-types';
 import * as FontAwesome from 'react-icons/lib/fa';
 import msgs from './../translations.json';
 import Str from './Str';
-import Logo from './Logo';
 import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';
 
 class Controls extends React.Component {
   render() {
     // const isAsc = this.props.isAsc;
-    const { isAsc } = this.props;
-    const groupClass = `d-flex${
-      this.props.isVertical
-        ? ' btn-group-vertical rounded-0'
-        : ' ml-auto justify-content-end'}`;
+    const {isAsc} = this.props;
+    const groupClass = `d-flex${this.props.isVertical
+      ? ' btn-group-vertical rounded-0'
+      : ' ml-auto justify-content-end'}`;
     const btnClass = `d-flex align-items-center${this.props.isVertical
       ? ' btn-block rounded-0'
       : ''}`;
@@ -50,5 +49,11 @@ class Controls extends React.Component {
     </ButtonGroup>);
   }
 }
+
+Controls.propTypes = {
+  isAsc: PropTypes.boolean,
+  toggleLang: PropTypes.boolean,
+  toggleOrder: PropTypes.boolean
+};
 
 export default connect(reducer, dispatcher)(Controls);
