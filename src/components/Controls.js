@@ -72,10 +72,10 @@ class Controls extends React.Component {
 }
 
 Controls.propTypes = {
-  isAsc: PropTypes.boolean,
-  isVertical: PropTypes.boolean,
-  toggleLang: PropTypes.boolean,
-  toggleOrder: PropTypes.boolean,
+  isAsc: PropTypes.bool.isRequired,
+  isVertical: PropTypes.bool.isRequired,
+  toggleLang: PropTypes.bool.isRequired,
+  toggleOrder: PropTypes.bool.isRequired,
 };
 
 export default connect(reducer, dispatcher)(Controls);

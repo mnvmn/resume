@@ -17,7 +17,7 @@ class ControlFlipPage extends React.Component {
 }
 
 ControlFlipPage.propTypes = {
-  orientation: PropTypes.boolean,
+  orientation: PropTypes.bool.isRequired,
 };
 
 export default ControlFlipPage;

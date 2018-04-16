@@ -25,7 +25,7 @@ class Cv extends React.Component {
 
 Cv.propTypes = {
   data: PropTypes.object.isRequired,
-  isAsc: PropTypes.boolean.isRequired,
+  isAsc: PropTypes.bool.isRequired,
 };
 
 export default connect(reducer, dispatcher)(Cv);
