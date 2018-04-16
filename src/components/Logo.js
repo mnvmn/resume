@@ -5,7 +5,7 @@ class Logo extends React.Component {
   render() {
     return (<div id="logo">
       <div className="title text-center mt-5">
-        Let's do something in React...
+        Let's build something in React...
       </div>
       {/* <div className="drawing position-absolute">
         <svg height="200" width="200">

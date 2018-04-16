@@ -46,6 +46,12 @@ button {
       border-color: #01355e !important;
       color: #012c4f !important; }
 
+.btn-vertical {
+  height: 100px; }
+
+.btn.btn-context {
+  background-color: #e9ecef !important; }
+
 .btn,
 button,
 input[type=submit] {

@@ -16,15 +16,18 @@
 }
 
 .control-flipPage-right {
-  right: 0;
+  right: -2rem;
+
+  .btn {
+    padding-right: $input-btn-padding-x + 2rem;
+  }
 }
 
-.left {
-  right: 0;
-}
-
-.btn-vertical {
-  height: 100px;
+.control-flipPage-left {
+  left: -2rem;
+  .btn {
+    padding-left: $input-btn-padding-x + 2rem;
+  }
 }
 
 #logo {

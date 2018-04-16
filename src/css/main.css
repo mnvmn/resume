@@ -6333,6 +6333,12 @@ button {
       border-color: #01355e !important;
       color: #012c4f !important; }
 
+.btn-vertical {
+  height: 100px; }
+
+.btn.btn-context {
+  background-color: #f5f5f5 !important; }
+
 .btn,
 button,
 input[type=submit] {
@@ -6379,13 +6385,14 @@ input[type=submit] {
   position: absolute; }
 
 .control-flipPage-right {
-  right: 0; }
+  right: -2rem; }
+  .control-flipPage-right .btn {
+    padding-right: 2.75rem; }
 
-.left {
-  right: 0; }
-
-.btn-vertical {
-  height: 100px; }
+.control-flipPage-left {
+  left: -2rem; }
+  .control-flipPage-left .btn {
+    padding-left: 2.75rem; }
 
 #logo .title {
   font-family: 'Nothing You Could Do', cursive;

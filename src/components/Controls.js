@@ -20,7 +20,7 @@ class Controls extends React.Component {
       ? ' btn-block rounded-0'
       : '')
 
-    return (<ButtonGroup color="primary" className={groupClass}>
+    return (<ButtonGroup className={groupClass}>
       <Button color="primary" outline={true} size="xs" className={btnClass} href="https://github.com/mnvmn/resume" target="_blank">
         <FontAwesome.FaCodeFork/>
         &nbsp;&nbsp;<Str msg={msgs.btns.viewSource}/>

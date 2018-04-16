@@ -68,6 +68,15 @@ button {
   }
 }
 
+.btn-vertical {
+  height: 100px;
+}
+
+.btn.btn-context {
+  // background-color: darken($gray-100, 5%) !important;
+  background-color: $footer-color !important;
+}
+
 .btn,
 button,
 input[type=submit] {
