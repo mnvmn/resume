@@ -39,7 +39,9 @@
         "en": "single",
         "sk": "slobodný"
       }
-    },
+    }
+  ],
+  "contact": [
     {
       "label": "Email",
       "value": "matus.nevedel@gmail.com"

@@ -6,11 +6,11 @@ import Str from './Str.js';
 class TableInfo extends React.Component {
 
   render() {
-
+    const isAsc = this.props.isAsc === 'undefined' || this.props.isAsc
     const lang = this.props.lang
     const infoList = this.props.data
       ? (
-        this.props.isAsc
+        isAsc
         ? this.props.data
         : [...this.props.data].reverse())
       : []
@@ -43,7 +43,7 @@ class TableInfo extends React.Component {
               <Str msg={info.value}/>
             </Col>
           </Row>
-          {info.projects && <TableProjects projects={info.projects} isAsc={this.props.isAsc} lang={lang}/>}
+          {info.projects && <TableProjects projects={info.projects} isAsc={isAsc} lang={lang}/>}
         </div>)
       }
     </div>
