@@ -9,27 +9,6 @@
 
 .landingPage {}
 
-.control-flipPage-left,
-.control-flipPage-right {
-  top: 200px;
-  position: absolute;
-}
-
-.control-flipPage-right {
-  right: -2rem;
-
-  .btn {
-    padding-right: $input-btn-padding-x + 2rem;
-  }
-}
-
-.control-flipPage-left {
-  left: -2rem;
-  .btn {
-    padding-left: $input-btn-padding-x + 2rem;
-  }
-}
-
 #logo {
   // position: absolute;
   .title {

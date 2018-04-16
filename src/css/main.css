@@ -6358,6 +6358,21 @@ input[type=submit] {
 .navbar-toggler {
   outline: none; }
 
+.control-flipPage-left,
+.control-flipPage-right {
+  top: 200px;
+  position: absolute; }
+
+.control-flipPage-right {
+  right: -2rem; }
+  .control-flipPage-right .btn {
+    padding-right: 2.75rem; }
+
+.control-flipPage-left {
+  left: -2rem; }
+  .control-flipPage-left .btn {
+    padding-left: 2.75rem; }
+
 .text-primary {
   color: #0a67c3 !important; }
 
@@ -6378,21 +6393,6 @@ input[type=submit] {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
-
-.control-flipPage-left,
-.control-flipPage-right {
-  top: 200px;
-  position: absolute; }
-
-.control-flipPage-right {
-  right: -2rem; }
-  .control-flipPage-right .btn {
-    padding-right: 2.75rem; }
-
-.control-flipPage-left {
-  left: -2rem; }
-  .control-flipPage-left .btn {
-    padding-left: 2.75rem; }
 
 #logo .title {
   font-family: 'Nothing You Could Do', cursive;

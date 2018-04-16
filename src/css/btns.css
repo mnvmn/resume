@@ -70,3 +70,18 @@ input[type=submit] {
 
 .navbar-toggler {
   outline: none; }
+
+.control-flipPage-left,
+.control-flipPage-right {
+  top: 200px;
+  position: absolute; }
+
+.control-flipPage-right {
+  right: -2rem; }
+  .control-flipPage-right .btn {
+    padding-right: 2.75rem; }
+
+.control-flipPage-left {
+  left: -2rem; }
+  .control-flipPage-left .btn {
+    padding-left: 2.75rem; }

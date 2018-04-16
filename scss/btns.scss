@@ -45,25 +45,19 @@ button {
     &:hover {
       border-color: darken($primary, 5%) !important;
       color: darken($primary, 4%) !important;
-      // border-color: #1562ae!important;
-      // color: #145ca4;
     }
   }
 
   &.btn-outline-secondary {
     border-color: $secondary !important;
-    // border-color: $secondary;
     color: darken($secondary, 5%) !important;
 
     &.active,
     &.hover,
     &:active,
     &:hover {
-      // background-color: $gray-100 !important;
       border-color: darken($secondary, 12%) !important;
       color: darken($secondary, 15%) !important;
-      // border-color: $link-hover-color !important;
-      // color: darken($link-hover-color, 2%) !important;
     }
   }
 }
@@ -96,4 +90,26 @@ input[type=submit] {
 
 .navbar-toggler {
   outline: none;
+}
+
+
+.control-flipPage-left,
+.control-flipPage-right {
+  top: 200px;
+  position: absolute;
+}
+
+.control-flipPage-right {
+  right: -2rem;
+
+  .btn {
+    padding-right: $input-btn-padding-x + 2rem;
+  }
+}
+
+.control-flipPage-left {
+  left: -2rem;
+  .btn {
+    padding-left: $input-btn-padding-x + 2rem;
+  }
 }
