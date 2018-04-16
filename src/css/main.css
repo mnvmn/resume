@@ -6361,7 +6361,8 @@ input[type=submit] {
 .control-flipPage-left,
 .control-flipPage-right {
   top: 200px;
-  position: absolute; }
+  position: absolute;
+  z-index: 100; }
 
 .control-flipPage-right {
   right: 0; }
