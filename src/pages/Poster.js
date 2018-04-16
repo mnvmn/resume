@@ -35,7 +35,7 @@ class PageCv extends React.Component {
       </Container>
 
 
-      <ControlFlipPage orientation="right"/>
+      <ControlFlipPage orientation="left"/>
 
       <Cv/>
 

@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
-
 import {connect} from 'react-redux';
-
 import dispatcher from './store/dispatchers.js';
 import reducer from './store/reducers.js';
-
 import PageCv from './pages/Cv.js';
 import Footer from './components/Footer.js';
-
 import './css/main.css';
 // import Logo from './components/Logo.js';
 

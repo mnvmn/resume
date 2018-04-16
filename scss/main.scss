@@ -9,9 +9,14 @@
 
 .landingPage {}
 
+.control-flipPage {
+  right: 0;
+  top: 200px;
+  position: absolute;
+}
+
 #logo {
   // position: absolute;
-
   .title {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 2em;
