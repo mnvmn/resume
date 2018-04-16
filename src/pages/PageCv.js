@@ -5,6 +5,7 @@ import reducer from './../store/reducers.js';
 import Cv from './../components/Cv.js';
 import Controls from './../components/Controls.js';
 import ControlFlipPage from './../components/ControlFlipPage.js';
+import {Link} from 'react-router-dom'
 
 import {
   Container,
@@ -34,7 +35,9 @@ class PageCv extends React.Component {
         </Row>
       </Container>
 
-      <ControlFlipPage orientation="right" href="/poster"/>
+      <Link to="/poster">
+        <ControlFlipPage orientation="right" href="/poster"/>
+      </Link>
 
       <Cv/>
 
