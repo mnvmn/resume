@@ -100,16 +100,19 @@ input[type=submit] {
 }
 
 .control-flipPage-right {
-  right: -2rem;
-
+  right: 0;
   .btn {
-    padding-right: $input-btn-padding-x + 2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0;
   }
 }
 
 .control-flipPage-left {
-  left: -2rem;
+  left: 0;
   .btn {
-    padding-left: $input-btn-padding-x + 2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
   }
 }
