@@ -1,11 +1,11 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import {ButtonGroup, Button} from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa';
 import msgs from './../translations.json';
-import Str from './Str.js';
+import Str from './Str';
 import Logo from './Logo.js';
-import dispatcher from './../store/dispatchers.js';
+import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers.js';
 
 class Controls extends React.Component {
