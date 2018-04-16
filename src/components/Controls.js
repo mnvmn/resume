@@ -1,25 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {ButtonGroup, Button} from 'reactstrap';
+import { ButtonGroup, Button } from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa';
 import msgs from './../translations.json';
 import Str from './Str';
-import Logo from './Logo.js';
+import Logo from './Logo';
 import dispatcher from './../store/dispatchers';
-import reducer from './../store/reducers.js';
+import reducer from './../store/reducers';
 
 class Controls extends React.Component {
-
   render() {
-    const isAsc = this.props.isAsc;
-    const groupClass = 'd-flex' + (
+    // const isAsc = this.props.isAsc;
+    const { isAsc } = this.props;
+    const groupClass = `d-flex${
       this.props.isVertical
-      ? ' btn-group-vertical rounded-0'
-      : ' ml-auto justify-content-end');
-    const btnClass = 'd-flex align-items-center' + (
-      this.props.isVertical
+        ? ' btn-group-vertical rounded-0'
+        : ' ml-auto justify-content-end'}`;
+    const btnClass = `d-flex align-items-center${this.props.isVertical
       ? ' btn-block rounded-0'
-      : '');
+      : ''}`;
 
     return (<ButtonGroup className={groupClass}>
       <Button color="primary" outline={true} size="xs" className={btnClass} href="https://github.com/mnvmn/resume" target="_blank">
