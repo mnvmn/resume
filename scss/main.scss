@@ -9,10 +9,22 @@
 
 .landingPage {}
 
-.control-flipPage {
-  right: 0;
+.control-flipPage-left,
+.control-flipPage-right {
   top: 200px;
   position: absolute;
+}
+
+.control-flipPage-right {
+  right: 0;
+}
+
+.left {
+  right: 0;
+}
+
+.btn-vertical {
+  height: 100px;
 }
 
 #logo {

@@ -4,7 +4,7 @@ class Logo extends React.Component {
 
   render() {
     return (<div id="logo">
-      <div className="title">
+      <div className="title text-center mt-5">
         Let's do something in React...
       </div>
       {/* <div className="drawing position-absolute">

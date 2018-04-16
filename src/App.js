@@ -1,10 +1,13 @@
+import './css/main.css';
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import dispatcher from './store/dispatchers.js';
 import reducer from './store/reducers.js';
-import PageCv from './pages/Cv.js';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import PageCv from './pages/PageCv.js';
+import PagePoster from './pages/PagePoster.js';
 import Footer from './components/Footer.js';
-import './css/main.css';
+
 // import Logo from './components/Logo.js';
 
 const URL_DATA = '/data.json';
@@ -23,10 +26,13 @@ class App extends Component {
 
   render() {
     return (<div className="App  d-flex flex-column">
-
-      <PageCv/>
+      <BrowserRouter>
+        <Switch>
+          <Route exact={true} path='/' component={PageCv}/>
+          <Route exact={true} path='/poster' component={PagePoster}/>
+        </Switch>
+      </BrowserRouter>
       <Footer/>
-
     </div>);
   }
 }

@@ -34,8 +34,7 @@ class PageCv extends React.Component {
         </Row>
       </Container>
 
-
-      <ControlFlipPage orientation="left"/>
+      <ControlFlipPage orientation="right" href="/poster"/>
 
       <Cv/>
 
