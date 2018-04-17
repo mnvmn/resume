@@ -1,5 +1,5 @@
 function saveLocal(key, val) {
-  if (typeof(Storage) !== 'undefined') {
+  if (typeof Storage !== 'undefined') {
     localStorage.setItem(key, val);
     // console.log('storing local', key, val)
   }
@@ -10,38 +10,37 @@ const reducers = (state = {}, action) => {
     case 'DATA_RECEIVED':
       return {
         ...state,
-        data: action.data
-      }
-    case 'TOGGLE_NAVBAR':
-      const navbarOpen = !state.navbarOpen
-      saveLocal('navbarOpen', navbarOpen.toString())
+        data: action.data,
+      };
+    case 'TOGGLE_NAVBAR': {
+      const navbarOpen = !state.navbarOpen;
+      saveLocal('navbarOpen', navbarOpen.toString());
       return {
         ...state,
-        navbarOpen: navbarOpen
-      }
-    case 'TOGGLE_LANG':
-      const lang = state.lang === 'en'
-        ? 'sk'
-        : 'en'
-      saveLocal('lang', lang)
+        navbarOpen,
+      };
+    }
+    case 'TOGGLE_LANG': {
+      const lang = state.lang === 'en' ? 'sk' : 'en';
+      saveLocal('lang', lang);
       return {
         ...state,
-        lang: lang
-      }
-    case 'TOGGLE_ORDER':
+        lang,
+      };
+    }
+    case 'TOGGLE_ORDER': {
       const isAsc = !state.isAsc;
-      saveLocal('isAsc', isAsc.toString())
+      saveLocal('isAsc', isAsc.toString());
       return {
         ...state,
-        isAsc: isAsc
-      }
+        isAsc,
+      };
+    }
     default:
-      return state
+      return state;
   }
-}
+};
 
-export const reducerLanguage = (state = {}, action) => {
-  return {lang: state.lang}
-}
+export const reducerLanguage = (state = {}) => ({ lang: state.lang });
 
 export default reducers;

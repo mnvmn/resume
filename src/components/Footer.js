@@ -10,13 +10,10 @@ class Footer extends React.Component {
 
     this.state = {
       repo: {},
-      isLoading: false,
     };
   }
 
   componentDidMount() {
-    this.setState({ isLoading: true });
-
     fetch(URL_REPO)
       .then((response) => {
         // console.log(response)
@@ -25,8 +22,8 @@ class Footer extends React.Component {
         }
         throw new Error('fetch repo failed');
       })
-      .then(data => this.setState({ repo: data, isLoading: false }))
-      .catch(error => this.setState({ error, isLoading: false }));
+      .then(data => this.setState({ repo: data }));
+    // .catch(error => console.log(error));
   }
 
   render() {

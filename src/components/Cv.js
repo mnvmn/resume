@@ -24,7 +24,11 @@ class Cv extends React.Component {
 }
 
 Cv.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    info: PropTypes.array,
+    education: PropTypes.array,
+    work: PropTypes.array,
+  }).isRequired,
   isAsc: PropTypes.bool.isRequired,
 };
 

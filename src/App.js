@@ -22,8 +22,8 @@ class App extends Component {
         }
         throw new Error('fetch data failed');
       })
-      .then(data => this.props.dataReceived(data))
-      .catch(error => this.setState({ error }));
+      .then(data => this.props.dataReceived(data));
+    // .catch(error => ));
   }
 
   render() {

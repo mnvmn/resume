@@ -23,7 +23,7 @@ class Controls extends React.Component {
       <ButtonGroup className={groupClass}>
         <Button
           color="primary"
-          outline={true}
+          outline
           size="xs"
           className={btnClass}
           href="https://github.com/mnvmn/resume"
@@ -34,7 +34,7 @@ class Controls extends React.Component {
         </Button>
         <Button
           color="primary"
-          outline={true}
+          outline
           size="xs"
           className={btnClass}
           href="https://github.com/mnvmn/mnvmn.github.io/raw/master/CV_MN.pdf"
@@ -45,7 +45,7 @@ class Controls extends React.Component {
         </Button>
         <Button
           color="primary"
-          outline={true}
+          outline
           size="xs"
           className={btnClass}
           onClick={this.props.toggleOrder}
@@ -58,7 +58,7 @@ class Controls extends React.Component {
         </Button>
         <Button
           color="primary"
-          outline={true}
+          outline
           size="xs"
           className={btnClass}
           onClick={this.props.toggleLang}
