@@ -14,9 +14,9 @@ class PageCv extends React.Component {
     return (
       <div id="pageCv">
         <div>
-          <Navbar color="faded" light={true} className="p-0 d-sm-none justify-content-end">
-            <Collapse isOpen={this.props.navbarOpen} navbar={true}>
-              <Controls isVertical={true} />
+          <Navbar color="faded" light className="p-0 d-sm-none justify-content-end">
+            <Collapse isOpen={this.props.navbarOpen} navbar>
+              <Controls isVertical />
             </Collapse>
             <NavbarToggler onClick={this.props.toggleNavbar} className="mt-2 mr-2" />
           </Navbar>
@@ -41,7 +41,7 @@ class PageCv extends React.Component {
 
 PageCv.propTypes = {
   navbarOpen: PropTypes.bool.isRequired,
-  toggleNavbar: PropTypes.bool.isRequired,
+  toggleNavbar: PropTypes.func.isRequired,
 };
 
 export default connect(reducer, dispatcher)(PageCv);
