@@ -6402,11 +6402,13 @@ input[type=submit] {
 .nnn {
   color: red; }
 
-#logo .title {
-  font-family: 'Nothing You Could Do', cursive;
-  font-size: 2em;
-  color: white;
-  color: #0475dc;
-  -ms-transform: rotate(-2deg);
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg); }
+#logo {
+  padding: 5px 10px; }
+  #logo .title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2em;
+    color: white;
+    color: #0475dc;
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg); }
