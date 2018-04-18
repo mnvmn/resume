@@ -6411,25 +6411,20 @@ input[type=submit] {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-.pageRoll-enter .App {
-  overflow: hidden; }
-
-.pageRoll-enter .page {
-  left: -150%;
+.pageRoll-enter {
+  opacity: 0.01;
   position: absolute;
-  z-index: 100; }
+  width: 100%; }
 
-.pageRoll-enter-active .page {
-  transition: transform 3s;
-  transform: translate(150%, 0); }
+.pageRoll-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-out; }
 
-.pageRoll-exit .App {
-  overflow: hidden; }
+.pageRoll-exit {
+  position: absolute;
+  width: 100%;
+  opacity: 1; }
 
-.pageRoll-exit .page {
-  z-index: 99;
-  position: absolute; }
-
-.pageRoll-exit-active .page {
-  transition: transform 3s;
-  transform: translate(150%, 0); }
+.pageRoll-exit-active {
+  opacity: 0.01;
+  transition: opacity 50ms ease; }
