@@ -1,9 +1,10 @@
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "variables";
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'variables';
 
 #root,
+#root > div,
 .App,
 body,
 html {
@@ -42,7 +43,6 @@ footer#footer {
   color: $footer-color;
 }
 
-
 .row {
   margin-bottom: 8px;
 }
@@ -53,4 +53,17 @@ h3,
 h4,
 h5 {
   font-weight: bold;
+}
+
+#logo {
+  padding: 5px 10px;
+  .title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2em;
+    color: white;
+    color: #0475dc;
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
 }

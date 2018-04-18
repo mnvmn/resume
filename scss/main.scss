@@ -1,28 +1,31 @@
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "variables";
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "page";
-@import "btns";
-@import "utils";
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'variables';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'page';
+@import 'btns';
+@import 'utils';
+@import 'animation';
 
-.nnn {
-  color: red;
+.pageRoll-enter {
+  opacity: 0.01;
+  position: absolute;
+  width: 100%;
 }
 
+.pageRoll-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-out;
+}
 
-#logo {
-  // position: absolute;
-  padding: 5px 10px;
-  .title {
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 2em;
-    color: white;
-    color: #0475dc;
-    // background-color: #0475dc;
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg);
-  }
+.pageRoll-exit {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+}
+
+.pageRoll-exit-active {
+  opacity: 0.01;
+  transition: opacity 50ms ease;
 }

@@ -18,10 +18,11 @@ const defaultState = {
     info: [],
     education: [],
     work: [],
+    contact: [],
   },
   isLoading: false,
-  navbarOpen: settings.isAsc !== null ? settings.navbarOpen : false,
-  isAsc: settings.isAsc !== null ? settings.isAsc : true,
+  navbarOpen: settings.isAsc !== null ? !!settings.navbarOpen : false,
+  isAsc: settings.isAsc !== null ? !!settings.isAsc : true,
   lang: settings.lang !== null ? settings.lang : 'en',
 };
 
