@@ -152,8 +152,8 @@
       "value": "Lomnido GmbH",
       "projects": [{
           "project": {
-            "en": "Frontend layer implementation for data integration application. Rewrite into single page application",
-            "sk": "Implementácia frontendovej vrstvy pre data-integračnú applikáciu. Prepísanie do single page applikácie"
+            "en": "Presentation layer implementation for data integration application. Rewrite into SPA",
+            "sk": "Implementácia prezentačnej vrstvy pre data-integračnú applikáciu. Prepísanie do single page applikácie"
           },
           "skill": "Grails, Groovy, Backbone.js, Marionette.js, Bootstrap 4, Datatables, jsPlumb, Node, Sass"
         },

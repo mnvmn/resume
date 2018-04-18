@@ -21,6 +21,13 @@ a.btn-link:focus,
 a.btn-link:visited {
   text-decoration: none;
 }
+.btn-link{
+  font-size: 0.9em
+}
+.btn-link:hover{
+  text-decoration: underline !important;
+  color: lighten($secondary, 7%) !important;
+}
 
 .btn,
 button {

@@ -19,11 +19,13 @@
   transition: opacity 200ms ease-out;
 }
 
+
 .pageRoll-exit {
   position: absolute;
   width: 100%;
   opacity: 1;
 }
+
 
 .pageRoll-exit-active {
   opacity: 0.01;
