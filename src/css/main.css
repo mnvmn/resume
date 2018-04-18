@@ -6245,6 +6245,7 @@ a.text-label:hover, a.text-label:focus {
     border: 1px solid #ddd !important; } }
 
 #root,
+#root > div,
 .App,
 body,
 html {
@@ -6285,19 +6286,16 @@ h4,
 h5 {
   font-weight: bold; }
 
-.fade-enter {
-  opacity: 0.01; }
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in; }
-
-.fade-exit {
-  opacity: 1; }
-
-.fade-exit-active {
-  opacity: 0.01;
-  transition: opacity 500ms ease-in; }
+#logo {
+  padding: 5px 10px; }
+  #logo .title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2em;
+    color: white;
+    color: #0475dc;
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg); }
 
 .btn-group-xs > .btn,
 .btn.btn-xs {
@@ -6413,30 +6411,12 @@ input[type=submit] {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-.pageRoll-enter {
-  opacity: 0.01; }
-
-.pageRoll-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in; }
-
-.pageRoll-exit {
-  opacity: 1; }
-
-.pageRoll-exit-active {
-  opacity: 0.01;
-  transition: opacity 500ms ease-in; }
-
 .nnn {
   color: red; }
 
-#logo {
-  padding: 5px 10px; }
-  #logo .title {
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 2em;
-    color: white;
-    color: #0475dc;
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg); }
+.pageRoll-enter {
+  left: 50%;
+  position: absolute; }
+
+.pageRoll-exit {
+  display: none; }

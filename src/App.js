@@ -29,23 +29,23 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App  d-flex flex-column">
-        <BrowserRouter>
-          <Route
-            render={({ location }) => (
-              <TransitionGroup>
-                <CSSTransition key={location.key} classNames="pageRoll" timeout={500}>
+      <BrowserRouter>
+        <Route
+          render={({ location }) => (
+            <TransitionGroup>
+              <CSSTransition key={location.key} classNames="pageRoll" timeout={2000}>
+                <div className="App  d-flex flex-column">
                   <Switch location={location}>
                     <Route exact path="/" component={PageCv} />
                     <Route exact path="/poster" component={PagePoster} />
                   </Switch>
-                </CSSTransition>
-              </TransitionGroup>
-            )}
-          />
-        </BrowserRouter>
-        <Footer />
-      </div>
+                  <Footer />
+                </div>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
+      </BrowserRouter>
     );
   }
 }

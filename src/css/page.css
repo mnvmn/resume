@@ -1,4 +1,5 @@
 #root,
+#root > div,
 .App,
 body,
 html {
@@ -39,16 +40,13 @@ h4,
 h5 {
   font-weight: bold; }
 
-.fade-enter {
-  opacity: 0.01; }
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in; }
-
-.fade-exit {
-  opacity: 1; }
-
-.fade-exit-active {
-  opacity: 0.01;
-  transition: opacity 500ms ease-in; }
+#logo {
+  padding: 5px 10px; }
+  #logo .title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2em;
+    color: white;
+    color: #0475dc;
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg); }

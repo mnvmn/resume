@@ -1,30 +1,46 @@
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "variables";
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "page";
-@import "btns";
-@import "utils";
-@import "animation";
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'variables';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'page';
+@import 'btns';
+@import 'utils';
+@import 'animation';
 
 .nnn {
   color: red;
 }
 
-
-
-#logo {
-  // position: absolute;
-  padding: 5px 10px;
-  .title {
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 2em;
-    color: white;
-    color: #0475dc;
-    // background-color: #0475dc;
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg);
-  }
+.pageRoll-enter {
+  // opacity: 0.01;
+  // transform-origin: 0 0;
+  // transition: transform 1s;
+  // transform: translate(-100%, 0);
+  left: 50%;
+  position: absolute;
 }
+.pageRoll-enter-active {
+  // transition: transform 1s;
+  // transform: translate(100%, 0);
+  // opacity: 1;
+  // transition: opacity 500ms ease-in;
+}
+.pageRoll-exit {
+  // opacity: 1;
+  //transform-origin: left top;
+  // left: -100%;
+  display: none;
+}
+
+.pageRoll-exit-active {
+  // transform-origin: 0 0;
+  // transition: transform 1s;
+  // transform: translate(100%, 0);
+}
+
+
+// .App {
+//   overflow-y: scroll;
+//   overflow-x: hidden;
+// }

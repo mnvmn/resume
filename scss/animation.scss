@@ -2,20 +2,3 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "variables";
-
-
-.pageRoll-enter {
-  opacity: 0.01;
-}
-.pageRoll-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-.pageRoll-exit {
-  opacity: 1;
-}
-
-.pageRoll-exit-active {
-  opacity: 0.01;
-  transition: opacity 500ms ease-in;
-}
