@@ -6285,6 +6285,20 @@ h4,
 h5 {
   font-weight: bold; }
 
+.fade-enter {
+  opacity: 0.01; }
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in; }
+
+.fade-exit {
+  opacity: 1; }
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in; }
+
 .btn-group-xs > .btn,
 .btn.btn-xs {
   padding: 5px 10px;
@@ -6398,6 +6412,20 @@ input[type=submit] {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
+
+.pageRoll-enter {
+  opacity: 0.01; }
+
+.pageRoll-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in; }
+
+.pageRoll-exit {
+  opacity: 1; }
+
+.pageRoll-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in; }
 
 .nnn {
   color: red; }
