@@ -16,9 +16,12 @@ class Str extends React.Component {
         initialIndex += text.length + link.length;
 
         buff.push(<span key={`${link}a`}>{text}</span>);
-        buff.push(<a className="btn-link" key={`${link}`} target="_blank" href={`http://${link}`}>
-          {link}
-                  </a>);
+        const aa = (
+          <a className="btn-link" key={`${link}`} target="_blank" href={`http://${link}`}>
+            {link}
+          </a>
+        );
+        buff.push(aa);
 
         return buff;
       }, []);
@@ -42,6 +45,14 @@ class Str extends React.Component {
     return <div className={this.props.className}>{finalText}</div>;
   }
 }
+
+export const translation = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.shape({
+    en: PropTypes.string,
+    sk: PropTypes.string,
+  }),
+]);
 
 Str.defaultProps = {
   className: '',
