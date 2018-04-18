@@ -14,7 +14,7 @@ class Cv extends React.Component {
       <div className="cv-container">
         <Container>
           <h3 className="text-center text-dark mt-2 mb-4">CV</h3>
-          <TableInfo data={data.info} isAsc />
+          <TableInfo data={data.info} />
           <TableInfo data={data.education} title={msgs.title.education} isAsc={this.props.isAsc} />
           <TableInfo data={data.work} title={msgs.title.work} isAsc={this.props.isAsc} />
         </Container>

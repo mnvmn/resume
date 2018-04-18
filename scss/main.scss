@@ -8,39 +8,37 @@
 @import 'utils';
 @import 'animation';
 
-.nnn {
-  color: red;
-}
-
 .pageRoll-enter {
-  // opacity: 0.01;
-  // transform-origin: 0 0;
-  // transition: transform 1s;
-  // transform: translate(-100%, 0);
-  left: 50%;
-  position: absolute;
+  .App {
+    overflow: hidden;
+  }
+  .page {
+    // opacity: 0.01;
+    // transform-origin: 0 0;
+    // transition: transform 1s;
+    // transform: translate(-100%, 0);
+    left: -150%;
+    position: absolute;
+    z-index: 100;
+  }
 }
-.pageRoll-enter-active {
-  // transition: transform 1s;
-  // transform: translate(100%, 0);
-  // opacity: 1;
-  // transition: opacity 500ms ease-in;
+.pageRoll-enter-active .page {
+  transition: transform 3s;
+  transform: translate(150%, 0);
 }
 .pageRoll-exit {
-  // opacity: 1;
-  //transform-origin: left top;
-  // left: -100%;
-  display: none;
+  .App {
+    overflow: hidden;
+  }
+  .page {
+    z-index: 99;
+    position: absolute;
+    // display: none;
+  }
 }
 
-.pageRoll-exit-active {
+.pageRoll-exit-active .page {
   // transform-origin: 0 0;
-  // transition: transform 1s;
-  // transform: translate(100%, 0);
+  transition: transform 3s;
+  transform: translate(150%, 0);
 }
-
-
-// .App {
-//   overflow-y: scroll;
-//   overflow-x: hidden;
-// }

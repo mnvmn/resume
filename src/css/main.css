@@ -6411,12 +6411,25 @@ input[type=submit] {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-.nnn {
-  color: red; }
+.pageRoll-enter .App {
+  overflow: hidden; }
 
-.pageRoll-enter {
-  left: 50%;
+.pageRoll-enter .page {
+  left: -150%;
+  position: absolute;
+  z-index: 100; }
+
+.pageRoll-enter-active .page {
+  transition: transform 3s;
+  transform: translate(150%, 0); }
+
+.pageRoll-exit .App {
+  overflow: hidden; }
+
+.pageRoll-exit .page {
+  z-index: 99;
   position: absolute; }
 
-.pageRoll-exit {
-  display: none; }
+.pageRoll-exit-active .page {
+  transition: transform 3s;
+  transform: translate(150%, 0); }

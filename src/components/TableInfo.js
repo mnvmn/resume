@@ -55,15 +55,16 @@ export default class TableInfo extends React.Component {
 }
 
 TableInfo.propTypes = {
-  isAsc: PropTypes.bool.isRequired,
+  isAsc: PropTypes.bool,
   title: translation,
-  data: PropTypes.shape({
+  data: PropTypes.arrayOf(PropTypes.shape({
     label: translation,
     value: translation,
     projects,
-  }).isRequired,
+  })).isRequired,
 };
 
 TableInfo.defaultProps = {
   title: '',
+  isAsc: false,
 };

@@ -12,7 +12,7 @@ import ControlFlipPage from './../components/ControlFlipPage';
 class PageCv extends React.Component {
   render() {
     return (
-      <div id="pageCv">
+      <div id="pageCv" className="page">
         <div>
           <Navbar color="faded" light className="p-0 d-sm-none justify-content-end">
             <Collapse isOpen={this.props.navbarOpen} navbar>
