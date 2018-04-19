@@ -49,7 +49,7 @@
     {
       "label": {
         "en": "Phone",
-        "sk": "Telefonický kontakt"
+        "sk": "Telefónne číslo"
       },
       "value": "+421 948 194 195"
     }
@@ -100,15 +100,15 @@
       "value": "freelance",
       "projects": [{
           "project": {
-            "en": "Theme implementation for portal www.ghmp.cz",
-            "sk": "Implementácia témy portálu www.ghmp.cz"
+            "en": "Development of theme for portal www.ghmp.cz",
+            "sk": "Development témy portálu www.ghmp.cz"
           },
           "skill": "Liferay, java, css"
         },
         {
           "project": {
             "en": "CMS customization, development and deployment www.volis.sk …",
-            "sk": "Konfigurácia, development a deployment CMS www.volis.sk …"
+            "sk": "Konfigurácia, vývoj a nasadenie CMS www.volis.sk …"
           },
           "skill": "Drupal, php, js, css"
         }
@@ -119,29 +119,29 @@
       "value": "Accenture s.r.o.",
       "projects": [{
           "project": {
-            "en": "Continuous delivery of components for Achmea (agile team)",
-            "sk": "Continuous delivery komponentov pre Achmea (agilný tím)"
+            "en": "Continuous delivery of components for Achmea",
+            "sk": "Agilný vývoj komponentov pre Achmea"
           },
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
           "project": {
-            "en": "Internal information portal development and deployment",
-            "sk": "Development a deployment interného informačného portálu"
+            "en": "Development and deployment of internal information portal",
+            "sk": "Vývoj a nasadenie interného informačného portálu"
           },
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
           "project": {
-            "en": "Implementation of dashbord for TDC call center (agile team)",
-            "sk": "Implementácia dashbordu pre call center TDC (agilný tím)"
+            "en": "Implementation of call center dashbord for TDC",
+            "sk": "Implementácia dashbordu pre TDC support centrum"
           },
           "skill": "SharePoint, ASP.Net, js, css"
         },
         {
           "project": {
-            "en": "Pre-launch development of global website www.husqvarna.com (agile team)",
-            "sk": "Development globálneho webu www.husqvarna.com (agilný tím) "
+            "en": "Pre-launch development of global portal www.husqvarna.com",
+            "sk": "Predprodukčný vývoj globálneho portálu www.husqvarna.com"
           },
           "skill": "Sitecore, ASP.Net, js, css"
         }
@@ -152,22 +152,22 @@
       "value": "Lomnido GmbH",
       "projects": [{
           "project": {
-            "en": "Presentation layer implementation for data integration application. Rewrite into SPA",
-            "sk": "Implementácia prezentačnej vrstvy pre data-integračnú applikáciu. Prepísanie do single page applikácie"
+            "en": "Development of presentation layer for data integration application. Rewrite into SPA",
+            "sk": "Development prezentačnej vrstvy pre data integračnú applikáciu. Prepísanie do single page aplikácie"
           },
           "skill": "Grails, Groovy, Backbone.js, Marionette.js, Bootstrap 4, Datatables, jsPlumb, Node, Sass"
         },
         {
           "project": {
-            "en": "Full stack application for monitoring of projects",
-            "sk": "Full stack aplikácia pre monitorovanie projektov"
+            "en": "Implementation of full stack application for monitoring of projects",
+            "sk": "Implementácia full stack aplikácie pre monitorovanie projektov"
           },
           "skill": "Grails, Groovy, Angular.js, Bootstrap 3, Datatables"
         },
         {
           "project": {
-            "en": "Client side application for server and network configuration",
-            "sk": "Client side aplikácia pre konfiguráciu serveru a siete"
+            "en": "Implementation of client side application for server and network configuration",
+            "sk": "Implementácia browserovej aplikácia pre konfiguráciu serveru a siete"
           },
           "skill": "Grails, Groovy, Angular.js, Bootstrap 3, Datatables"
         }

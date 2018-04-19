@@ -7,6 +7,10 @@
     "work": {
       "en": "work experience",
       "sk": "zamestnanie"
+    },
+    "contact": {
+      "en": "contact",
+      "sk": "kontakt"
     }
   },
   "btns": {

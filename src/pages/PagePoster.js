@@ -8,6 +8,8 @@ import reducer from './../store/reducers';
 import Logo from './../components/Logo';
 import ControlFlipPage from './../components/ControlFlipPage';
 import Str from './../components/Str';
+import msgs from './../translations.json';
+
 
 class PagePoster extends React.Component {
   render() {
@@ -22,13 +24,13 @@ class PagePoster extends React.Component {
         </Link>
 
         <Container style={{ marginTop: '60px' }}>
-          <h3 className="text-center text-dark mt-2 mb-4">CONTACT</h3>
+          <h3 className="text-center text-dark mt-2 mb-4 text-uppercase"><Str msg={msgs.title.contact} /></h3>
           {data.contact.map(info => (
-            <Row key={Math.random()}>
-              <Col xs="5" lg="4" className="text-dark">
+            <Row key={Math.random()} className="justify-content-center">
+              <Col xs="5" md="3" className="text-dark">
                 <Str msg={info.label} />
               </Col>
-              <Col xs="7" lg="8" className="text-dark">
+              <Col xs="7" md="5" lg="4" className="text-dark">
                 <Str msg={info.value} />
               </Col>
             </Row>
