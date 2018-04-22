@@ -124,3 +124,28 @@ input[type=submit] {
     border-left-width: 0;
   }
 }
+
+@include media-breakpoint-up(lg) {
+  .control-flipPage-left{
+    left: 100px;
+  }
+  .control-flipPage-right {
+    right: 100px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .control-flipPage-left{
+    left: 130px;
+  }
+  .control-flipPage-right {
+    right: 130px;
+  }
+}
+@include media-breakpoint-up(xxl) {
+  .control-flipPage-left{
+    left: 170px;
+  }
+  .control-flipPage-right {
+    right: 170px;
+  }
+}

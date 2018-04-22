@@ -28,7 +28,8 @@ footer#footer {
 
 #bootstrap-grid-util {
   left: 20px;
-  color: #f5f5f5; }
+  color: #f5f5f5;
+  display: block; }
 
 .row {
   margin-bottom: 8px; }

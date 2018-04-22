@@ -97,3 +97,21 @@ input[type=submit] {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left-width: 0; }
+
+@media (min-width: 992px) {
+  .control-flipPage-left {
+    left: 100px; }
+  .control-flipPage-right {
+    right: 100px; } }
+
+@media (min-width: 1050px) {
+  .control-flipPage-left {
+    left: 130px; }
+  .control-flipPage-right {
+    right: 130px; } }
+
+@media (min-width: 1200px) {
+  .control-flipPage-left {
+    left: 170px; }
+  .control-flipPage-right {
+    right: 170px; } }
