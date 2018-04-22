@@ -8,6 +8,7 @@ import reducer from './store/reducers';
 import PageCv from './pages/PageCv';
 import PagePoster from './pages/PagePoster';
 import Footer from './components/Footer';
+import GridUtil from './components/GridUtil';
 import './css/main.css';
 
 // import Logo from './components/Logo';
@@ -30,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App  d-flex flex-column">
+        <GridUtil />
         <BrowserRouter>
           <Route
             render={({ location }) => (

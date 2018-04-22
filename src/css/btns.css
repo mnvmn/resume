@@ -86,32 +86,34 @@ input[type=submit] {
 
 .control-flipPage-right {
   right: 0; }
+
+.control-flipPage-left {
+  left: 0; }
+
+@media (max-width: 949.98px) {
   .control-flipPage-right .btn {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right-width: 0; }
-
-.control-flipPage-left {
-  left: 0; }
   .control-flipPage-left .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-left-width: 0; }
+    border-left-width: 0; } }
 
-@media (min-width: 992px) {
+@media (min-width: 950px) {
   .control-flipPage-left {
-    left: 100px; }
+    left: 30px; }
   .control-flipPage-right {
-    right: 100px; } }
+    right: 30px; } }
 
 @media (min-width: 1050px) {
   .control-flipPage-left {
-    left: 130px; }
+    left: 50px; }
   .control-flipPage-right {
-    right: 130px; } }
+    right: 50px; } }
 
 @media (min-width: 1200px) {
   .control-flipPage-left {
-    left: 170px; }
+    left: 120px; }
   .control-flipPage-right {
-    right: 170px; } }
+    right: 120px; } }

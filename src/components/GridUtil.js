@@ -8,7 +8,8 @@ class GridUtil extends React.Component {
         <span className="d-none d-sm-block d-md-none">SM</span>
         <span className="d-none d-md-block d-lg-none">MD</span>
         <span className="d-none d-lg-block d-xl-none">LG</span>
-        <span className="d-none d-xl-block">XL</span>
+        <span className="d-none d-xl-block d-xxl-none">XL</span>
+        <span className="d-none d-xxl-block">XXL</span>
       </div>
     );
   }

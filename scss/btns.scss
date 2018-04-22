@@ -99,7 +99,6 @@ input[type=submit] {
   outline: none;
 }
 
-
 .control-flipPage-left,
 .control-flipPage-right {
   top: 200px;
@@ -109,43 +108,50 @@ input[type=submit] {
 
 .control-flipPage-right {
   right: 0;
-  .btn {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right-width: 0;
-  }
 }
 
 .control-flipPage-left {
   left: 0;
-  .btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left-width: 0;
+}
+
+@include media-breakpoint-down(md) {
+  .control-flipPage-right {
+    .btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right-width: 0;
+    }
+  }
+  .control-flipPage-left {
+    .btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left-width: 0;
+    }
   }
 }
 
 @include media-breakpoint-up(lg) {
   .control-flipPage-left{
-    left: 100px;
+    left: 30px;
   }
   .control-flipPage-right {
-    right: 100px;
+    right: 30px;
   }
 }
 @include media-breakpoint-up(xl) {
   .control-flipPage-left{
-    left: 130px;
+    left: 50px;
   }
   .control-flipPage-right {
-    right: 130px;
+    right: 50px;
   }
 }
 @include media-breakpoint-up(xxl) {
   .control-flipPage-left{
-    left: 170px;
+    left: 120px;
   }
   .control-flipPage-right {
-    right: 170px;
+    right: 120px;
   }
 }
