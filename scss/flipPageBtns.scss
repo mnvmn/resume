@@ -3,9 +3,14 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "variables";
 
+.btn-vertical {
+  height: 100px;
+}
+
 .control-flipPage-left,
 .control-flipPage-right {
   top: 200px;
+  top: 40vh;
   position: absolute;
   z-index: 100;
 }

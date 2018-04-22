@@ -3,6 +3,7 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "variables";
 
+
 .btn-group-xs > .btn,
 .btn.btn-xs {
   padding: 5px 10px;
@@ -69,13 +70,13 @@ button {
   }
 }
 
-.btn-vertical {
-  height: 100px;
-}
-
 .btn.btn-context {
   // background-color: darken($gray-100, 5%) !important;
   background-color: $footer-color !important;
+  color: $gray-600 !important;
+  &:hover{
+    color: darken($gray-600, 2%) !important;
+  }
 }
 
 .btn,
@@ -99,59 +100,6 @@ input[type=submit] {
   outline: none;
 }
 
-.control-flipPage-left,
-.control-flipPage-right {
-  top: 200px;
-  position: absolute;
-  z-index: 100;
-}
-
-.control-flipPage-right {
-  right: 0;
-}
-
-.control-flipPage-left {
-  left: 0;
-}
-
-@include media-breakpoint-down(md) {
-  .control-flipPage-right {
-    .btn {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-right-width: 0;
-    }
-  }
-  .control-flipPage-left {
-    .btn {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-left-width: 0;
-    }
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .control-flipPage-left{
-    left: 30px;
-  }
-  .control-flipPage-right {
-    right: 30px;
-  }
-}
-@include media-breakpoint-up(xl) {
-  .control-flipPage-left{
-    left: 50px;
-  }
-  .control-flipPage-right {
-    right: 50px;
-  }
-}
-@include media-breakpoint-up(xxl) {
-  .control-flipPage-left{
-    left: 120px;
-  }
-  .control-flipPage-right {
-    right: 120px;
-  }
+.btn-vertical {
+  height: 100px;
 }

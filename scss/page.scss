@@ -16,7 +16,7 @@ body {
   background-color: white;
 }
 
-.cv-container {
+#cv-container {
   h3 {
     font-size: 1.6em;
   }
@@ -36,12 +36,6 @@ footer#footer {
   border-top: 1px solid darken($footer-color, 3%);
   background-color: $footer-color;
   z-index: 10;
-}
-
-#bootstrap-grid-util {
-  left: 20px;
-  color: $gray-400;
-  display: block
 }
 
 .row {
@@ -67,4 +61,10 @@ h5 {
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
   }
+}
+
+#bootstrap-grid-util {
+  left: 20px;
+  color: $gray-400;
+  display: none
 }

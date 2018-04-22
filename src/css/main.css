@@ -26,7 +26,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-  --context: #adb5bd;
+  --context: #dee2e6;
   --label: #324354;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -1270,13 +1270,13 @@ pre {
 .table-context,
 .table-context > th,
 .table-context > td {
-  background-color: #e8eaed; }
+  background-color: #f6f7f8; }
 
 .table-hover .table-context:hover {
-  background-color: #dadde2; }
+  background-color: #e8eaed; }
   .table-hover .table-context:hover > td,
   .table-hover .table-context:hover > th {
-    background-color: #dadde2; }
+    background-color: #e8eaed; }
 
 .table-label,
 .table-label > th,
@@ -1953,26 +1953,26 @@ fieldset:disabled a.btn {
 
 .btn-context {
   color: #212529;
-  background-color: #adb5bd;
-  border-color: #adb5bd; }
+  background-color: #dee2e6;
+  border-color: #dee2e6; }
   .btn-context:hover {
     color: #212529;
-    background-color: #98a2ac;
-    border-color: #919ca6; }
+    background-color: #c8cfd6;
+    border-color: #c1c9d0; }
   .btn-context:focus, .btn-context.focus {
-    box-shadow: 0 0 0 0.2rem rgba(173, 181, 189, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(222, 226, 230, 0.5); }
   .btn-context.disabled, .btn-context:disabled {
     color: #212529;
-    background-color: #adb5bd;
-    border-color: #adb5bd; }
+    background-color: #dee2e6;
+    border-color: #dee2e6; }
   .btn-context:not(:disabled):not(.disabled):active, .btn-context:not(:disabled):not(.disabled).active,
   .show > .btn-context.dropdown-toggle {
     color: #212529;
-    background-color: #919ca6;
-    border-color: #8a95a1; }
+    background-color: #c1c9d0;
+    border-color: #bac2cb; }
     .btn-context:not(:disabled):not(.disabled):active:focus, .btn-context:not(:disabled):not(.disabled).active:focus,
     .show > .btn-context.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(173, 181, 189, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(222, 226, 230, 0.5); }
 
 .btn-label {
   color: #fff;
@@ -2182,27 +2182,27 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-outline-context {
-  color: #adb5bd;
+  color: #dee2e6;
   background-color: transparent;
   background-image: none;
-  border-color: #adb5bd; }
+  border-color: #dee2e6; }
   .btn-outline-context:hover {
     color: #212529;
-    background-color: #adb5bd;
-    border-color: #adb5bd; }
+    background-color: #dee2e6;
+    border-color: #dee2e6; }
   .btn-outline-context:focus, .btn-outline-context.focus {
-    box-shadow: 0 0 0 0.2rem rgba(173, 181, 189, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(222, 226, 230, 0.5); }
   .btn-outline-context.disabled, .btn-outline-context:disabled {
-    color: #adb5bd;
+    color: #dee2e6;
     background-color: transparent; }
   .btn-outline-context:not(:disabled):not(.disabled):active, .btn-outline-context:not(:disabled):not(.disabled).active,
   .show > .btn-outline-context.dropdown-toggle {
     color: #212529;
-    background-color: #adb5bd;
-    border-color: #adb5bd; }
+    background-color: #dee2e6;
+    border-color: #dee2e6; }
     .btn-outline-context:not(:disabled):not(.disabled):active:focus, .btn-outline-context:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-context.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(173, 181, 189, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(222, 226, 230, 0.5); }
 
 .btn-outline-label {
   color: #324354;
@@ -3557,11 +3557,11 @@ tbody.collapse.show {
 
 .badge-context {
   color: #212529;
-  background-color: #adb5bd; }
+  background-color: #dee2e6; }
   .badge-context[href]:hover, .badge-context[href]:focus {
     color: #212529;
     text-decoration: none;
-    background-color: #919ca6; }
+    background-color: #c1c9d0; }
 
 .badge-label {
   color: #fff;
@@ -3680,13 +3680,13 @@ tbody.collapse.show {
     color: #040505; }
 
 .alert-context {
-  color: #5a5e62;
-  background-color: #eff0f2;
-  border-color: #e8eaed; }
+  color: #737678;
+  background-color: #f8f9fa;
+  border-color: #f6f7f8; }
   .alert-context hr {
-    border-top-color: #dadde2; }
+    border-top-color: #e8eaed; }
   .alert-context .alert-link {
-    color: #424547; }
+    color: #5a5c5e; }
 
 .alert-label {
   color: #1a232c;
@@ -3878,15 +3878,15 @@ tbody.collapse.show {
     border-color: #1b1e21; }
 
 .list-group-item-context {
-  color: #5a5e62;
-  background-color: #e8eaed; }
+  color: #737678;
+  background-color: #f6f7f8; }
   .list-group-item-context.list-group-item-action:hover, .list-group-item-context.list-group-item-action:focus {
-    color: #5a5e62;
-    background-color: #dadde2; }
+    color: #737678;
+    background-color: #e8eaed; }
   .list-group-item-context.list-group-item-action.active {
     color: #fff;
-    background-color: #5a5e62;
-    border-color: #5a5e62; }
+    background-color: #737678;
+    border-color: #737678; }
 
 .list-group-item-label {
   color: #1a232c;
@@ -4477,12 +4477,12 @@ button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
 .bg-context {
-  background-color: #adb5bd !important; }
+  background-color: #dee2e6 !important; }
 
 a.bg-context:hover, a.bg-context:focus,
 button.bg-context:hover,
 button.bg-context:focus {
-  background-color: #919ca6 !important; }
+  background-color: #c1c9d0 !important; }
 
 .bg-label {
   background-color: #324354 !important; }
@@ -4553,7 +4553,7 @@ button.bg-label:focus {
   border-color: #343a40 !important; }
 
 .border-context {
-  border-color: #adb5bd !important; }
+  border-color: #dee2e6 !important; }
 
 .border-label {
   border-color: #324354 !important; }
@@ -6593,10 +6593,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
 .text-context {
-  color: #adb5bd !important; }
+  color: #dee2e6 !important; }
 
 a.text-context:hover, a.text-context:focus {
-  color: #919ca6 !important; }
+  color: #c1c9d0 !important; }
 
 .text-label {
   color: #324354 !important; }
@@ -6679,13 +6679,13 @@ html {
 body {
   background-color: white; }
 
-.cv-container {
+#cv-container {
   padding-top: 30px;
   padding-bottom: 30px; }
-  .cv-container h3 {
+  #cv-container h3 {
     font-size: 1.6em; }
   @media (max-width: 575.98px) {
-    .cv-container {
+    #cv-container {
       padding-top: 0px;
       margin-top: -30px; } }
 
@@ -6695,11 +6695,6 @@ footer#footer {
   z-index: 10; }
   footer#footer > div {
     height: 60px; }
-
-#bootstrap-grid-util {
-  left: 20px;
-  color: #ced4da;
-  display: block; }
 
 .row {
   margin-bottom: 8px; }
@@ -6721,6 +6716,11 @@ h5 {
     -ms-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg); }
+
+#bootstrap-grid-util {
+  left: 20px;
+  color: #ced4da;
+  display: none; }
 
 .btn-group-xs > .btn,
 .btn.btn-xs {
@@ -6777,11 +6777,11 @@ button {
       border-color: #01355e !important;
       color: #012c4f !important; }
 
-.btn-vertical {
-  height: 100px; }
-
 .btn.btn-context {
-  background-color: #f5f5f5 !important; }
+  background-color: #f5f5f5 !important;
+  color: #6c757d !important; }
+  .btn.btn-context:hover {
+    color: #677078 !important; }
 
 .btn,
 button,
@@ -6802,49 +6802,16 @@ input[type=submit] {
 .navbar-toggler {
   outline: none; }
 
-.control-flipPage-left,
-.control-flipPage-right {
-  top: 200px;
-  position: absolute;
-  z-index: 100; }
+.btn-vertical {
+  height: 100px; }
 
-.control-flipPage-right {
-  right: 0; }
-
-.control-flipPage-left {
-  left: 0; }
-
-@media (max-width: 949.98px) {
-  .control-flipPage-right .btn {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right-width: 0; }
-  .control-flipPage-left .btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left-width: 0; } }
-
-@media (min-width: 950px) {
-  .control-flipPage-left {
-    left: 30px; }
-  .control-flipPage-right {
-    right: 30px; } }
-
-@media (min-width: 1050px) {
-  .control-flipPage-left {
-    left: 50px; }
-  .control-flipPage-right {
-    right: 50px; } }
-
-@media (min-width: 1200px) {
-  .control-flipPage-left {
-    left: 120px; }
-  .control-flipPage-right {
-    right: 120px; } }
+.btn-vertical {
+  height: 100px; }
 
 .control-flipPage-left,
 .control-flipPage-right {
   top: 200px;
+  top: 40vh;
   position: absolute;
   z-index: 100; }
 

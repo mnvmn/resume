@@ -22,7 +22,7 @@ $dark: #40454a;
 $dark: #40454a;
 $label: #324354;
 
-$theme-colors: map-merge(("primary": $primary, "secondary": $secondary, "context": $gray-500, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, "label": $label), $theme-colors); // $secondary: #394396;
+$theme-colors: map-merge(("primary": $primary, "secondary": $secondary, "context": $gray-300, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, "label": $label), $theme-colors); // $secondary: #394396;
 // $link-color:                $body-color;
 // $link-color:                #0c1c9a;
 // $link-hover-color:          darken($link-color, 15%);

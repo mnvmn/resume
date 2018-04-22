@@ -9,13 +9,13 @@ html {
 body {
   background-color: white; }
 
-.cv-container {
+#cv-container {
   padding-top: 30px;
   padding-bottom: 30px; }
-  .cv-container h3 {
+  #cv-container h3 {
     font-size: 1.6em; }
   @media (max-width: 575.98px) {
-    .cv-container {
+    #cv-container {
       padding-top: 0px;
       margin-top: -30px; } }
 
@@ -25,11 +25,6 @@ footer#footer {
   z-index: 10; }
   footer#footer > div {
     height: 60px; }
-
-#bootstrap-grid-util {
-  left: 20px;
-  color: #ced4da;
-  display: block; }
 
 .row {
   margin-bottom: 8px; }
@@ -51,3 +46,8 @@ h5 {
     -ms-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg); }
+
+#bootstrap-grid-util {
+  left: 20px;
+  color: #ced4da;
+  display: none; }
