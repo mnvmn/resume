@@ -6913,3 +6913,11 @@ input[type='submit'] {
 .pageRoll-exit-active {
   opacity: 0.01;
   transition: opacity 50ms ease; }
+
+.work .entry {
+  padding-top: 9px;
+  padding-bottom: 7px;
+  border-top: 1px solid #e9ecef; }
+  .work .entry.first {
+    padding-top: 0;
+    border-width: 0; }

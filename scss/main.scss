@@ -30,3 +30,13 @@
   opacity: 0.01;
   transition: opacity 50ms ease;
 }
+
+.work .entry {
+  padding-top: 9px;
+  padding-bottom: 7px;
+  border-top: 1px solid $gray-200;
+  &.first {
+    padding-top: 0;
+    border-width: 0;
+  }
+}
