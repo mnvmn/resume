@@ -18,6 +18,14 @@
       "en": "View Source @github",
       "sk": "Navštív repo @github"
     },
+    "viewContact": {
+      "en": "Contact",
+      "sk": "Kontakt"
+    },
+    "viewCv": {
+      "en": "Back to CV",
+      "sk": "Späť na CV"
+    },
     "downloadPdf": {
       "en": "Download PDF",
       "sk": "Stiahni PDF"

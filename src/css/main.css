@@ -6821,6 +6821,12 @@ input[type=submit] {
 .control-flipPage-left {
   left: 0; }
 
+@media (max-width: 575.98px) {
+  .control-flipPage-right {
+    display: none; }
+  .control-flipPage-left {
+    top: 30px; } }
+
 @media (max-width: 949.98px) {
   .control-flipPage-right .btn {
     border-top-right-radius: 0;
@@ -6847,7 +6853,7 @@ input[type=submit] {
   .control-flipPage-left {
     left: 120px; }
   .control-flipPage-right {
-    right: 120px; } }
+    right: 100px; } }
 
 .text-primary {
   color: #0a67c3 !important; }

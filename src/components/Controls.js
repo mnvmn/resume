@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { ButtonGroup, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as FontAwesome from 'react-icons/lib/fa';
 import msgs from './../translations.json';
@@ -32,6 +33,12 @@ class Controls extends React.Component {
           <FontAwesome.FaCodeFork />
           &nbsp;&nbsp;<Str msg={msgs.btns.viewSource} />
         </Button>
+        {this.props.isVertical && (
+          <Link to="/poster" className={`${btnClass} btn btn-outline-primary btn-xs`}>
+            <FontAwesome.FaMobile />
+            &nbsp;&nbsp;<Str msg={msgs.btns.viewContact} />
+          </Link>
+        )}
         <Button
           color="primary"
           outline

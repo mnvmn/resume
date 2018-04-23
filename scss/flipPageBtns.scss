@@ -23,6 +23,15 @@
   left: 0;
 }
 
+@include media-breakpoint-down(xs) {
+  .control-flipPage-right {
+    display: none;
+  }
+  .control-flipPage-left {
+    top: 30px;
+  }
+}
+
 @include media-breakpoint-down(md) {
   .control-flipPage-right {
     .btn {
@@ -61,6 +70,6 @@
     left: 120px;
   }
   .control-flipPage-right {
-    right: 120px;
+    right: 100px;
   }
 }
