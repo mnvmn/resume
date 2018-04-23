@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';
 import Logo from './../components/Logo';
+import Scene from './../components/Scene';
 import ControlFlipPage from './../components/ControlFlipPage';
 import Str from './../components/Str';
 import msgs from './../translations.json';
@@ -36,6 +37,7 @@ class PagePoster extends React.Component {
             </Row>
           ))}
         </Container>
+        <Scene />
       </div>
     );
   }
