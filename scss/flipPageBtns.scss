@@ -1,7 +1,7 @@
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "variables";
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'variables';
 
 .btn-vertical {
   height: 100px;
@@ -28,7 +28,14 @@
     display: none;
   }
   .control-flipPage-left {
-    top: 30px;
+    top: 0px;
+    .btn {
+      background-color: $footer-color !important;
+      border-color: $gray-300 !important;
+    }
+  }
+  .btn-vertical {
+    height: 45px;
   }
 }
 
@@ -50,7 +57,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .control-flipPage-left{
+  .control-flipPage-left {
     left: 30px;
   }
   .control-flipPage-right {
@@ -58,7 +65,7 @@
   }
 }
 @include media-breakpoint-up(xl) {
-  .control-flipPage-left{
+  .control-flipPage-left {
     left: 50px;
   }
   .control-flipPage-right {
@@ -66,7 +73,7 @@
   }
 }
 @include media-breakpoint-up(xxl) {
-  .control-flipPage-left{
+  .control-flipPage-left {
     left: 120px;
   }
   .control-flipPage-right {

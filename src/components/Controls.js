@@ -16,6 +16,7 @@ class Controls extends React.Component {
     const groupClass = `d-flex${
       this.props.isVertical ? ' btn-group-vertical rounded-0' : ' ml-auto justify-content-end'
     }`;
+    const btnSize = this.props.isVertical ? 'sm' : 'xs';
     const btnClass = `d-flex align-items-center${
       this.props.isVertical ? ' btn-block rounded-0' : ''
     }`;
@@ -25,7 +26,7 @@ class Controls extends React.Component {
         <Button
           color="primary"
           outline
-          size="xs"
+          size={btnSize}
           className={btnClass}
           href="https://github.com/mnvmn/resume"
           target="_blank"
@@ -34,7 +35,7 @@ class Controls extends React.Component {
           &nbsp;&nbsp;<Str msg={msgs.btns.viewSource} />
         </Button>
         {this.props.isVertical && (
-          <Link to="/poster" className={`${btnClass} btn btn-outline-primary btn-xs`}>
+          <Link to="/poster" className={`btn btn-${btnSize} btn-outline-primary ${btnClass}`}>
             <FontAwesome.FaMobile />
             &nbsp;&nbsp;<Str msg={msgs.btns.viewContact} />
           </Link>
@@ -42,7 +43,7 @@ class Controls extends React.Component {
         <Button
           color="primary"
           outline
-          size="xs"
+          size={btnSize}
           className={btnClass}
           href="https://github.com/mnvmn/mnvmn.github.io/raw/master/CV_MN.pdf"
           target="_blank"
@@ -53,7 +54,7 @@ class Controls extends React.Component {
         <Button
           color="primary"
           outline
-          size="xs"
+          size={btnSize}
           className={btnClass}
           onClick={this.props.toggleOrder}
         >
@@ -66,7 +67,7 @@ class Controls extends React.Component {
         <Button
           color="primary"
           outline
-          size="xs"
+          size={btnSize}
           className={btnClass}
           onClick={this.props.toggleLang}
         >

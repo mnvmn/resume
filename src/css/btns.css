@@ -41,6 +41,19 @@ button {
     button.btn-outline-primary:hover {
       border-color: #095aab !important;
       color: #095db0 !important; }
+    @media (max-width: 575.98px) {
+      .btn.btn-outline-primary,
+      button.btn-outline-primary {
+        border-left-width: 0;
+        border-right-width: 0;
+        background-color: #f5f5f5 !important; }
+        .btn.btn-outline-primary:first-child,
+        button.btn-outline-primary:first-child {
+          border-top-width: 0; }
+        .btn.btn-outline-primary, .btn.btn-outline-primary:hover,
+        button.btn-outline-primary,
+        button.btn-outline-primary:hover {
+          border-color: #dee2e6 !important; } }
   .btn.btn-outline-secondary,
   button.btn-outline-secondary {
     border-color: #01579b !important;
@@ -61,13 +74,13 @@ button {
 
 .btn,
 button,
-input[type=submit] {
+input[type='submit'] {
   cursor: pointer !important; }
   .btn.disabled, .btn:disabled,
   button.disabled,
   button:disabled,
-  input[type=submit].disabled,
-  input[type=submit]:disabled {
+  input[type='submit'].disabled,
+  input[type='submit']:disabled {
     cursor: default !important; }
 
 @media (max-width: 575.98px) {
@@ -76,7 +89,9 @@ input[type=submit] {
     width: 100%; } }
 
 .navbar-toggler {
-  outline: none; }
+  background-color: #f5f5f5 !important; }
+  .navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus, .navbar-toggler:hover {
+    outline: none !important; }
 
 .btn-vertical {
   height: 100px; }

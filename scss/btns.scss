@@ -1,8 +1,7 @@
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "variables";
-
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'variables';
 
 .btn-group-xs > .btn,
 .btn.btn-xs {
@@ -22,10 +21,10 @@ a.btn-link:focus,
 a.btn-link:visited {
   text-decoration: none;
 }
-.btn-link{
-  font-size: 0.9em
+.btn-link {
+  font-size: 0.9em;
 }
-.btn-link:hover{
+.btn-link:hover {
   text-decoration: underline !important;
   color: lighten($secondary, 7%) !important;
 }
@@ -47,12 +46,23 @@ button {
 
   &.btn-outline-primary {
     transition: none;
-    border-color: #378fe7!important;
+    border-color: #378fe7 !important;
     color: #1976d2;
-
     &:hover {
       border-color: darken($primary, 5%) !important;
       color: darken($primary, 4%) !important;
+    }
+
+    @include media-breakpoint-down(xs) {
+      border-left-width: 0;
+      border-right-width: 0;
+      background-color: $footer-color  !important;
+      &:first-child{
+        border-top-width: 0;
+      }
+      &, &:hover {
+        border-color: $gray-300 !important;
+      }
     }
   }
 
@@ -74,14 +84,14 @@ button {
   // background-color: darken($gray-100, 5%) !important;
   background-color: $footer-color !important;
   color: $gray-600 !important;
-  &:hover{
+  &:hover {
     color: darken($gray-600, 2%) !important;
   }
 }
 
 .btn,
 button,
-input[type=submit] {
+input[type='submit'] {
   cursor: pointer !important;
 
   &.disabled,
@@ -97,7 +107,14 @@ input[type=submit] {
 }
 
 .navbar-toggler {
-  outline: none;
+  background-color: $footer-color  !important;
+  
+  &,
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none !important;
+  }
 }
 
 .btn-vertical {
