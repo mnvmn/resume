@@ -39,7 +39,7 @@ class App extends Component {
                 <CSSTransition key={location.key} classNames="pageRoll" timeout={200}>
                   <Switch location={location}>
                     <Route exact path="/" component={PageCv} />
-                    <Route exact path="/poster" component={PagePoster} />
+                    <Route exact path="/contact" component={PagePoster} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

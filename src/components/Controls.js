@@ -35,7 +35,7 @@ class Controls extends React.Component {
           &nbsp;&nbsp;<Str msg={msgs.btns.viewSource} />
         </Button>
         {this.props.isVertical && (
-          <Link to="/poster" className={`btn btn-${btnSize} btn-outline-primary ${btnClass}`}>
+          <Link to="/contact" className={`btn btn-${btnSize} btn-outline-primary ${btnClass}`}>
             <FontAwesome.FaMobile />
             &nbsp;&nbsp;<Str msg={msgs.btns.viewContact} />
           </Link>
