@@ -6901,7 +6901,7 @@ input[type='submit'] {
 
 .pageRoll-enter-active {
   opacity: 1;
-  transition: opacity 300ms ease-out; }
+  transition: opacity 200ms ease-out; }
 
 .pageRoll-exit {
   display: none;
