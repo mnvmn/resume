@@ -7,9 +7,6 @@ import Str, { translation } from './Str';
 export default class TableInfo extends React.Component {
   render() {
     const isAsc = this.props.isAsc === 'undefined' || this.props.isAsc;
-    // const infoList = this.props.data
-    //   ? isAsc ? this.props.data : [...this.props.data].reverse()
-    //   : [];
     const { data } = this.props;
     const infoList = (function getInfoList() {
       if (data) {
@@ -22,7 +19,7 @@ export default class TableInfo extends React.Component {
     }());
 
     return (
-      <div className="mb-4">
+      <section className={`mb-4 ${this.props.sectionName}`}>
         {this.props.title && (
           <Row>
             <Col>
@@ -33,8 +30,8 @@ export default class TableInfo extends React.Component {
           </Row>
         )}
         {infoList.map((info, index) => (
-          <div key={Math.random()}>
-            <Row className={info.projects && index > 0 ? 'mt-4' : ''}>
+          <div key={Math.random()} className={`entry${info.projects && index > 0 ? ' mt-4' : ''}`}>
+            <Row>
               <Col xs="5" lg="4" className={this.props.title ? 'text-primary' : 'text-dark'}>
                 <Str msg={info.label} className={this.props.title ? 'pl-1' : ''} />
               </Col>
@@ -49,7 +46,7 @@ export default class TableInfo extends React.Component {
             {info.projects && <TableProjects projects={info.projects} isAsc={isAsc} />}
           </div>
         ))}
-      </div>
+      </section>
     );
   }
 }
@@ -57,6 +54,7 @@ export default class TableInfo extends React.Component {
 TableInfo.propTypes = {
   isAsc: PropTypes.bool,
   title: translation,
+  sectionName: PropTypes.string.isRequired,
   data: PropTypes.arrayOf(PropTypes.shape({
     label: translation,
     value: translation,
