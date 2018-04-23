@@ -24,12 +24,12 @@ class Animation extends Component {
 
   start() {
     if (!this.frameId) {
-      this.frameId = requestAnimationFrame(this.animate);
+      this.frameId = window.requestAnimationFrame(this.animate);
     }
   }
 
   stop() {
-    cancelAnimationFrame(this.frameId);
+    window.cancelAnimationFrame(this.frameId);
   }
 
   animate() {
@@ -40,6 +40,7 @@ class Animation extends Component {
   render() {
     return (
       <div
+        className="animation"
         style={{ width: `${this.props.width}px`, height: `${this.props.height}px` }}
         ref={(el) => {
           this.el = el;

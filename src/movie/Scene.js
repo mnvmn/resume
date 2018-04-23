@@ -3,35 +3,46 @@ import * as THREE from 'three';
 const Scene = {
   init(width, height) {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: '#0475dc' });
-    const cube = new THREE.Mesh(geometry, material);
 
-    camera.position.z = 4;
-    scene.add(cube);
+    this.camera = new THREE.PerspectiveCamera(15, width / height, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+
+    // const geo1 = new THREE.BoxGeometry(10, 10, 10);
+    const geo2 = new THREE.TorusGeometry(10, 3, 16, 100);
+
+    // const mat1 = new THREE.MeshBasicMaterial({ color: '#0475dc', wireframe: true });
+    const mat2 = new THREE.LineBasicMaterial({ color: '#0475dc', linewidth: 1 });
+    // const mat3 = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+
+    const edges = new THREE.EdgesGeometry(geo2);
+    this.object = new THREE.LineSegments(edges, mat2);
+
     renderer.setClearColor('#FFF');
     renderer.setSize(width, height);
 
     this.scene = scene;
-    this.camera = camera;
+
     this.renderer = renderer;
-    this.material = material;
-    this.cube = cube;
+
+    this.setUpCamera();
+    this.setUpPosition();
+
+    scene.add(this.object);
 
     return this;
   },
-
-  animate() {
-    this.cube.rotation.x += 0.01;
-    this.cube.rotation.y += 0.01;
-
-    this.renderFrame();
-    this.frameId = window.requestAnimationFrame(this.animate);
+  setUpCamera() {
+    this.camera.position.z = 100;
   },
-
+  setUpPosition() {
+    this.object.rotation.x = 40;
+  },
+  animate() {
+    this.object.rotation.z += 0.002;
+    //console.log(this.object.rotation.y);
+  },
   renderFrame() {
+    this.animate();
     this.renderer.render(this.scene, this.camera);
   },
 };

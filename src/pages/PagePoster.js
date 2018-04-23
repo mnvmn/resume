@@ -11,21 +11,28 @@ import ControlFlipPage from './../components/ControlFlipPage';
 import Str from './../components/Str';
 import msgs from './../translations.json';
 
-
 class PagePoster extends React.Component {
   render() {
     const { data } = this.props;
 
     return (
       <div id="pageLogo" className="page">
-        <Logo />
-
         <Link to="/">
           <ControlFlipPage orientation="left" />
         </Link>
 
+        <div className="d-flex justify-content-center mt-5">
+          <Animation />
+        </div>
+
+        <div className="d-flex justify-content-center mt-5">
+          <Logo />
+        </div>
+
         <Container style={{ marginTop: '60px' }}>
-          <h3 className="text-center text-dark mt-2 mb-4 text-uppercase"><Str msg={msgs.title.contact} /></h3>
+          <h3 className="text-center text-dark mt-2 mb-4 text-uppercase">
+            <Str msg={msgs.title.contact} />
+          </h3>
           {data.contact.map(info => (
             <Row key={Math.random()} className="justify-content-center">
               <Col xs="5" md="3" className="text-dark">
@@ -37,7 +44,6 @@ class PagePoster extends React.Component {
             </Row>
           ))}
         </Container>
-        <Animation />
       </div>
     );
   }
