@@ -6897,22 +6897,15 @@ input[type='submit'] {
   transform: rotateY(180deg); }
 
 .pageRoll-enter {
-  opacity: 0.01;
-  position: absolute;
-  width: 100%; }
+  opacity: 0.01; }
 
 .pageRoll-enter-active {
   opacity: 1;
-  transition: opacity 200ms ease-out; }
+  transition: opacity 300ms ease-out; }
 
 .pageRoll-exit {
-  position: absolute;
-  width: 100%;
+  display: none;
   opacity: 1; }
-
-.pageRoll-exit-active {
-  opacity: 0.01;
-  transition: opacity 50ms ease; }
 
 .work .entry {
   padding-top: 9px;
