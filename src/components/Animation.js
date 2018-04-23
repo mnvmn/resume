@@ -13,13 +13,13 @@ class Animation extends Component {
 
   componentDidMount() {
     this.scene = Scene.init(this.props.width, this.props.height);
-    this.el.appendChild(this.scene.domElement);
+    this.el.appendChild(this.scene.renderer.domElement);
     this.start();
   }
 
   componentWillUnmount() {
     this.stop();
-    this.el.removeChild(this.scene.domElement);
+    this.el.removeChild(this.scene.renderer.domElement);
   }
 
   start() {
