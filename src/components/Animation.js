@@ -3,14 +3,6 @@ import PropTypes from 'prop-types';
 import Scene from './../movie/Scene';
 
 class Animation extends Component {
-  constructor(props) {
-    super(props);
-
-    this.start = this.start.bind(this);
-    this.stop = this.stop.bind(this);
-    this.animate = this.animate.bind(this);
-  }
-
   componentDidMount() {
     this.scene = Scene.init(this.props.width, this.props.height);
     this.el.appendChild(this.scene.renderer.domElement);
@@ -22,20 +14,20 @@ class Animation extends Component {
     this.el.removeChild(this.scene.renderer.domElement);
   }
 
-  start() {
+  start = () => {
     if (!this.frameId) {
       this.frameId = window.requestAnimationFrame(this.animate);
     }
-  }
+  };
 
-  stop() {
+  stop = () => {
     window.cancelAnimationFrame(this.frameId);
-  }
+  };
 
-  animate() {
+  animate = () => {
     this.scene.renderFrame();
     this.frameId = window.requestAnimationFrame(this.animate);
-  }
+  };
 
   render() {
     return (
