@@ -3,23 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "concurrently": "^3.5.1",
+    "bootstrap": "^4.1.0",
     "jquery": "^3.3.1",
-    "moment": "^2.22.0",
-    "moment-timezone": "^0.5.14",
-    "node-sass": "^4.8.3",
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.16",
     "popper.js": "^1.14.3",
     "prop-types": "^15.6.1",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-icons": "^2.2.7",
     "react-moment": "^0.7.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
     "react-transition-group": "^2.3.1",
-    "reactstrap": "^5.0.0-beta.3",
+    "reactstrap": "^5.0.0",
     "redux": "^3.7.2",
     "three": "^0.92.0"
   },
@@ -29,16 +27,18 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "copy": "cpx 'build/**/*' ./../mnvmn.github.io -w",
-    "sass": "node-sass --watch scss/main.scss --output src/css --include-path scss/",
+    "sass": "node-sass --watch src/scss --output src/css",
     "dev": "concurrently \"npm run start\" \"npm run sass\" \"npm run copy\""
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
+    "concurrently": "^3.5.1",
     "cpx": "^1.5.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-plugin-react": "^7.7.0",
+    "node-sass": "^4.9.0"
   }
 }
