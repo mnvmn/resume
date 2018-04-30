@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import * as THREE from 'three';
+import * as orbitControls from 'three-orbit-controls';
 import Scene from './../movie/Scene';
 
 class Animation extends Component {
   componentDidMount() {
     this.scene = Scene.init(this.props.width, this.props.height);
     this.el.appendChild(this.scene.renderer.domElement);
+
+    const OrbitControls = orbitControls(THREE);
+    const controls = new OrbitControls(this.scene.camera, this.el); // eslint-disable-line no-new
+    controls.rotateSpeed = -1;
+
     this.start();
   }
 

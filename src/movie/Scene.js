@@ -1,16 +1,10 @@
 import * as THREE from 'three';
-import * as orbitControls from 'three-orbit-controls';
 
 const Scene = {
   init(width, height) {
     const scene = new THREE.Scene();
 
     this.camera = new THREE.PerspectiveCamera(15, width / height, 0.1, 1000);
-    const OrbitControls = orbitControls(THREE);
-
-    const controls = new OrbitControls(this.camera); // eslint-disable-line no-new
-    controls.rotateSpeed = -1;
-
     const renderer = new THREE.WebGLRenderer({ antialias: true });
 
     // const geo1 = new THREE.BoxGeometry(10, 10, 10);
@@ -45,7 +39,7 @@ const Scene = {
     this.object.rotation.x = (Math.PI / 40) * 12;
   },
   animate() {
-    this.object.rotation.z += 0.002;
+    this.object.rotation.z -= 0.002;
     // console.log(this.object.rotation.y);
   },
   renderFrame() {

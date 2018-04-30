@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';
 import Logo from './../components/Logo';
-import Animation from './../components/Animation';
 import ControlFlipPage from './../components/ControlFlipPage';
 import Str from './../components/Str';
 import msgs from './../translations.json';
@@ -21,11 +20,11 @@ class PagePoster extends React.Component {
           <ControlFlipPage orientation="left" />
         </Link>
 
-        <div className="d-flex justify-content-center mt-5">
-          <Animation />
-        </div>
+        <Link to="/animation">
+          <ControlFlipPage orientation="right" />
+        </Link>
 
-        <div className="d-flex justify-content-center mt-5">
+        <div className="d-flex justify-content-center" style={{ marginTop: '200px' }}>
           <Logo />
         </div>
 
