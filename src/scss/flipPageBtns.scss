@@ -24,18 +24,13 @@
 }
 
 @include media-breakpoint-down(xs) {
+  .control-flipPage-left,
   .control-flipPage-right {
-    display: none;
-  }
-  .control-flipPage-left {
     top: 0px;
     .btn {
       background-color: $footer-color !important;
       border-color: $gray-300 !important;
     }
-  }
-  .btn-vertical {
-    height: 45px;
   }
 }
 

@@ -4,9 +4,20 @@ import { Button } from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa';
 
 class ControlFlipPage extends React.Component {
+  static defaultProps = {
+    className: '',
+  };
+
+  static propTypes = {
+    className: PropTypes.string,
+    orientation: PropTypes.string.isRequired,
+  };
+
   render() {
     return (
-      <div className={`control-flipPage-${this.props.orientation.toString()}`}>
+      <div
+        className={`control-flipPage-${this.props.orientation.toString()} ${this.props.className}`}
+      >
         <Button color="context" size="md" className="btn-vertical d-flex align-items-center">
           {this.props.orientation === 'right' && <FontAwesome.FaAngleRight />}
           {this.props.orientation === 'left' && <FontAwesome.FaAngleLeft />}
@@ -15,9 +26,5 @@ class ControlFlipPage extends React.Component {
     );
   }
 }
-
-ControlFlipPage.propTypes = {
-  orientation: PropTypes.string.isRequired,
-};
 
 export default ControlFlipPage;

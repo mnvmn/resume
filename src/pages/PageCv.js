@@ -30,7 +30,7 @@ class PageCv extends React.Component {
         </Container>
 
         <Link to="/contact">
-          <ControlFlipPage orientation="right" />
+          <ControlFlipPage orientation="right" className="d-none d-sm-block" />
         </Link>
 
         <Cv />
