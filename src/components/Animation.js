@@ -8,11 +8,10 @@ class Animation extends Component {
   componentDidMount() {
     this.scene = Scene.init(this.props.width, this.props.height);
     this.el.appendChild(this.scene.renderer.domElement);
-
     const OrbitControls = orbitControls(THREE);
     const controls = new OrbitControls(this.scene.camera, this.el); // eslint-disable-line no-new
     controls.rotateSpeed = -1;
-
+    controls.enableKeys = false;
     this.start();
   }
 
@@ -55,8 +54,8 @@ Animation.propTypes = {
 };
 
 Animation.defaultProps = {
-  width: 200,
-  height: 200,
+  width: 400,
+  height: 400,
 };
 
 export default Animation;
