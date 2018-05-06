@@ -13,7 +13,7 @@ class Controls extends React.Component {
   render() {
     // const isAsc = this.props.isAsc;
     const { isAsc } = this.props;
-    const groupClass = `d-flex${
+    const groupClass = `d-flex d-print-none${
       this.props.isVertical ? ' btn-group-vertical rounded-0' : ' ml-auto justify-content-end'
     }`;
     const btnSize = this.props.isVertical ? 'sm' : 'xs';

@@ -1,45 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container, Col, Row } from 'reactstrap';
 import Moment from 'react-moment';
-
-const URL_REPO = 'https://api.github.com/repos/mnvmn/mnvmn.github.io';
+import { connect } from 'react-redux';
+import dispatcher from './../store/dispatchers';
+import reducer from './../store/reducers';
 
 class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      repo: {},
-    };
-  }
-
-  componentDidMount() {
-    fetch(URL_REPO)
-      .then((response) => {
-        // console.log(response)
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error('fetch repo failed');
-      })
-      .then(data => this.setState({ repo: data }));
-    // .catch(error => console.log(error));
-  }
+  static propTypes = {
+    repo: PropTypes.shape({
+      pushed_at: PropTypes.string.isRequired,
+    }).isRequired,
+  };
 
   render() {
     const { version } = React;
     return (
-      <footer id="footer" className="mt-auto">
+      <footer id="footer" className="mt-auto d-print-none">
         <div className="d-flex align-items-center">
           <Container>
             <Row>
-              {this.state.repo.pushed_at && (
+              {this.props.repo.pushed_at && (
                 <Col className="text-sm text-left text-muted">
                   <small>
                     <span>Deployed</span>
                     &nbsp;
                     <span className="font-weight-bold">
-                      <Moment format="Do MMM YYYY" date={this.state.repo.pushed_at} />
+                      <Moment format="Do MMM YYYY" date={this.props.repo.pushed_at} />
                     </span>
                   </small>
                 </Col>
@@ -59,4 +46,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer;
+export default connect(reducer, dispatcher)(Footer);

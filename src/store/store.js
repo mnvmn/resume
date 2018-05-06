@@ -14,6 +14,9 @@ function loadLocal() {
 
 const settings = loadLocal();
 const defaultState = {
+  repo: {
+    pushed_at: '',
+  },
   data: {
     info: [],
     education: [],

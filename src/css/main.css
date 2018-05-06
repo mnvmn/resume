@@ -7127,6 +7127,15 @@ input[type='submit'] {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
+.d-print-only {
+  display: none; }
+
+@media print {
+  .d-print-block {
+    display: block; }
+  .d-print-none {
+    display: none; } }
+
 .pageRoll-enter {
   opacity: 0.01; }
 

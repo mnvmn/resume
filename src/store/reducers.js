@@ -7,7 +7,12 @@ function saveLocal(key, val) {
 
 const reducers = (state = {}, action) => {
   switch (action.type) {
-    case 'DATA_RECEIVED':
+    case 'RECEIVED_REPO_DATA':
+      return {
+        ...state,
+        repo: action.data,
+      };
+    case 'RECEIVED_CV_DATA':
       return {
         ...state,
         data: action.data,

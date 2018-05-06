@@ -15,9 +15,20 @@ import './css/main.css';
 // import Logo from './components/Logo';
 
 const URL_DATA = '/data.json';
+const URL_REPO = 'https://api.github.com/repos/mnvmn/mnvmn.github.io';
 
 class App extends Component {
   componentDidMount() {
+    fetch(URL_REPO)
+      .then((response) => {
+        // console.log(response)
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('fetch repo failed');
+      })
+      .then(data => this.props.receivedRepoData(data));
+
     fetch(URL_DATA)
       .then((response) => {
         if (response.ok) {
@@ -25,7 +36,7 @@ class App extends Component {
         }
         throw new Error('fetch data failed');
       })
-      .then(data => this.props.dataReceived(data));
+      .then(data => this.props.receivedCvData(data));
     // .catch(error => ));
   }
 
@@ -55,7 +66,8 @@ class App extends Component {
 }
 
 App.propTypes = {
-  dataReceived: PropTypes.func.isRequired,
+  receivedCvData: PropTypes.func.isRequired,
+  receivedRepoData: PropTypes.func.isRequired,
 };
 
 export default connect(reducer, dispatcher)(App);
