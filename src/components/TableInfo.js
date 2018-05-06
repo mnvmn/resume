@@ -5,6 +5,22 @@ import { TableProjects, projects } from './TableProjects';
 import Str, { translation } from './Str';
 
 export default class TableInfo extends React.Component {
+  static propTypes = {
+    isAsc: PropTypes.bool,
+    title: translation,
+    sectionName: PropTypes.string.isRequired,
+    data: PropTypes.arrayOf(PropTypes.shape({
+      label: translation,
+      value: translation,
+      projects,
+    })).isRequired,
+  };
+
+  static defaultProps = {
+    title: '',
+    isAsc: false,
+  };
+
   render() {
     const isAsc = this.props.isAsc === 'undefined' || this.props.isAsc;
     const { data } = this.props;
@@ -50,19 +66,3 @@ export default class TableInfo extends React.Component {
     );
   }
 }
-
-TableInfo.propTypes = {
-  isAsc: PropTypes.bool,
-  title: translation,
-  sectionName: PropTypes.string.isRequired,
-  data: PropTypes.arrayOf(PropTypes.shape({
-    label: translation,
-    value: translation,
-    projects,
-  })).isRequired,
-};
-
-TableInfo.defaultProps = {
-  title: '',
-  isAsc: false,
-};

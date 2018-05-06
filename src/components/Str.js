@@ -4,6 +4,16 @@ import PropTypes from 'prop-types';
 import { reducerLanguage } from './../store/reducers';
 
 class Str extends React.Component {
+  static defaultProps = {
+    className: '',
+  };
+
+  static propTypes = {
+    lang: PropTypes.string.isRequired,
+    msg: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+    className: PropTypes.string,
+  };
+
   static createLinks(str) {
     const links = str.match(/www\.[\w.]*/g);
 
@@ -53,15 +63,5 @@ export const translation = PropTypes.oneOfType([
     sk: PropTypes.string,
   }),
 ]);
-
-Str.defaultProps = {
-  className: '',
-};
-
-Str.propTypes = {
-  lang: PropTypes.string.isRequired,
-  msg: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-  className: PropTypes.string,
-};
 
 export default connect(reducerLanguage, {})(Str);

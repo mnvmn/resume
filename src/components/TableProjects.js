@@ -4,6 +4,10 @@ import { Col, Row } from 'reactstrap';
 import Str, { translation } from './Str';
 
 export class TableProjects extends React.Component {
+  static propTypes = {
+    projects: projects.isRequired,
+  };
+
   render() {
     const { projects } = this.props;
 
@@ -26,7 +30,3 @@ export const projects = PropTypes.arrayOf(PropTypes.shape({
   project: translation,
   skill: translation,
 }));
-
-TableProjects.propTypes = {
-  projects: projects.isRequired,
-};

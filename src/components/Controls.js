@@ -10,6 +10,13 @@ import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';
 
 class Controls extends React.Component {
+  static propTypes = {
+    isAsc: PropTypes.bool.isRequired,
+    isVertical: PropTypes.bool.isRequired,
+    toggleLang: PropTypes.func.isRequired,
+    toggleOrder: PropTypes.func.isRequired,
+  };
+
   render() {
     // const isAsc = this.props.isAsc;
     const { isAsc } = this.props;
@@ -78,12 +85,5 @@ class Controls extends React.Component {
     );
   }
 }
-
-Controls.propTypes = {
-  isAsc: PropTypes.bool.isRequired,
-  isVertical: PropTypes.bool.isRequired,
-  toggleLang: PropTypes.func.isRequired,
-  toggleOrder: PropTypes.func.isRequired,
-};
 
 export default connect(reducer, dispatcher)(Controls);
