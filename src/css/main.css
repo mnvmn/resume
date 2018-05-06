@@ -7112,6 +7112,9 @@ input[type='submit'] {
 .text-secondary {
   color: #01579b !important; }
 
+.text-small {
+  font-size: 0.9em; }
+
 .rotate-180 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);

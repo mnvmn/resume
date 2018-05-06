@@ -10,14 +10,21 @@ import Controls from './../components/Controls';
 import DeployedDate from './../components/DeployedDate';
 import ControlFlipPage from './../components/ControlFlipPage';
 
+const cvLink = 'https://mnvmn.github.io';
+
 class PageCv extends React.Component {
   render() {
     return (
       <div id="pageCv" className="page">
         <Container className="d-print-block">
           <Row>
-            <Col className="d-flex justify-content-end text-muted">
-              <DeployedDate />
+            <Col className="d-flex justify-content-between text-muted">
+              <a href={cvLink} className="btn-link">
+                {cvLink}
+              </a>
+              <div className="text-small">
+                <DeployedDate />
+              </div>
             </Col>
           </Row>
         </Container>
