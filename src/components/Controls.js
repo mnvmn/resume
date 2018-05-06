@@ -47,7 +47,7 @@ class Controls extends React.Component {
             &nbsp;&nbsp;<Str msg={msgs.btns.viewContact} />
           </Link>
         )}
-        <Button
+        {/* <Button
           color="primary"
           outline
           size={btnSize}
@@ -57,7 +57,7 @@ class Controls extends React.Component {
         >
           <FontAwesome.FaDownload />
           &nbsp;&nbsp;<Str msg={msgs.btns.downloadPdf} />
-        </Button>
+        </Button> */}
         <Button
           color="primary"
           outline

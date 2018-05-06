@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Col, Row } from 'reactstrap';
-import Moment from 'react-moment';
 import { connect } from 'react-redux';
 import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';
+import DeployedDate from './DeployedDate';
 
 class Footer extends React.Component {
   static propTypes = {
@@ -26,7 +26,7 @@ class Footer extends React.Component {
                     <span>Deployed</span>
                     &nbsp;
                     <span className="font-weight-bold">
-                      <Moment format="Do MMM YYYY" date={this.props.repo.pushed_at} />
+                      <DeployedDate />
                     </span>
                   </small>
                 </Col>

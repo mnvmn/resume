@@ -7,12 +7,21 @@ import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';
 import Cv from './../components/Cv';
 import Controls from './../components/Controls';
+import DeployedDate from './../components/DeployedDate';
 import ControlFlipPage from './../components/ControlFlipPage';
 
 class PageCv extends React.Component {
   render() {
     return (
       <div id="pageCv" className="page">
+        <Container className="d-print-block">
+          <Row>
+            <Col className="d-flex justify-content-end text-muted">
+              <DeployedDate />
+            </Col>
+          </Row>
+        </Container>
+
         <div>
           <Navbar color="faded" light className="p-0 d-sm-none justify-content-end">
             <Collapse isOpen={this.props.navbarOpen} navbar>

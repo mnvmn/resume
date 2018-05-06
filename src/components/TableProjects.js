@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import { Col, Row } from 'reactstrap';
 import Str, { translation } from './Str';
 
+export const projects = PropTypes.arrayOf(PropTypes.shape({
+  project: translation,
+  skill: translation,
+}));
+
 export class TableProjects extends React.Component {
   static propTypes = {
     projects: projects.isRequired,
@@ -25,8 +30,3 @@ export class TableProjects extends React.Component {
     ));
   }
 }
-
-export const projects = PropTypes.arrayOf(PropTypes.shape({
-  project: translation,
-  skill: translation,
-}));

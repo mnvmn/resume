@@ -16,7 +16,7 @@ class ControlFlipPage extends React.Component {
   render() {
     return (
       <div
-        className={`control-flipPage-${this.props.orientation.toString()} ${this.props.className}`}
+        className={`control-flipPage-${this.props.orientation.toString()} d-print-none ${this.props.className}`}
       >
         <Button color="context" size="md" className="btn-vertical d-flex align-items-center">
           {this.props.orientation === 'right' && <FontAwesome.FaAngleRight />}
