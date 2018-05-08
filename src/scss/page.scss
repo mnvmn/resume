@@ -16,12 +16,21 @@ body {
   background-color: white;
 }
 
+.container-alt {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 #cv-container {
   h3 {
     font-size: 1.6em;
   }
   padding-top: 30px;
   padding-bottom: 30px;
+
+  .cv-header {
+    background-color: smoke;
+  }
 
   @include media-breakpoint-down(xs) {
     padding-top: 0px;
@@ -66,5 +75,5 @@ h5 {
 #bootstrap-grid-util {
   left: 20px;
   color: $gray-400;
-  display: none
+  display: none;
 }

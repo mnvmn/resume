@@ -9,11 +9,17 @@ html {
 body {
   background-color: white; }
 
+.container-alt {
+  margin-right: auto;
+  margin-left: auto; }
+
 #cv-container {
   padding-top: 30px;
   padding-bottom: 30px; }
   #cv-container h3 {
     font-size: 1.6em; }
+  #cv-container .cv-header {
+    background-color: smoke; }
   @media (max-width: 575.98px) {
     #cv-container {
       padding-top: 0px;
