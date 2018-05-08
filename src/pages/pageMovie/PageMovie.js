@@ -1,13 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import dispatcher from './../store/dispatchers';
-import reducer from './../store/reducers';
-import Animation from './../components/Animation';
-import ControlFlipPage from './../components/ControlFlipPage';
+import ControlFlipPage from './../../components/ControlFlipPage';
+import Animation from './Animation';
 
-class PagePoster extends React.Component {
+class PageMovie extends React.Component {
   render() {
     return (
       <div id="pageAnimation" className="page">
@@ -23,4 +19,4 @@ class PagePoster extends React.Component {
   }
 }
 
-export default connect(reducer, dispatcher)(PagePoster);
+export default PageMovie;

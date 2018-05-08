@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as THREE from 'three';
 import * as orbitControls from 'three-orbit-controls';
-import Scene from './../movie/Scene';
+import Scene from './Scene';
 
 class Animation extends Component {
   componentDidMount() {

@@ -3,12 +3,12 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Container, Col, Row } from 'reactstrap';
 import PropTypes from 'prop-types';
-import dispatcher from './../store/dispatchers';
-import reducer from './../store/reducers';
-import Logo from './../components/Logo';
-import ControlFlipPage from './../components/ControlFlipPage';
-import Str from './../components/Str';
-import msgs from './../translations.json';
+import dispatcher from './../../store/dispatchers';
+import reducer from './../../store/reducers';
+import ControlFlipPage from './../../components/ControlFlipPage';
+import Str from './../../components/Str';
+import msgs from './../../translations.json';
+import Logo from './Logo';
 
 class PagePoster extends React.Component {
   render() {
