@@ -4,10 +4,10 @@ import { ButtonGroup, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as FontAwesome from 'react-icons/lib/fa';
-import msgs from './../translations.json';
-import Str from './Str';
-import dispatcher from './../store/dispatchers';
-import reducer from './../store/reducers';
+import msgs from './../../translations.json';
+import Str from './../../components/Str';
+import dispatcher from './../../store/dispatchers';
+import reducer from './../../store/reducers';
 
 class Controls extends React.Component {
   static propTypes = {

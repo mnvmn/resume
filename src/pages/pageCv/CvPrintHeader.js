@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import DeployedDate from './../components/DeployedDate';
+import DeployedDate from './../../components/DeployedDate';
 
 const cvLink = 'https://mnvmn.github.io';
 

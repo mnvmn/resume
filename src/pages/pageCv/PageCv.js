@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Container, Row, Col, Navbar, NavbarToggler, Collapse } from 'reactstrap';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import dispatcher from './../store/dispatchers';
-import reducer from './../store/reducers';
-import Cv from './../components/Cv';
-import Controls from './../components/Controls';
-import ControlFlipPage from './../components/ControlFlipPage';
-import CvPrintHeader from './../components/CvPrintHeader';
+import dispatcher from './../../store/dispatchers';
+import reducer from './../../store/reducers';
+import Cv from './Cv';
+import Controls from './Controls';
+import ControlFlipPage from './../../components/ControlFlipPage';
+import CvPrintHeader from './CvPrintHeader';
 
 class PageCv extends React.Component {
   render() {
