@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Col, Row } from 'reactstrap';
-import Str, { translation } from './Str';
+import Str, { translation } from './../../components/Str';
 
 export const projects = PropTypes.arrayOf(PropTypes.shape({
   project: translation,
@@ -14,9 +14,7 @@ export class TableProjects extends React.Component {
   };
 
   render() {
-    const { projects } = this.props;
-
-    return projects.map(project => (
+    return this.props.projects.map(project => (
       <Row key={Math.random()}>
         <Col className="clearfix" xs="12">
           <div className="float-left  text-dark">

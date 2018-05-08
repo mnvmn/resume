@@ -3,12 +3,11 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Container, Col, Row } from 'reactstrap';
 import PropTypes from 'prop-types';
-import dispatcher from './../store/dispatchers';
-import reducer from './../store/reducers';
-import Logo from './../components/Logo';
-import ControlFlipPage from './../components/ControlFlipPage';
-import Str from './../components/Str';
-import msgs from './../translations.json';
+import dispatcher from './../../store/dispatchers';
+import reducer from './../../store/reducers';
+import ControlFlipPage from './../../components/ControlFlipPage';
+import Str from './../../components/Str';
+import msgs from './../../translations.json';
 
 class PagePoster extends React.Component {
   render() {
@@ -25,7 +24,9 @@ class PagePoster extends React.Component {
         </Link>
 
         <div className="d-flex justify-content-center" style={{ marginTop: '200px' }}>
-          <Logo />
+          <div id="logo">
+            <div className="title text-center">Let&apos;s build something in React...</div>
+          </div>
         </div>
 
         <Container style={{ marginTop: '60px' }}>
