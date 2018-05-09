@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import ReactLogo from 'react-3d-logo';
 import { Container, Row, Col, Navbar, NavbarToggler, Collapse } from 'reactstrap';
 import dispatcher from './../../store/dispatchers';
 import reducer from './../../store/reducers';
@@ -24,14 +25,18 @@ class PageCv extends React.Component {
           <NavbarToggler onClick={this.props.toggleNavbar} className="mt-2 mr-2" />
         </Navbar>
 
-        {/* <div className="container-alt px-2 px-md-4 px-lg-3 px-xl-0"
-        style={{ maxWidth: '1000px' }}>
-          <Logo />
-        </div> */}
+        <div className="d-none d-sm-block d-print-none">
+          {/* <div className="pl-4">
+            <Container>
+              <ReactLogo width={100} height={100} />
+            </Container>
+          </div> */}
 
-        <div className="cv-header d-print-none">
-          <Container className="d-none d-sm-block mt-3">
-            <Row>
+          <Container className="mt-3">
+            <Row className="d-flex align-items-center">
+              <Col>
+                <ReactLogo width={100} height={100} />
+              </Col>
               <Col>
                 <Controls isVertical={false} />
               </Col>

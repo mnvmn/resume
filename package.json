@@ -10,6 +10,7 @@
     "popper.js": "^1.14.3",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
+    "react-3d-logo": "file:../react-3d-logo/react-3d-logo-1.0.0.tgz",
     "react-dom": "^16.3.2",
     "react-icons": "^2.2.7",
     "react-moment": "^0.7.0",
