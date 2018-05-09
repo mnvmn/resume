@@ -7133,11 +7133,11 @@ input[type='submit'] {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-.d-print-block {
+.d-print-only {
   display: none; }
 
 @media print {
-  .d-print-block {
+  .d-print-only {
     display: block; }
   .d-print-none {
     display: none; } }

@@ -29,16 +29,6 @@
         "sk": "Trvalé bydlisko"
       },
       "value": "Bratislava"
-    },
-    {
-      "label": {
-        "en": "Marital status",
-        "sk": "Rodinný stav"
-      },
-      "value": {
-        "en": "single",
-        "sk": "slobodný"
-      }
     }
   ],
   "contact": [

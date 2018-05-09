@@ -7,7 +7,7 @@ const cvLink = 'https://mnvmn.github.io';
 export default class CvPrintHeader extends React.Component {
   render() {
     return (
-      <Container className="d-print-block">
+      <Container className="d-print-only">
         <Row>
           <Col className="d-flex justify-content-between text-muted">
             <a href={cvLink} className="btn-link">

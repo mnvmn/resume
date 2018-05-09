@@ -26,11 +26,11 @@
   transform: rotateY(180deg);
 }
 
-.d-print-block {
+.d-print-only {
   display: none;
 }
 @media print {
-  .d-print-block {
+  .d-print-only {
     display: block;
   }
 
