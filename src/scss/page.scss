@@ -24,15 +24,9 @@ body {
   h3 {
     font-size: 1.6em;
   }
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-
-
-  @include media-breakpoint-down(xs) {
-    padding-top: 0px;
-    margin-top: -30px;
-  }
+  // @include media-breakpoint-down(xs) {
+  //   padding-top: 0px;
+  // }
 }
 
 footer#footer {

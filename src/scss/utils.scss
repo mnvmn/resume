@@ -31,7 +31,7 @@
 }
 @media print {
   .d-print-only {
-    display: block;
+    display: block !important;
   }
 
   .d-print-none {

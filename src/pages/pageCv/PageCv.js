@@ -25,30 +25,26 @@ class PageCv extends React.Component {
           <NavbarToggler onClick={this.props.toggleNavbar} className="mt-2 mr-2" />
         </Navbar>
 
-        <div className="d-none d-sm-block d-print-none">
-          {/* <div className="pl-4">
-            <Container>
+        <Container className="d-none d-sm-block d-print-none mt-2 mb-3">
+          <Row className="d-flex align-items-center">
+            <Col>
               <ReactLogo width={100} height={100} />
-            </Container>
-          </div> */}
+            </Col>
+            <Col>
+              <Controls isVertical={false} />
+            </Col>
+          </Row>
+        </Container>
 
-          <Container className="mt-3">
-            <Row className="d-flex align-items-center">
-              <Col>
-                <ReactLogo width={100} height={100} />
-              </Col>
-              <Col>
-                <Controls isVertical={false} />
-              </Col>
-            </Row>
-          </Container>
-        </div>
+        <Container className="d-print-only d-block d-sm-none mt-2 mt-md-5 mb-3 mb-md-5">
+          <h3 className="text-center text-dark mt-md-2">CV</h3>
+        </Container>
+
+        <Cv />
 
         <Link to="/contact">
           <ControlFlipPage orientation="right" className="d-none d-sm-block" />
         </Link>
-
-        <Cv />
       </div>
     );
   }

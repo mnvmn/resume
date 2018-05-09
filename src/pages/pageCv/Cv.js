@@ -22,7 +22,6 @@ class Cv extends React.Component {
     return (
       <div id="cv-container">
         <Container>
-          <h3 className="d-print-only text-center text-dark mt-2 mb-4">CV</h3>
           <TableInfo data={data.info} isAsc sectionName="info" />
           <TableInfo
             data={data.education}
