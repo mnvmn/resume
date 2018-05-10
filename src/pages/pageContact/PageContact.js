@@ -19,10 +19,6 @@ class PagePoster extends React.Component {
           <ControlFlipPage orientation="left" />
         </Link>
 
-        <Link to="/animation">
-          <ControlFlipPage orientation="right" />
-        </Link>
-
         <div className="d-flex justify-content-center" style={{ marginTop: '200px' }}>
           <div id="logo">
             <div className="title text-center">Let&apos;s build something in React...</div>

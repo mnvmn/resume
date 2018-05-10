@@ -6,7 +6,6 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import dispatcher from './store/dispatchers';
 import reducer from './store/reducers';
 import PageCv from './pages/pageCv/PageCv';
-import PageMovie from './pages/pageMovie/PageMovie';
 import PageContact from './pages/pageContact/PageContact';
 import Footer from './components/Footer';
 import GridUtil from './components/GridUtil';
@@ -52,7 +51,6 @@ class App extends Component {
                   <Switch location={location}>
                     <Route exact path="/" component={PageCv} />
                     <Route exact path="/contact" component={PageContact} />
-                    <Route exact path="/animation" component={PageMovie} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
