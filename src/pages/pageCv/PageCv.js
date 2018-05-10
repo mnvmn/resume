@@ -10,7 +10,6 @@ import Cv from './Cv';
 import Controls from './Controls';
 import ControlFlipPage from './../../components/ControlFlipPage';
 import CvPrintHeader from './CvPrintHeader';
-// import Logo from './Logo';
 
 class PageCv extends React.Component {
   render() {
