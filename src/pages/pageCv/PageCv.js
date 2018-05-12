@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { Container, Row, Col, Navbar, NavbarToggler, Collapse } from 'reactstrap';
 import PropTypes from 'prop-types';
 import ReactLogo from 'react-3d-logo';
-import { Container, Row, Col, Navbar, NavbarToggler, Collapse } from 'reactstrap';
+import Logo from './Logo';
 import dispatcher from './../../store/dispatchers';
 import reducer from './../../store/reducers';
 import Cv from './Cv';
@@ -28,6 +29,7 @@ class PageCv extends React.Component {
           <Row className="d-flex align-items-center">
             <Col>
               <ReactLogo width={100} height={100} />
+              <Logo width={100} height={100} />
             </Col>
             <Col>
               <Controls isVertical={false} />
