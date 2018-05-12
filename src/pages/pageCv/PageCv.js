@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Navbar, NavbarToggler, Collapse } from 'reactstrap';
 import PropTypes from 'prop-types';
-import ReactLogo from 'react-3d-logo';
 import Logo from './Logo';
 import dispatcher from './../../store/dispatchers';
 import reducer from './../../store/reducers';
@@ -13,6 +12,11 @@ import ControlFlipPage from './../../components/ControlFlipPage';
 import CvPrintHeader from './CvPrintHeader';
 
 class PageCv extends React.Component {
+  static propTypes = {
+    navbarOpen: PropTypes.bool.isRequired,
+    toggleNavbar: PropTypes.func.isRequired,
+  };
+
   render() {
     return (
       <div id="pageCv" className="page">
@@ -28,8 +32,7 @@ class PageCv extends React.Component {
         <Container className="d-none d-sm-block d-print-none mt-2 mb-3">
           <Row className="d-flex align-items-center">
             <Col>
-              <ReactLogo width={100} height={100} />
-              <Logo width={100} height={100} />
+              <Logo width={100} height={100} color="#0475dc" />
             </Col>
             <Col>
               <Controls isVertical={false} />
@@ -50,10 +53,5 @@ class PageCv extends React.Component {
     );
   }
 }
-
-PageCv.propTypes = {
-  navbarOpen: PropTypes.bool.isRequired,
-  toggleNavbar: PropTypes.func.isRequired,
-};
 
 export default connect(reducer, dispatcher)(PageCv);
