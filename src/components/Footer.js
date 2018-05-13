@@ -23,32 +23,24 @@ class Footer extends React.Component {
     return (
       <footer id="footer" className="mt-auto d-print-none">
         <div className="d-flex align-items-center">
-          <Container>
+          <Container className="text-muted">
             <Row>
-              <Col className="text-sm text-left text-muted">
-                {/* <h3 className="text-center text-dark mt-2 mb-4 text-uppercase">
-                  <Str msg={msgs.title.contact} />
-                </h3> */}
-
+              <Col className="text-sm text-left">
                 {this.props.data.contact.map(info => (
-                  <Row key={info.label}>
-                    <Col xs="5" md="3" className="text-dark">
-                      <Str msg={info.label} />
-                    </Col>
-                    <Col xs="7" md="5" lg="4" className="text-dark">
-                      <Str msg={info.value} />
-                    </Col>
-                  </Row>
+                  // title="<Str msg={info.label} />
+                  <div key={info.label}>
+                    <Str msg={info.value} />
+                  </div>
                 ))}
               </Col>
 
-              <Col className="text-sm text-right text-muted">
+              <Col className="text-sm text-right">
                 <div>
                   {this.props.repo.pushed_at ? (
                     <span>
                       <span>Deployed</span>
                       &nbsp;
-                      <span className="font-weight-bold">
+                      <span>
                         <DeployedDate />
                       </span>
                     </span>
@@ -57,9 +49,7 @@ class Footer extends React.Component {
                   )}
                 </div>
                 <div>
-                  <span>#</span>
-                  &nbsp;
-                  <span className="font-weight-bold">React v{version}</span>
+                  <span>React v{version}</span>
                 </div>
               </Col>
             </Row>
