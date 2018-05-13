@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 class Logo extends React.Component {
   static propTypes = {
-    width: PropTypes.oneOfType([PropTypes.string, PropTypes.num]),
-    height: PropTypes.oneOfType([PropTypes.string, PropTypes.num]),
+    width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     color: PropTypes.string,
   };
 

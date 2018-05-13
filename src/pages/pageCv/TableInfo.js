@@ -46,7 +46,10 @@ export default class TableInfo extends React.Component {
           </Row>
         )}
         {infoList.map((info, index) => (
-          <div key={Math.random()} className={`entry${index === 0 ? ' first' : ''}`}>
+          <div
+            key={info.label.en ? info.label.en : info.label}
+            className={`entry${index === 0 ? ' first' : ''}`}
+          >
             <Row>
               <Col xs="5" lg="4" className={this.props.title ? 'text-primary' : 'text-dark'}>
                 <Str msg={info.label} className={this.props.title ? 'pl-1' : ''} />

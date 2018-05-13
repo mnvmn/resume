@@ -16,11 +16,12 @@ body {
   font-size: 1.6em; }
 
 footer#footer {
+  font-size: 0.9em;
   border-top: 1px solid #ededed;
   background-color: #f5f5f5;
   z-index: 10; }
   footer#footer > div {
-    height: 60px; }
+    min-height: 60px; }
 
 .row {
   margin-bottom: 8px; }

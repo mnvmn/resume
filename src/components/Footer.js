@@ -6,7 +6,7 @@ import Str from './Str';
 import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';
 import DeployedDate from './DeployedDate';
-import msgs from './../translations.json';
+// import msgs from './../translations.json';
 
 class Footer extends React.Component {
   static propTypes = {
@@ -26,12 +26,12 @@ class Footer extends React.Component {
           <Container>
             <Row>
               <Col className="text-sm text-left text-muted">
-                <h3 className="text-center text-dark mt-2 mb-4 text-uppercase">
+                {/* <h3 className="text-center text-dark mt-2 mb-4 text-uppercase">
                   <Str msg={msgs.title.contact} />
-                </h3>
+                </h3> */}
 
                 {this.props.data.contact.map(info => (
-                  <Row key={Math.random()} className="justify-content-center">
+                  <Row key={info.label}>
                     <Col xs="5" md="3" className="text-dark">
                       <Str msg={info.label} />
                     </Col>
@@ -45,23 +45,21 @@ class Footer extends React.Component {
               <Col className="text-sm text-right text-muted">
                 <div>
                   {this.props.repo.pushed_at ? (
-                    <small>
+                    <span>
                       <span>Deployed</span>
                       &nbsp;
                       <span className="font-weight-bold">
                         <DeployedDate />
                       </span>
-                    </small>
+                    </span>
                   ) : (
-                    <small>&nbsp;</small>
+                    <span>&nbsp;</span>
                   )}
                 </div>
                 <div>
-                  <small>
-                    <span>#</span>
-                    &nbsp;
-                    <span className="font-weight-bold">React v{version}</span>
-                  </small>
+                  <span>#</span>
+                  &nbsp;
+                  <span className="font-weight-bold">React v{version}</span>
                 </div>
               </Col>
             </Row>

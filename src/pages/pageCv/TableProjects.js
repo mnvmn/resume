@@ -15,7 +15,7 @@ export class TableProjects extends React.Component {
 
   render() {
     return this.props.projects.map(project => (
-      <Row key={Math.random()}>
+      <Row key={project.project.en}>
         <Col className="clearfix" xs="12">
           <div className="float-left  text-dark">
             <Str msg={project.project} className="pl-1" />
