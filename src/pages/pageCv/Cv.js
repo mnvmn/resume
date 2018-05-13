@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import TableInfo from './TableInfo';
 import msgs from './../../translations.json';
 import dispatcher from './../../store/dispatchers';
 import reducer from './../../store/reducers';
+import Str from './../../components/Str';
 
 class Cv extends React.Component {
   static propTypes = {
@@ -35,6 +36,23 @@ class Cv extends React.Component {
             isAsc={this.props.isAsc}
             sectionName="work"
           />
+        </Container>
+
+        <Container className="contact">
+          <Row>
+            <Col>
+              <h5 className="text-label text-uppercase">
+                <Str msg={msgs.title.contact} />
+              </h5>
+            </Col>
+          </Row>
+
+          {this.props.data.contact.map(info => (
+            <div key={info.label}>
+              <Str msg={info.label} />
+              <Str msg={info.value} />
+            </div>
+          ))}
         </Container>
       </div>
     );
