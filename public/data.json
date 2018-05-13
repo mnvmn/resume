@@ -1,5 +1,6 @@
 {
-  "info": [{
+  "info": [
+    {
       "label": {
         "en": "Name",
         "sk": "Meno"
@@ -31,20 +32,21 @@
       "value": "Bratislava"
     }
   ],
-  "contact": [
-    {
+  "contact": {
+    "email": {
       "label": "Email",
       "value": "matus.nevedel@gmail.com"
     },
-    {
+    "phone": {
       "label": {
         "en": "Phone",
         "sk": "Telefónne číslo"
       },
       "value": "+421 948 194 195"
     }
-  ],
-  "education": [{
+  },
+  "education": [
+    {
       "label": "1999 – 2004",
       "value": {
         "en": "Evanjelical lyceum, Bratislava",
@@ -63,32 +65,38 @@
       }
     }
   ],
-  "work": [{
+  "work": [
+    {
       "label": "2005 – 2007",
       "value": "PRO SCK s.r.o.",
-      "projects": [{
-        "project": {
-          "en": "Project documentation drafting - Eurovea, Motešických palace",
-          "sk": "Rysovanie stavebných výkresov - Eurovea, Palác Motešických"
-        },
-        "skill": "AutoCAD"
-      }]
+      "projects": [
+        {
+          "project": {
+            "en": "Project documentation drafting - Eurovea, Motešických palace",
+            "sk": "Rysovanie stavebných výkresov - Eurovea, Palác Motešických"
+          },
+          "skill": "AutoCAD"
+        }
+      ]
     },
     {
       "label": "2008 – 2010",
       "value": "AUDIRO s.r.o.",
-      "projects": [{
-        "project": {
-          "en": "Project documentation and visualisations for houses and interiors",
-          "sk": "Tvorba projektovej dokumentácie and vizualizácií"
-        },
-        "skill": "Autodesk and  Adobe software"
-      }]
+      "projects": [
+        {
+          "project": {
+            "en": "Project documentation and visualisations for houses and interiors",
+            "sk": "Tvorba projektovej dokumentácie and vizualizácií"
+          },
+          "skill": "Autodesk and  Adobe software"
+        }
+      ]
     },
     {
       "label": "2011 – 2012",
       "value": "freelance",
-      "projects": [{
+      "projects": [
+        {
           "project": {
             "en": "Development of theme for portal www.ghmp.cz",
             "sk": "Development témy portálu www.ghmp.cz"
@@ -107,7 +115,8 @@
     {
       "label": "2012 – 2015",
       "value": "Accenture s.r.o.",
-      "projects": [{
+      "projects": [
+        {
           "project": {
             "en": "Continuous delivery of components for Achmea",
             "sk": "Agilný vývoj komponentov pre Achmea"
@@ -140,12 +149,16 @@
     {
       "label": "2015 – 2018",
       "value": "Lomnido GmbH",
-      "projects": [{
+      "projects": [
+        {
           "project": {
-            "en": "Development of presentation layer for data integration application. Rewrite into SPA",
-            "sk": "Development prezentačnej vrstvy pre data integračnú applikáciu. Prepísanie do single page aplikácie"
+            "en":
+              "Development of presentation layer for data integration application. Rewrite into SPA",
+            "sk":
+              "Development prezentačnej vrstvy pre data integračnú applikáciu. Prepísanie do single page aplikácie"
           },
-          "skill": "Grails, Groovy, Backbone.js, Marionette.js, Bootstrap 4, Datatables, jsPlumb, Node, Sass"
+          "skill":
+            "Grails, Groovy, Backbone.js, Marionette.js, Bootstrap 4, Datatables, jsPlumb, Node, Sass"
         },
         {
           "project": {

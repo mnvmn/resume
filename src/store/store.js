@@ -21,7 +21,10 @@ const defaultState = {
     info: [],
     education: [],
     work: [],
-    contact: [],
+    contact: {
+      email: {},
+      phone: {},
+    },
   },
   isLoading: false,
   navbarOpen: settings.isAsc !== null ? !!settings.navbarOpen : false,

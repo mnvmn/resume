@@ -52,7 +52,7 @@ class Str extends React.Component {
 
     const finalText = trans ? Str.createLinks(trans) : '';
 
-    return <div className={this.props.className}>{finalText}</div>;
+    return <span className={this.props.className}>{finalText}</span>;
   }
 }
 

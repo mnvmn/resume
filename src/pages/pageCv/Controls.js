@@ -35,7 +35,7 @@ class Controls extends React.Component {
           outline
           size={btnSize}
           className={btnClass}
-          href="https://github.com/mnvmn/resume"
+          href="https://github.com/mnvmn"
           target="_blank"
         >
           <FontAwesome.FaCodeFork />
