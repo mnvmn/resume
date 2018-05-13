@@ -26,16 +26,18 @@ class Footer extends React.Component {
         <div className="d-flex align-items-center">
           <Container className="text-muted">
             <Row>
-              <Col className="text-sm text-left">
-                <div>
-                  <MatDesignIcons.MdMailOutline />
-                  <Str msg={this.props.data.contact.email.value} className="ml-2" />
-                </div>
-                <div>
-                  <MatDesignIcons.MdPhone />&nbsp;
-                  <Str msg={this.props.data.contact.phone.value} className="ml-1" />
-                </div>
-              </Col>
+              {this.props.data.contact && (
+                <Col className="text-sm text-left">
+                  <div>
+                    <MatDesignIcons.MdMailOutline />
+                    <Str msg={this.props.data.contact.email.value} className="ml-2" />
+                  </div>
+                  <div>
+                    <MatDesignIcons.MdPhone />
+                    <Str msg={this.props.data.contact.phone.value} className="ml-2" />
+                  </div>
+                </Col>
+              )}
 
               <Col className="text-sm text-right">
                 <div>
