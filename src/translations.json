@@ -15,8 +15,8 @@
   },
   "btns": {
     "viewSource": {
-      "en": "View Source @github",
-      "sk": "Navštív @github"
+      "en": "Github",
+      "sk": "Github"
     },
     "viewContact": {
       "en": "Contact",

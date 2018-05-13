@@ -19,38 +19,38 @@ class Logo extends React.Component {
       <div>
         <svg height={this.props.height} width={this.props.width} viewBox="0 0 100 100">
           <g
-            id="layer1"
-            transform="translate(0)"
             style={{
               fill: 'none',
               stroke: this.props.color,
               strokeWidth: 0.8,
             }}
           >
-            <ellipse
-              id="path4147"
-              rx="46.681"
-              ry="10.426"
-              transform="matrix(-.37430 -.92731 .87601 -.48230 0 0)"
-              cy="31.137"
-              cx="-70.838"
-            />
-            <ellipse
-              id="path4162"
-              rx="12.386"
-              ry="47.768"
-              transform="matrix(.97745 .21117 -.66264 .74894 0 0)"
-              cy="44.641"
-              cx="78.695"
-            />
-            <ellipse
-              id="path4164"
-              rx="47.256"
-              ry="11.284"
-              transform="matrix(.98997 .14129 .038972 .99924 0 0)"
-              cy="48.047"
-              cx="48.685"
-            />
+            <g transform="rotate(-5, 50, 50)" >
+              <ellipse
+                id="path4147"
+                rx="46.681"
+                ry="10.426"
+                transform="matrix(-.37430 -.92731 .87601 -.48230 0 0)"
+                cy="31.137"
+                cx="-70.838"
+              />
+              <ellipse
+                id="path4162"
+                rx="12.386"
+                ry="47.768"
+                transform="matrix(.97745 .21117 -.66264 .74894 0 0)"
+                cy="44.641"
+                cx="78.695"
+              />
+              <ellipse
+                id="path4164"
+                rx="47.256"
+                ry="11.284"
+                transform="matrix(.98997 .14129 .038972 .99924 0 0)"
+                cy="48.047"
+                cx="48.685"
+              />
+            </g>
             <g
               id="layer1"
               transform="translate(0)"

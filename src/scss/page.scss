@@ -51,17 +51,12 @@ h5 {
   font-weight: bold;
 }
 
-#logo {
-  padding: 5px 10px;
-  .title {
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 2em;
-    color: white;
-    color: #0475dc;
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg);
-  }
+#logo-title {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 2em;
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
 #bootstrap-grid-util {
