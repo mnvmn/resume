@@ -18,7 +18,9 @@ class PagePoster extends React.Component {
           className="d-flex justify-content-center"
           style={{ marginTop: '200px', padding: '5px 10px' }}
         >
-          <div id="logo-title" className="title text-center mb-3" style={{ color: '#2d568e' }}>
+          {/* #0475dc */}
+          {/* '#0a67c3' */}
+          <div id="logo-title" className="title text-center mb-3" style={{ color: '#0475dc' }}>
             Let&apos;s build something in React...
           </div>
         </div>
