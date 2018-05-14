@@ -17,7 +17,7 @@ class Logo extends React.Component {
   render() {
     return (
       <div>
-        <svg height={this.props.height} width={this.props.width} viewBox="0 0 100 100">
+        <svg height={this.props.height} width={this.props.width} viewBox="0 0 100 100" id="logo">
           <g
             style={{
               fill: 'none',
