@@ -56,11 +56,12 @@ button {
     @include media-breakpoint-down(xs) {
       border-left-width: 0;
       border-right-width: 0;
-      background-color: $footer-color  !important;
-      &:first-child{
+      background-color: $footer-color !important;
+      &:first-child {
         border-top-width: 0;
       }
-      &, &:hover {
+      &,
+      &:hover {
         border-color: $gray-300 !important;
       }
     }
@@ -82,10 +83,11 @@ button {
 
 .btn.btn-context {
   // background-color: darken($gray-100, 5%) !important;
-  background-color: $footer-color !important;
-  color: $gray-600 !important;
+  color: $gray-700 !important;
   &:hover {
-    color: darken($gray-600, 2%) !important;
+    transition: background-color 200ms ease, border-color 200ms ease;
+    background-color: lighten($footer-color, 2%) !important;
+    color: darken($gray-700, 4%) !important;
   }
 }
 
@@ -107,8 +109,8 @@ input[type='submit'] {
 }
 
 .navbar-toggler {
-  background-color: $footer-color  !important;
-  
+  background-color: $footer-color !important;
+
   &,
   &:active,
   &:focus,

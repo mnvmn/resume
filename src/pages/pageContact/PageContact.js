@@ -26,6 +26,7 @@ class PagePoster extends React.Component {
         </div>
         <div className="d-flex justify-content-center mt-5">
           <Logo3d />
+          {/* <Logo3d color="#929292" /> */}
         </div>
         <div className="d-flex justify-content-center">
           <Logo3d isSpinning />

@@ -67,10 +67,11 @@ button {
       color: #012c4f !important; }
 
 .btn.btn-context {
-  background-color: #f5f5f5 !important;
-  color: #6c757d !important; }
+  color: #495057 !important; }
   .btn.btn-context:hover {
-    color: #677078 !important; }
+    transition: background-color 200ms ease, border-color 200ms ease;
+    background-color: #fafafa !important;
+    color: #40464c !important; }
 
 .btn,
 button,
