@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Navbar, NavbarToggler, Collapse } from 'reactstrap';
 import PropTypes from 'prop-types';
+import Logo3d from 'react-3d-logo';
 import Logo from './Logo';
 import dispatcher from './../../store/dispatchers';
 import reducer from './../../store/reducers';
@@ -45,6 +46,10 @@ class PageCv extends React.Component {
         </Container>
 
         <Cv />
+
+        <div className="d-flex justify-content-center mt-5">
+          <Logo3d color="#0361b7" />
+        </div>
 
         <Link to="/contact">
           <ControlFlipPage orientation="right" className="d-none d-sm-block" />

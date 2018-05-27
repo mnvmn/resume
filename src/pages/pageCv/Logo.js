@@ -25,7 +25,7 @@ class Logo extends React.Component {
               strokeWidth: 0.8,
             }}
           >
-            <g transform="rotate(-5, 50, 50)" >
+            <g transform="rotate(-8, 50, 50)" >
               <ellipse
                 id="path4147"
                 rx="46.681"

@@ -44,18 +44,10 @@ class App extends Component {
       <div className="App  d-flex flex-column">
         <GridUtil />
         <BrowserRouter>
-          <Route
-            render={({ location }) => (
-              <TransitionGroup>
-                <CSSTransition key={location.key} classNames="pageRoll" timeout={200}>
-                  <Switch location={location}>
-                    <Route exact path="/" component={PageCv} />
-                    <Route exact path="/contact" component={PageContact} />
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
-            )}
-          />
+          <Switch>
+            <Route exact path="/" component={PageCv} />
+            <Route exact path="/contact" component={PageContact} />
+          </Switch>
         </BrowserRouter>
         <Footer />
       </div>
