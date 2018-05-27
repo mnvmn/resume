@@ -47,14 +47,13 @@ class PageCv extends React.Component {
 
         <Cv />
 
-        <div className="d-flex justify-content-center mt-5">
-          <Logo3d color="#0361b7" />
-        </div>
+        {/* <div className="d-flex justify-content-center mt-5 mb-3 d-print-none">
+          <Logo3d isSpinning color="#bdbdbd" />
+        </div> */}
 
         <Link to="/contact">
           <ControlFlipPage orientation="right" className="d-none d-sm-block" />
         </Link>
-
       </div>
     );
   }

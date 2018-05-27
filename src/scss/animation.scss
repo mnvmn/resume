@@ -3,48 +3,10 @@
 @import 'node_modules/bootstrap/scss/variables';
 @import 'variables';
 
-.pageRoll-enter {
-  opacity: 0.01;
-}
-
-.pageRoll-enter-active {
-  opacity: 1;
-  transition: opacity 200ms ease-out;
-}
-
-// .pageRoll-enter,
-// .pageRoll-exit {
-//   position: absolute;
-//   width: 100%;
-// }
-
-.pageRoll-exit {
-  display: none;
-  opacity: 1;
-}
-
-// .pageRoll-exit-active {
-//   opacity: 0.01;
-//   transition: opacity 50ms ease;
-// }
-#footer{
-  animation: footer-appear 500ms ease-out;
-}
-@keyframes footer-appear {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #logo {
   min-height: 100px;
   animation: logo-grow 400ms ease-in;
+  animation: logo-grow 400ms ease-in, logo-appear 600ms ease-in;
 }
 @keyframes logo-grow {
   0% {
@@ -54,30 +16,25 @@
     transform: scale(1, 1);
   }
 }
+@keyframes logo-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 #cv-container {
   // transition: <property> <duration> <timing-function> <delay>;
-  animation: cv-enter 1600ms ease-out, cv-appear 1600ms ease-out;
-  // animation: cv-appear 1400ms ease-out;
-}
-
-@keyframes cv-grow {
-  0% {
-    transform: scale(0.98, 0.96);
-  }
-  60% {
-    transform: scale(0.98, 0.96);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
+  animation: cv-enter 1400ms ease-out, cv-appear 1400ms ease-out;
 }
 @keyframes cv-enter {
   0% {
-    transform: translate(0, 7px);
+    transform: translate(0, 5px);
   }
   60% {
-    transform: translate(0, 7px);
+    transform: translate(0, 5px);
   }
   100% {
     transform: translate(0, 0);
@@ -91,6 +48,33 @@
     opacity: 0;
   }
   95% {
+    opacity: 1;
+  }
+}
+
+.appear {
+  animation: appear 800ms ease-in;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#footer {
+  animation: footer-appear 500ms ease-out;
+}
+@keyframes footer-appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }

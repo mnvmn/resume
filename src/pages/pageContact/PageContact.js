@@ -9,7 +9,7 @@ import ControlFlipPage from './../../components/ControlFlipPage';
 class PagePoster extends React.Component {
   render() {
     return (
-      <div id="pageLogo" className="page">
+      <div id="pageLogo" className="page appear">
         <Link to="/">
           <ControlFlipPage orientation="left" />
         </Link>
@@ -20,12 +20,18 @@ class PagePoster extends React.Component {
         >
           {/* #0475dc */}
           {/* '#0a67c3' */}
-          <div id="logo-title" className="title text-center mb-3" style={{ color: '#0475dc' }}>
-            Let&apos;s build something in React...
-          </div>
+          {/* <div id="logo-title" className="title text-center mb-3" style={{ color: '#0475dc' }}>
+            React.js and THREE.js
+          </div> */}
         </div>
         <div className="d-flex justify-content-center mt-5">
-          <Logo3d color="#0361b7" />
+          <Logo3d />
+        </div>
+        <div className="d-flex justify-content-center">
+          <Logo3d isSpinning />
+        </div>
+        <div className="d-flex justify-content-center">
+          <Logo3d isSpinning isRotating />
         </div>
       </div>
     );

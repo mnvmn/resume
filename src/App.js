@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import dispatcher from './store/dispatchers';
 import reducer from './store/reducers';
 import PageCv from './pages/pageCv/PageCv';
