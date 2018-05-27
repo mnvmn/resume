@@ -153,26 +153,19 @@
         {
           "project": {
             "en":
-              "Development of presentation layer for data integration application. Rewrite into SPA",
+              "Implementation of presentation layer for data transformation application. Rewrite from MVC into SPA web client and REST services. Development of interactive components for building workflows, routing configuration, data mapping, account management, and other items including overview and monitoring",
             "sk":
-              "Development prezentačnej vrstvy pre data integračnú applikáciu. Prepísanie do single page aplikácie"
+              "Implementácia prezentačnej vrstvy pre data integračnú applikáciu. Rewrite z MVC do SPA a RESTových servisov. Development interaktívnych komponentov pre vytváranie nastavení a monitoring."
           },
           "skill":
-            "Grails, Groovy, Backbone.js, Marionette.js, Bootstrap 4, Datatables, jsPlumb, Node, Sass"
+            "Grails, Groovy, Backbone, Marionette, Bootstrap 4, Datatables, JsPlumb, Flot, Node, sass"
         },
         {
           "project": {
-            "en": "Implementation of full stack application for monitoring of projects",
-            "sk": "Implementácia full stack aplikácie pre monitorovanie projektov"
+            "en": "Implementation of full stack application for monitoring of projects and client side application for server and network configuration",
+            "sk": "Implementácia full stack aplikácie pre monitorovanie projektov a browserovej aplikácia pre konfiguráciu serveru a siete"
           },
-          "skill": "Grails, Groovy, Angular.js, Bootstrap 3, Datatables"
-        },
-        {
-          "project": {
-            "en": "Implementation of client side application for server and network configuration",
-            "sk": "Implementácia browserovej aplikácia pre konfiguráciu serveru a siete"
-          },
-          "skill": "Grails, Groovy, Angular.js, Bootstrap 3, Datatables"
+          "skill": "Grails, Groovy, Angular, Bootstrap 3, less"
         }
       ]
     }

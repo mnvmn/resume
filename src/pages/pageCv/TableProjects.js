@@ -18,7 +18,7 @@ export class TableProjects extends React.Component {
       <Row key={project.project.en}>
         <Col className="clearfix" xs="12">
           <div className="float-left  text-dark">
-            <Str msg={project.project} className="pl-1" />
+            <Str msg={project.project} className="ml-1 d-inline-block" />
           </div>
           <div className="float-right text-right text-secondary">
             <Str msg={project.skill} />
