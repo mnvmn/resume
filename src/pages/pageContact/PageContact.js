@@ -9,7 +9,7 @@ import ControlFlipPage from './../../components/ControlFlipPage';
 class PagePoster extends React.Component {
   render() {
     return (
-      <div id="pageLogo" className="page appear">
+      <div id="pageLogo" className="page anim-enter">
         <Link to="/">
           <ControlFlipPage orientation="left" />
         </Link>

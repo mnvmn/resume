@@ -3,38 +3,18 @@
 @import 'node_modules/bootstrap/scss/variables';
 @import 'variables';
 
-#logo {
-  min-height: 100px;
-  animation: logo-grow 400ms ease-in;
-  animation: logo-grow 400ms ease-in, logo-appear 600ms ease-in;
-}
-@keyframes logo-grow {
-  0% {
-    transform: scale(0, 0);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-@keyframes logo-appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #cv-container {
   // transition: <property> <duration> <timing-function> <delay>;
-  animation: cv-enter 1400ms ease-out, cv-appear 1400ms ease-out;
+  animation: cv-enter 800ms ease-out, cv-appear 400ms ease-in;
 }
+#logo {
+  min-height: 100px;
+  animation: cv-enter 800ms ease-out, cv-appear 400ms ease-in;
+}
+
 @keyframes cv-enter {
   0% {
-    transform: translate(0, 5px);
-  }
-  60% {
-    transform: translate(0, 5px);
+    transform: translate(-8px, 0);
   }
   100% {
     transform: translate(0, 0);
@@ -44,26 +24,10 @@
   0% {
     opacity: 0;
   }
-  60% {
-    opacity: 0;
-  }
   95% {
     opacity: 1;
   }
 }
-
-.appear {
-  animation: appear 800ms ease-in;
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #footer {
   animation: footer-appear 500ms ease-out;
 }
@@ -76,5 +40,39 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+.anim-grow {
+  animation: anim-grow 300ms ease-in;
+}
+.anim-enter {
+  animation: anim-appear 500ms ease-in, anim-enter 500ms ease-in;
+}
+.anim-appear {
+  animation: anim-appear 500ms ease-in;
+}
+@keyframes anim-enter {
+  0% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes anim-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim-grow {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }

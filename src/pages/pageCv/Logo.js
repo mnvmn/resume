@@ -16,8 +16,13 @@ class Logo extends React.Component {
 
   render() {
     return (
-      <div>
-        <svg height={this.props.height} width={this.props.width} viewBox="0 0 100 100" id="logo">
+      <div id="logo">
+        <svg
+          height={this.props.height}
+          width={this.props.width}
+          viewBox="0 0 100 100"
+          className="anim-grow"
+        >
           <g
             style={{
               fill: 'none',
@@ -25,7 +30,7 @@ class Logo extends React.Component {
               strokeWidth: 0.8,
             }}
           >
-            <g transform="rotate(-8, 50, 50)" >
+            <g transform="rotate(-8, 50, 50)">
               <ellipse
                 id="path4147"
                 rx="46.681"
