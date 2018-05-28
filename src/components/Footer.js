@@ -23,7 +23,9 @@ class Footer extends React.Component {
         <div className="d-flex align-items-center">
           <Container className="text-muted">
             <Row>
-              <ContactInfo showIcons />
+              <Col>
+                <ContactInfo showIcons />
+              </Col>
 
               <Col className="text-sm text-right">
                 <div>

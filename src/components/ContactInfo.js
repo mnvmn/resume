@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Col } from 'reactstrap';
 import { connect } from 'react-redux';
 import * as MatDesignIcons from 'react-icons/lib/md';
 import Str from './Str';
@@ -21,20 +20,20 @@ class ContactInfo extends React.Component {
 
   render() {
     return (
-      <Col className="text-sm text-left">
+      <div>
         {this.props.data.contact && (
           <div>
             <div>
-              {this.props.showIcons && <MatDesignIcons.MdMailOutline />}
-              <Str msg={this.props.data.contact.email.value} className="ml-2" />
+              {this.props.showIcons && <MatDesignIcons.MdMailOutline className="mr-2" />}
+              <Str msg={this.props.data.contact.email.value} />
             </div>
             <div>
-              {this.props.showIcons && <MatDesignIcons.MdPhone />}
-              <Str msg={this.props.data.contact.phone.value} className="ml-2" />
+              {this.props.showIcons && <MatDesignIcons.MdPhone className="mr-2" />}
+              <Str msg={this.props.data.contact.phone.value} />
             </div>
           </div>
         )}
-      </Col>
+      </div>
     );
   }
 }
