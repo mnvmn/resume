@@ -153,16 +153,16 @@
         {
           "project": {
             "en":
-              "Implementation of presentation layer for data transformation application. Rewrite from MVC into SPA web client and REST services. Development of interactive components for building workflows, routing configuration, data mapping, account management, and other items including overview and monitoring",
+              "Implementation of presentation layer for data transformation application. Rewrite from MVC into SPA web client and REST services. Development of interactive components for building workflows, routing, data mapping and other configuration items including overview, monitoring, account management, help and documentation",
             "sk":
-              "Implementácia prezentačnej vrstvy pre data integračnú applikáciu. Rewrite z MVC do SPA a RESTových servisov. Development interaktívnych komponentov pre vytváranie nastavení a monitoring."
+              "Implementácia prezentačnej vrstvy pre data integračnú applikáciu. Rewrite z MVC do SPA a RESTových servisov. Development interaktívnych komponentov pre vytváranie nastavení a monitoring"
           },
           "skill":
-            "Grails, Groovy, Backbone, Marionette, Bootstrap 4, Datatables, JsPlumb, Flot, Node, sass"
+            "Grails, Groovy, Backbone, Marionette, Datatables, JsPlumb, Flot, Bootstrap 4, sass"
         },
         {
           "project": {
-            "en": "Implementation of full stack application for monitoring of projects and client side application for server and network configuration",
+            "en": "Implementation of full stack application for monitoring of projects and a client side application for server and network configuration",
             "sk": "Implementácia full stack aplikácie pre monitorovanie projektov a browserovej aplikácia pre konfiguráciu serveru a siete"
           },
           "skill": "Grails, Groovy, Angular, Bootstrap 3, less"
