@@ -1,0 +1,29 @@
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import DeployedDate from './DeployedDate';
+import ContactInfo from './ContactInfo';
+
+const cvLink = 'https://mnvmn.github.io';
+
+export default class PrintHeader extends React.Component {
+  render() {
+    return (
+      <Container className="d-print-only">
+        <Row>
+          <Col className="d-flex justify-content-between text-muted text-small">
+            <ContactInfo />
+
+            <div>
+              <a href={cvLink} className="btn-link">
+                {cvLink}
+              </a>
+              <div className="text-right">
+                <DeployedDate />
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
+}

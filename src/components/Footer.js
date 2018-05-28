@@ -2,20 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Col, Row } from 'reactstrap';
 import { connect } from 'react-redux';
-import * as MatDesignIcons from 'react-icons/lib/md';
-import Str from './Str';
 import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';
 import DeployedDate from './DeployedDate';
+import ContactInfo from './ContactInfo';
+
 // import msgs from './../translations.json';
 
 class Footer extends React.Component {
   static propTypes = {
     repo: PropTypes.shape({
       pushed_at: PropTypes.string.isRequired,
-    }).isRequired,
-    data: PropTypes.shape({
-      contact: PropTypes.object,
     }).isRequired,
   };
 
@@ -26,18 +23,7 @@ class Footer extends React.Component {
         <div className="d-flex align-items-center">
           <Container className="text-muted">
             <Row>
-              {this.props.data.contact && (
-                <Col className="text-sm text-left">
-                  <div>
-                    <MatDesignIcons.MdMailOutline />
-                    <Str msg={this.props.data.contact.email.value} className="ml-2" />
-                  </div>
-                  <div>
-                    <MatDesignIcons.MdPhone />
-                    <Str msg={this.props.data.contact.phone.value} className="ml-2" />
-                  </div>
-                </Col>
-              )}
+              <ContactInfo showIcons />
 
               <Col className="text-sm text-right">
                 <div>
