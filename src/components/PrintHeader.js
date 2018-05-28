@@ -14,7 +14,7 @@ export default class PrintHeader extends React.Component {
             <ContactInfo />
 
             <div>
-              <a href={cvLink} className="btn-link">
+              <a href={cvLink}>
                 {cvLink}
               </a>
               <div className="text-right">

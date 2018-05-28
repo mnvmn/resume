@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Container } from 'reactstrap';
 import TableInfo from './TableInfo';
-// import TableContact from './TableContact';
 import msgs from './../../translations.json';
 import dispatcher from './../../store/dispatchers';
 import reducer from './../../store/reducers';
@@ -37,11 +36,6 @@ class Cv extends React.Component {
             isAsc={this.props.isAsc}
             sectionName="work"
           />
-          {/* <TableContact
-            data={data}
-            title={msgs.title.contact}
-            sectionName="work"
-          /> */}
         </Container>
       </div>
     );
