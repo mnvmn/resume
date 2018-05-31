@@ -27,7 +27,7 @@ class Footer extends React.Component {
                 <ContactInfo showIcons />
               </Col>
 
-              <Col className="text-sm text-right">
+              <Col xs={12} md="auto" className="text-sm text-md-right">
                 <div>
                   {this.props.repo.pushed_at ? (
                     <span>
