@@ -158,14 +158,14 @@
               "Implementácia prezentačnej vrstvy pre data integračnú applikáciu. Rewrite z MVC do SPA a RESTových servisov. Development interaktívnych komponentov pre vytváranie nastavení a monitoring"
           },
           "skill":
-            "Grails, Groovy, Backbone, Marionette, Datatables, JsPlumb, Flot, Bootstrap 4, sass"
+            "groovy, Grails, Backbone, Marionette, jQuery, Underscore, Datatables, JsPlumb, Flot, Bootstrap 4, sass"
         },
         {
           "project": {
             "en": "Implementation of full stack application for monitoring of projects and a client side application for server and network configuration",
             "sk": "Implementácia full stack aplikácie pre monitorovanie projektov a browserovej aplikácia pre konfiguráciu serveru a siete"
           },
-          "skill": "Grails, Groovy, Angular, Bootstrap 3, less"
+          "skill": "groovy, Grails, Angular, Bootstrap 3, less"
         }
       ]
     }
