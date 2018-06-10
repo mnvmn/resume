@@ -25,16 +25,16 @@ class Cv extends React.Component {
         <Container>
           <TableInfo data={data.info} isAsc sectionName="info" />
           <TableInfo
-            data={data.education}
-            title={msgs.title.education}
-            isAsc={this.props.isAsc}
-            sectionName="education"
-          />
-          <TableInfo
             data={data.work}
             title={msgs.title.work}
             isAsc={this.props.isAsc}
             sectionName="work"
+          />
+          <TableInfo
+            data={data.education}
+            title={msgs.title.education}
+            isAsc={this.props.isAsc}
+            sectionName="education"
           />
         </Container>
       </div>

@@ -6945,6 +6945,15 @@ h5 {
   color: #ced4da;
   display: none; }
 
+::selection {
+  background: #ffdc72;
+  color: #654c2b; }
+
+.text-primary::selection,
+.text-primary span::selection, .text-secondary::selection,
+.text-secondary span::selection {
+  color: #8a6b2d; }
+
 .btn-group-xs > .btn,
 .btn.btn-xs {
   padding: 5px 10px;
