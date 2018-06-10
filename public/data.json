@@ -93,20 +93,29 @@
       ]
     },
     {
+      "label": "2011 Sep",
+      "value": {
+        "en": "internship",
+        "sk": "letná stáž"
+      },
+      "projects": [
+        {
+          "project": {
+            "en": "development of theme for portal www.ghmp.cz",
+            "sk": "development témy portálu www.ghmp.cz"
+          },
+          "skill": "Liferay, java, css"
+        }
+      ]
+    },
+    {
       "label": "2011 – 2012",
       "value": "freelance",
       "projects": [
         {
           "project": {
-            "en": "Internship in EEA s.r.o.  - development of theme for portal www.ghmp.cz",
-            "sk": "Stáž v EEA s.r.o. - development témy portálu www.ghmp.cz"
-          },
-          "skill": "Liferay, java, css"
-        },
-        {
-          "project": {
-            "en": "Freelance - CMS customization, development and deployment ie. www.volis.sk",
-            "sk": "Freelance - Konfigurácia, vývoj a nasadenie CMS napr. www.volis.sk"
+            "en": "CMS customization, development and deployment www.volis.sk and others",
+            "sk": "Konfigurácia, vývoj a nasadenie CMS www.volis.sk a ďalšie"
           },
           "skill": "Drupal, php, js, css"
         }
