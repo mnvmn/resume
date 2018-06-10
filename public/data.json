@@ -98,15 +98,15 @@
       "projects": [
         {
           "project": {
-            "en": "Development of theme for portal www.ghmp.cz",
-            "sk": "Development témy portálu www.ghmp.cz"
+            "en": "Internship in EEA s.r.o.  - development of theme for portal www.ghmp.cz",
+            "sk": "Stáž v EEA s.r.o. - development témy portálu www.ghmp.cz"
           },
           "skill": "Liferay, java, css"
         },
         {
           "project": {
-            "en": "CMS customization, development and deployment www.volis.sk …",
-            "sk": "Konfigurácia, vývoj a nasadenie CMS www.volis.sk …"
+            "en": "Freelance - CMS customization, development and deployment ie. www.volis.sk",
+            "sk": "Freelance - Konfigurácia, vývoj a nasadenie CMS napr. www.volis.sk"
           },
           "skill": "Drupal, php, js, css"
         }
@@ -118,31 +118,35 @@
       "projects": [
         {
           "project": {
-            "en": "Continuous delivery of components for Achmea",
-            "sk": "Agilný vývoj komponentov pre Achmea"
-          },
-          "skill": "SharePoint, ASP.Net, js, css"
+            "en": "Full stack development on Microsoft platform. Member of agile scrum teams on projects for international clients.",
+            "sk": "Full stack development na platforme Microsoft. Práca v agilných tímoch na projektoch pre medzinárodných klientov."
+          }
         },
         {
           "project": {
-            "en": "Development and deployment of internal information portal",
-            "sk": "Vývoj a nasadenie interného informačného portálu"
-          },
-          "skill": "SharePoint, ASP.Net, js, css"
+            "en": "Project Achmea - continuous delivery of SharePoint components",
+            "sk": "Projekt Achmea - agilný vývoj SharePoint komponentov"
+          }
         },
         {
           "project": {
-            "en": "Implementation of call center dashbord for TDC",
-            "sk": "Implementácia dashbordu pre TDC support centrum"
-          },
-          "skill": "SharePoint, ASP.Net, js, css"
+            "en": "Internal project - design, development and deployment of portal dedicated to Bratislava Delivery Center on Avanade domain",
+            "sk": "Interný projekt - dizajn, vývoj a nasadenie portálu pre Bratislava Delivery Center v doméne Avanade"
+          }
         },
         {
           "project": {
-            "en": "Pre-launch development of global portal www.husqvarna.com",
-            "sk": "Predprodukčný vývoj globálneho portálu www.husqvarna.com"
+            "en": "Project TDC - implementation of call center dashbord as SPA and backend services aggregating data from legacy systems",
+            "sk": "Projekt TDC - implementácia single page aplikácia slúžiacej ako dashbord pre call centrum"
           },
-          "skill": "Sitecore, ASP.Net, js, css"
+          "skill": "SharePoint 2010, ASP.Net, js, css"
+        },
+        {
+          "project": {
+            "en": "Project Husqvarna - implementation of content management system for www.husqvarna.com",
+            "sk": "Projekt Husqvarna - implementácia CMS www.husqvarna.com"
+          },
+          "skill": "Sitecore 7, ASP.Net, Bootstrap 3, js, css"
         }
       ]
     },
@@ -153,7 +157,7 @@
         {
           "project": {
             "en":
-              "Implementation of presentation layer for data transformation application. Rewrite from MVC into SPA web client and REST services. Development of interactive components for building workflows, routing, data mapping and other configuration items including overview, monitoring, account management, help and documentation",
+              "Front end layer implementation of data transformation application. Development of interactive components for connectivity configuration, setup of customisable workflows, message routing, mapping between dataformats, environment staging, administration, system monitoring and others. Rewrite of grails MVC project into REST services and SPA web client.",
             "sk":
               "Implementácia prezentačnej vrstvy pre data integračnú applikáciu. Rewrite z MVC do SPA a RESTových servisov. Development interaktívnych komponentov pre vytváranie nastavení a monitoring"
           },
@@ -162,7 +166,7 @@
         },
         {
           "project": {
-            "en": "Implementation of full stack application for monitoring of projects and a client side application for server and network configuration",
+            "en": "Implementation of two applications for server configuration and remote monitoring of deployed projects",
             "sk": "Implementácia full stack aplikácie pre monitorovanie projektov a browserovej aplikácia pre konfiguráciu serveru a siete"
           },
           "skill": "groovy, Grails, Angular, Bootstrap 3, less"
