@@ -139,8 +139,8 @@
         },
         {
           "project": {
-            "en": "Internal project - design, development and deployment of portal dedicated to Bratislava Delivery Center on Avanade domain",
-            "sk": "Interný projekt - dizajn, vývoj a nasadenie portálu pre Bratislava Delivery Center v doméne Avanade"
+            "en": "Internal assignment - design, development and deployment of portal dedicated to Bratislava Delivery Center on Avanade domain",
+            "sk": "Interná úloha - dizajn, vývoj a nasadenie portálu pre Bratislava Delivery Center v doméne Avanade"
           }
         },
         {
@@ -152,7 +152,7 @@
         },
         {
           "project": {
-            "en": "Project Husqvarna - implementation of content management system for www.husqvarna.com",
+            "en": "Project Husqvarna - implementation of content management system www.husqvarna.com",
             "sk": "Projekt Husqvarna - implementácia CMS www.husqvarna.com"
           },
           "skill": "Sitecore 7, ASP.Net, Bootstrap 3, js, css"
@@ -166,7 +166,7 @@
         {
           "project": {
             "en":
-              "Front end layer implementation of data transformation application. Development of interactive components for connectivity configuration, setup of customisable workflows, message routing, mapping between dataformats, environment staging, administration, system monitoring and others. Rewrite of grails MVC project into REST services and SPA web client.",
+              "Front end layer implementation for data transformation application. Development of interactive components for connectivity configuration, setup of customisable workflows, message routing, mapping between dataformats, environment staging, administration, system monitoring and others. Rewrite of grails MVC project into REST services and SPA web client.",
             "sk":
               "Implementácia prezentačnej vrstvy pre data integračnú applikáciu. Rewrite z MVC do SPA a RESTových servisov. Development interaktívnych komponentov pre vytváranie nastavení a monitoring"
           },
