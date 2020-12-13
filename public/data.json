@@ -189,7 +189,7 @@
         {
           "project": {
             "en":
-              "Bug fixes and performance enhancements for the front end layer of a clinical trials document management application. Integration with corporate platform. Implementation of new components. Implementation of UI tracing instrumentation. Proof of concept for reactjs migration. Various utility scripts. Consulting for automatic UI and performance tests.",
+              "Bug fixes and performance enhancements for the front end layer of a clinical trials document management application. Integration with corporate platform. Implementation of new components. Implementation of UI tracing instrumentation. Proof of concept for migration of the app to reactjs framework. Various utility scripts. Consulting for automatic UI and performance tests.",
             "sk":
               "Opravy defektov a zefektívnenie FE vrstvy aplikácie na vedenie dokumentov pre klinické testy. Integrácia s korporátnou platformou. Implementácia nových komponentov. Implementácia UI tracingu. Proof of concept pre migráciu na reactjs framework. Tvorba pomocných skriptov. Konzultácie pre vývoj automatizovaných UI a performance testov."
           },
