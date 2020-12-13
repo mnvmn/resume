@@ -171,14 +171,30 @@
               "Implementácia prezentačnej vrstvy pre data integračnú applikáciu. Rewrite z MVC do SPA a RESTových servisov. Development interaktívnych komponentov pre vytváranie nastavení a monitoring"
           },
           "skill":
-            "groovy, Grails, Backbone, Marionette, jQuery, Underscore, Datatables, JsPlumb, Flot, Bootstrap 4, sass"
+            "Groovy, Grails, Backbone, Marionette, jQuery, Underscore, Datatables, JsPlumb, Flot, Bootstrap 4"
         },
         {
           "project": {
             "en": "Implementation of two applications for server configuration and remote monitoring of deployed projects",
             "sk": "Implementácia full stack aplikácie pre monitorovanie projektov a browserovej aplikácia pre konfiguráciu serveru a siete"
           },
-          "skill": "groovy, Grails, Angular, Bootstrap 3, less"
+          "skill": "Groovy, Grails, AngularJs, Bootstrap 3"
+        }
+      ]
+    },
+    {
+      "label": "2018 Jun – ",
+      "value": "Foundation s.r.o.",
+      "projects": [
+        {
+          "project": {
+            "en":
+              "Bug fixes and performance enhancements for the front end layer of a clinical trials document management application. Integration with corporate platform. Implementation of new components. Implementation of UI tracing instrumentation. Proof of concept for reactjs migration. Various utility scripts. Consulting for automatic UI and performance tests.",
+            "sk":
+              "Opravy defektov a zefektívnenie FE vrstvy aplikácie na vedenie dokumentov pre klinické testy. Integrácia s korporátnou platformou. Implementácia nových komponentov. Implementácia UI tracingu. Proof of concept pre migráciu na reactjs framework. Tvorba pomocných skriptov. Konzultácie pre vývoj automatizovaných UI a performance testov."
+          },
+          "skill":
+            "AngularJs, Grunt, PdfJs, ZipkinJs, Underscore, ReactJs, Webpack, Bootstrap 3"
         }
       ]
     }
