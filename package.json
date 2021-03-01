@@ -19,7 +19,7 @@
     "react-transition-group": "^4.4.1",
     "reactstrap": "^8.7.1",
     "redux": "^4.0.5",
-    "three": "^0.123.0",
+    "three": "^0.125.0",
     "three-orbit-controls": "^82.1.0"
   },
   "scripts": {
