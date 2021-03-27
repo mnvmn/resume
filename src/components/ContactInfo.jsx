@@ -6,36 +6,32 @@ import Str from './Str';
 import dispatcher from '../store/dispatchers';
 import reducer from '../store/reducers';
 
-class ContactInfo extends React.Component {
-  static propTypes = {
-    showIcons: PropTypes.bool,
-    data: PropTypes.shape({
-      contact: PropTypes.object,
-    }).isRequired,
-  };
-
-  static defaultProps = {
-    showIcons: false,
-  };
-
-  render() {
-    return (
+const ContactInfo = ({ showIcons, data }) => {
+  <div>
+    {data.contact && (
       <div>
-        {this.props.data.contact && (
-          <div>
-            <div>
-              {this.props.showIcons && <MatDesignIcons.MdMailOutline className="mr-2" />}
-              <Str msg={this.props.data.contact.email.value} />
-            </div>
-            <div>
-              {this.props.showIcons && <MatDesignIcons.MdPhone className="mr-2" />}
-              <Str msg={this.props.data.contact.phone.value} />
-            </div>
-          </div>
-        )}
+        <div>
+          {showIcons && <MatDesignIcons.MdMailOutline className="mr-2" />}
+          <Str msg={data.contact.email.value} />
+        </div>
+        <div>
+          {showIcons && <MatDesignIcons.MdPhone className="mr-2" />}
+          <Str msg={data.contact.phone.value} />
+        </div>
       </div>
-    );
-  }
-}
+    )}
+  </div>;
+};
+
+ContactInfo.propTypes = {
+  showIcons: PropTypes.bool,
+  data: PropTypes.shape({
+    contact: PropTypes.object,
+  }).isRequired,
+};
+
+ContactInfo.defaultProps = {
+  showIcons: false,
+};
 
 export default connect(reducer, dispatcher)(ContactInfo);

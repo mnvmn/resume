@@ -5,7 +5,9 @@
     "es6": true,
     "node": false
   },
-    "extends": ["airbnb"],
+  "extends": [
+    "airbnb"
+  ],
   "settings": {
     "react": {
       "createClass": "createReactClass",
@@ -24,8 +26,11 @@
     "react",
     "react-hooks"
   ],
-  "rules": {},
+  "rules": {
+    "react/forbid-prop-types": 0
+  },
   "globals": {
-    "Promise": true
+    "Promise": true,
+    "process": true
   }
 }

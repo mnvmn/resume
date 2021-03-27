@@ -17,6 +17,7 @@ const URL_REPO = 'https://api.github.com/repos/mnvmn/mnvmn.github.io';
 
 class App extends Component {
   componentDidMount() {
+    const { receivedCvData, receivedRepoData } = this.props;
     fetch(URL_REPO)
       .then((response) => {
         // console.log(response)
@@ -25,7 +26,7 @@ class App extends Component {
         }
         throw new Error('fetch repo failed');
       })
-      .then((data) => this.props.receivedRepoData(data));
+      .then((data) => receivedRepoData(data));
 
     fetch(URL_DATA)
       .then((response) => {
@@ -34,7 +35,7 @@ class App extends Component {
         }
         throw new Error('fetch data failed');
       })
-      .then((data) => this.props.receivedCvData(data));
+      .then((data) => receivedCvData(data));
     // .catch(error => ));
   }
 
