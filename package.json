@@ -32,6 +32,9 @@
     "dev": "concurrently \"npm run start\" \"npm run sass\" \"npm run copy\""
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
     "babel-eslint": "^10.1.0",
     "cpx": "^1.5.0",
     "eslint": "^7.15.0",

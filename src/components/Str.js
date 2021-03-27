@@ -26,7 +26,7 @@ class Str extends React.Component {
 
         processingIndex += text.length + link.length;
         const linkElement = (
-          <a className="btn-link" key={buff.length} target="_blank" href={`http://${link}`}>
+          <a className="btn-link" key={buff.length} target="_blank" href={`http://${link}`} rel="noreferrer">
             {link}
           </a>
         );
