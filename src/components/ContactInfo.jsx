@@ -6,7 +6,7 @@ import Str from './Str';
 import dispatcher from '../store/dispatchers';
 import reducer from '../store/reducers';
 
-const ContactInfo = ({ showIcons, data }) => {
+const ContactInfo = ({ showIcons, data }) => (
   <div>
     {data.contact && (
       <div>
@@ -20,8 +20,8 @@ const ContactInfo = ({ showIcons, data }) => {
         </div>
       </div>
     )}
-  </div>;
-};
+  </div>
+);
 
 ContactInfo.propTypes = {
   showIcons: PropTypes.bool,

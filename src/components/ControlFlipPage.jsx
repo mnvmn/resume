@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Button } from 'reactstrap';
 import * as FontAwesome from 'react-icons/fa';
 
-const ControlFlipPage = ({ orientation, className }) => {
+const ControlFlipPage = ({ orientation, className }) => (
   <div
     className={`control-flipPage-${orientation.toString()} d-print-none ${className}`}
   >
@@ -11,8 +11,8 @@ const ControlFlipPage = ({ orientation, className }) => {
       {orientation === 'right' && <FontAwesome.FaAngleRight />}
       {orientation === 'left' && <FontAwesome.FaAngleLeft />}
     </Button>
-  </div>;
-};
+  </div>
+);
 
 ControlFlipPage.defaultProps = {
   className: '',

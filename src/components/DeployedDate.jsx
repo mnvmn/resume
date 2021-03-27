@@ -5,9 +5,9 @@ import { connect } from 'react-redux';
 import dispatcher from '../store/dispatchers';
 import reducer from '../store/reducers';
 
-const DeployedDate = ({ repo }) => {
-  <Moment format="Do MMM YYYY" date={repo.pushed_at} />;
-};
+const DeployedDate = ({ repo }) => (
+  <Moment format="Do MMM YYYY" date={repo.pushed_at} />
+);
 
 DeployedDate.propTypes = {
   repo: PropTypes.shape({
