@@ -1,0 +1,74 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": false
+  },
+  //  "extends": ["airbnb"],
+  //  "extends": ["plugin:react/recommended", "airbnb"],
+  "extends": [
+    "plugin:react/recommended"
+  ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect"
+    },
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "react/prop-types": [
+      "off"
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-props-no-spreading": [
+      "off"
+    ],
+    "prefer-arrow-callback": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "no-warning-comments": [
+      "off"
+    ],
+    "no-nested-ternary": [
+      "off"
+    ]
+    //    "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+    //    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    //    "jsx-a11y/anchor-is-valid": [
+    //      "error",
+    //      {
+    //        "components": ["Link"],
+    //        "specialLink": ["hrefLeft", "hrefRight", "to"],
+    //        "aspects": ["noHref", "invalidHref", "preferButton"]
+    //      }
+    //    ]
+  },
+  "globals": {
+    "Promise": true
+  }
+}

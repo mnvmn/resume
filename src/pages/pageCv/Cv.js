@@ -5,7 +5,7 @@ import { Container } from 'reactstrap';
 import TableInfo from './TableInfo';
 import msgs from '../../translations.json';
 import dispatcher from '../../store/dispatchers';
-import reducer from './../../store/reducers';
+import reducer from '../../store/reducers';
 
 class Cv extends React.Component {
   static propTypes = {
