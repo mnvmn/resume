@@ -4,17 +4,6 @@ import PropTypes from 'prop-types';
 import { reducerLanguage } from '../store/reducers';
 
 class Str extends React.Component {
-  static defaultProps = {
-    className: '',
-    msg: null,
-  };
-
-  static propTypes = {
-    lang: PropTypes.string.isRequired,
-    msg: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-    className: PropTypes.string,
-  };
-
   static createLinks(str) {
     const links = str.match(/www\.[\w.]*/g);
     let processingIndex = 0;
@@ -46,10 +35,9 @@ class Str extends React.Component {
   }
 
   render() {
-    const { lang } = this.props;
-    const { msg } = this.props;
+    const { lang, msg, className } = this.props;
     const trans = msg && msg[lang] ? msg[lang] : msg;
-    return trans ? <span className={this.props.className}>{Str.createLinks(trans)}</span> : null;
+    return trans ? <span className={className}>{Str.createLinks(trans)}</span> : null;
   }
 }
 
@@ -60,5 +48,16 @@ export const translation = PropTypes.oneOfType([
     sk: PropTypes.string,
   }),
 ]);
+
+Str.defaultProps = {
+  className: '',
+  msg: null,
+};
+
+Str.propTypes = {
+  lang: PropTypes.string.isRequired,
+  msg: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  className: PropTypes.string,
+};
 
 export default connect(reducerLanguage, {})(Str);

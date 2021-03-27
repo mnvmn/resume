@@ -5,16 +5,14 @@ import { connect } from 'react-redux';
 import dispatcher from '../store/dispatchers';
 import reducer from '../store/reducers';
 
-class DeployedDate extends React.Component {
-  static propTypes = {
-    repo: PropTypes.shape({
-      pushed_at: PropTypes.string.isRequired,
-    }).isRequired,
-  };
+const DeployedDate = ({ repo }) => {
+  <Moment format="Do MMM YYYY" date={repo.pushed_at} />;
+};
 
-  render() {
-    return <Moment format="Do MMM YYYY" date={this.props.repo.pushed_at} />;
-  }
-}
+DeployedDate.propTypes = {
+  repo: PropTypes.shape({
+    pushed_at: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default connect(reducer, dispatcher)(DeployedDate);

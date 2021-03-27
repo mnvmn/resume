@@ -7,53 +7,49 @@ import reducer from '../store/reducers';
 import DeployedDate from './DeployedDate';
 import ContactInfo from './ContactInfo';
 
-// import msgs from './../translations.json';
+const Footer = ({ repo }) => {
+  const { version } = React;
+  return (
+    <footer id="footer" className="mt-auto d-print-none pt-2">
+      <div className="d-flex align-items-center">
+        <Container className="text-muted">
+          <Row>
+            <Col>
+              <ContactInfo showIcons />
+            </Col>
 
-class Footer extends React.Component {
-  static propTypes = {
-    repo: PropTypes.shape({
-      pushed_at: PropTypes.string.isRequired,
-    }).isRequired,
-  };
-
-  render() {
-    const { version } = React;
-    return (
-      <footer id="footer" className="mt-auto d-print-none pt-2">
-        <div className="d-flex align-items-center">
-          <Container className="text-muted">
-            <Row>
-              <Col>
-                <ContactInfo showIcons />
-              </Col>
-
-              <Col xs={12} md="auto" className="text-sm text-md-right">
-                <div>
-                  {this.props.repo.pushed_at ? (
-                    <span>
-                      <span>Deployed</span>
-                      &nbsp;
-                      <span>
-                        <DeployedDate />
-                      </span>
-                    </span>
-                  ) : (
-                    <span>&nbsp;</span>
-                  )}
-                </div>
-                <div>
+            <Col xs={12} md="auto" className="text-sm text-md-right">
+              <div>
+                {repo.pushed_at ? (
                   <span>
-                    React v
-                    {version}
+                    <span>Deployed</span>
+                    &nbsp;
+                    <span>
+                      <DeployedDate />
+                    </span>
                   </span>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </footer>
-    );
-  }
-}
+                ) : (
+                  <span>&nbsp;</span>
+                )}
+              </div>
+              <div>
+                <span>
+                  React v
+                  {version}
+                </span>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </footer>
+  );
+};
+
+Footer.propTypes = {
+  repo: PropTypes.shape({
+    pushed_at: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default connect(reducer, dispatcher)(Footer);
