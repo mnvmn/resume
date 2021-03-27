@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import * as MatDesignIcons from 'react-icons/lib/md';
+import * as MatDesignIcons from 'react-icons/md';
 import Str from './Str';
 import dispatcher from './../store/dispatchers';
 import reducer from './../store/reducers';

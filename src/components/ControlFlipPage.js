@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'reactstrap';
-import * as FontAwesome from 'react-icons/lib/fa';
+import * as FontAwesome from 'react-icons/fa';
 
 class ControlFlipPage extends React.Component {
   static defaultProps = {

@@ -2,7 +2,7 @@
   "extends": ["airbnb", "plugin:react/recommended"],
   "parser": "babel-eslint",
   "rules": {
-    "react/prefer-stateless-function": [false, { "ignorePureComponents": true }],
+    "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "jsx-a11y/anchor-is-valid": [
       "error",

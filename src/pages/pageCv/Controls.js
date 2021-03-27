@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { ButtonGroup, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import * as FontAwesome from 'react-icons/lib/fa';
+import * as FontAwesome from 'react-icons/fa';
 import msgs from './../../translations.json';
 import Str from './../../components/Str';
 import dispatcher from './../../store/dispatchers';
@@ -38,7 +38,7 @@ class Controls extends React.Component {
           href="https://github.com/mnvmn"
           target="_blank"
         >
-          <FontAwesome.FaCodeFork />
+          <FontAwesome.FaCodeBranch />
           &nbsp;&nbsp;<Str msg={msgs.btns.viewSource} />
         </Button>
         {this.props.isVertical && (
@@ -66,7 +66,7 @@ class Controls extends React.Component {
           onClick={this.props.toggleOrder}
         >
           <span className="">
-            {isAsc ? <FontAwesome.FaSortAmountDesc /> : <FontAwesome.FaSortAmountAsc />}
+            {isAsc ? <FontAwesome.FaSortAmountDown /> : <FontAwesome.FaSortAmountUp />}
           </span>
           &nbsp;&nbsp;{' '}
           {isAsc ? <Str msg={msgs.btns.orderByDateDesc} /> : <Str msg={msgs.btns.orderByDateAsc} />}
