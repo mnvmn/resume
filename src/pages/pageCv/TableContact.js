@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Col, Row } from 'reactstrap';
-import msgs from './../../translations.json';
-import Str from './../../components/Str';
+import msgs from '../../translations.json';
+import Str from '../../components/Str';
 
 export default class TableContact extends React.Component {
   static propTypes = {
@@ -20,7 +20,7 @@ export default class TableContact extends React.Component {
           </Col>
         </Row>
 
-        {this.props.data.map(info => (
+        {this.props.data.map((info) => (
           <div key={info.label}>
             <Str msg={info.label} />
             <Str msg={info.value} />

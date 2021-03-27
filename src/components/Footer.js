@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Col, Row } from 'reactstrap';
 import { connect } from 'react-redux';
-import dispatcher from './../store/dispatchers';
-import reducer from './../store/reducers';
+import dispatcher from '../store/dispatchers';
+import reducer from '../store/reducers';
 import DeployedDate from './DeployedDate';
 import ContactInfo from './ContactInfo';
 
@@ -42,7 +42,10 @@ class Footer extends React.Component {
                   )}
                 </div>
                 <div>
-                  <span>React v{version}</span>
+                  <span>
+                    React v
+                    {version}
+                  </span>
                 </div>
               </Col>
             </Row>

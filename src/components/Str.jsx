@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { reducerLanguage } from './../store/reducers';
+import { reducerLanguage } from '../store/reducers';
 
 class Str extends React.Component {
   static defaultProps = {

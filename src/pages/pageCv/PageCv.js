@@ -1,15 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Navbar, NavbarToggler, Collapse } from 'reactstrap';
+import {
+  Container, Row, Col, Navbar, NavbarToggler, Collapse,
+} from 'reactstrap';
 import PropTypes from 'prop-types';
 import Logo from './Logo';
-import dispatcher from './../../store/dispatchers';
-import reducer from './../../store/reducers';
+import dispatcher from '../../store/dispatchers';
+import reducer from '../../store/reducers';
 import Cv from './Cv';
 import Controls from './Controls';
-import ControlFlipPage from './../../components/ControlFlipPage';
-import PrintHeader from './../../components/PrintHeader';
+import ControlFlipPage from '../../components/ControlFlipPage';
+import PrintHeader from '../../components/PrintHeader';
 
 class PageCv extends React.Component {
   static propTypes = {

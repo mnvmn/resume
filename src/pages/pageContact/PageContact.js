@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Logo3d from 'react-3d-logo';
-import dispatcher from './../../store/dispatchers';
-import reducer from './../../store/reducers';
-import ControlFlipPage from './../../components/ControlFlipPage';
+import dispatcher from '../../store/dispatchers';
+import reducer from '../../store/reducers';
+import ControlFlipPage from '../../components/ControlFlipPage';
 
 class PagePoster extends React.Component {
   render() {

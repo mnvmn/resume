@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Col, Row } from 'reactstrap';
 import { TableProjects, projects } from './TableProjects';
-import Str, { translation } from './../../components/Str';
+import Str, { translation } from '../../components/Str';
 
 export default class TableInfo extends React.Component {
   static propTypes = {

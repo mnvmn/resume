@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Moment from 'react-moment';
 import { connect } from 'react-redux';
-import dispatcher from './../store/dispatchers';
-import reducer from './../store/reducers';
+import dispatcher from '../store/dispatchers';
+import reducer from '../store/reducers';
 
 class DeployedDate extends React.Component {
   static propTypes = {

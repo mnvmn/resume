@@ -4,10 +4,10 @@ import { ButtonGroup, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as FontAwesome from 'react-icons/fa';
-import msgs from './../../translations.json';
-import Str from './../../components/Str';
-import dispatcher from './../../store/dispatchers';
-import reducer from './../../store/reducers';
+import msgs from '../../translations.json';
+import Str from '../../components/Str';
+import dispatcher from '../../store/dispatchers';
+import reducer from '../../store/reducers';
 
 class Controls extends React.Component {
   static propTypes = {
@@ -39,12 +39,14 @@ class Controls extends React.Component {
           target="_blank"
         >
           <FontAwesome.FaCodeBranch />
-          &nbsp;&nbsp;<Str msg={msgs.btns.viewSource} />
+          &nbsp;&nbsp;
+          <Str msg={msgs.btns.viewSource} />
         </Button>
         {this.props.isVertical && (
           <Link to="/contact" className={`btn btn-${btnSize} btn-outline-primary ${btnClass}`}>
             <FontAwesome.FaMobile />
-            &nbsp;&nbsp;<Str msg={msgs.btns.viewContact} />
+            &nbsp;&nbsp;
+            <Str msg={msgs.btns.viewContact} />
           </Link>
         )}
         {/* <Button
@@ -68,7 +70,8 @@ class Controls extends React.Component {
           <span className="">
             {isAsc ? <FontAwesome.FaSortAmountDown /> : <FontAwesome.FaSortAmountUp />}
           </span>
-          &nbsp;&nbsp;{' '}
+          &nbsp;&nbsp;
+          {' '}
           {isAsc ? <Str msg={msgs.btns.orderByDateDesc} /> : <Str msg={msgs.btns.orderByDateAsc} />}
         </Button>
         <Button
@@ -79,7 +82,8 @@ class Controls extends React.Component {
           onClick={this.props.toggleLang}
         >
           <FontAwesome.FaLanguage />
-          &nbsp;&nbsp;<Str msg={msgs.btns.changeLanguage} />
+          &nbsp;&nbsp;
+          <Str msg={msgs.btns.changeLanguage} />
         </Button>
       </ButtonGroup>
     );

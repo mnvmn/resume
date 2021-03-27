@@ -25,7 +25,7 @@ class App extends Component {
         }
         throw new Error('fetch repo failed');
       })
-      .then(data => this.props.receivedRepoData(data));
+      .then((data) => this.props.receivedRepoData(data));
 
     fetch(URL_DATA)
       .then((response) => {
@@ -34,7 +34,7 @@ class App extends Component {
         }
         throw new Error('fetch data failed');
       })
-      .then(data => this.props.receivedCvData(data));
+      .then((data) => this.props.receivedCvData(data));
     // .catch(error => ));
   }
 
